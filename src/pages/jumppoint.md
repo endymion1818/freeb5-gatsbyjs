@@ -11,31 +11,9 @@ The JumpPoint is where you&#8217;ll find access to Babylon 5 forums, web pages a
 
 Beware: the sites and content in the JumpPoint are not spoiler-free!
 
-&nbsp;
+- [JMSNews](http://jmsnews.com/forums/forumdisplay.php?f=9)
+- [Gateworld Forum](http://forum.gateworld.net/threads/87851-Free-Babylon-5/page2)
+- [TrekBBS](http://www.trekbbs.com/)
+- [ISN News](http://www.isnnews.net/forums/forumdisplay.php?f=7)
 
-<ul class="nav nav-tabs">
-  <li>
-    <a class="active" title="JMSNews" href="http://freeb5:8888/jumppoint/">JMSNews</a>
-  </li>
-  <li>
-    <a title="Jump Point" href="http://freeb5:8888/jumppoint/links/">Links</a>
-  </li>
-  <li>
-    <a title="B5TV" href="http://freeb5:8888/jump-point/b5tv/">B5TV</a>
-  </li>
-  <li>
-    <a title="TrekBBS" href="http://freeb5:8888/jumppoint/trekbbs/">TrekBBS</a>
-  </li>
-  <li>
-    <a title="ISNNews" href="http://freeb5:8888/jumppoint/isn-news/">ISN News</a>
-  </li>
-  <li>
-    <a title="GateWorldForum" href="http://freeb5:8888/jumppoint/gate-world-forum/">GateWorld Forum</a>
-  </li>
-</ul>
-
-
-
-[Open in seperate tab »][1]{.btn.btn-default}
-
- [1]: http://jmsnews.com/forums/forumdisplay.php?f=9
+_Note from Webmaster: As more sites move to HTTPS, I'm losing the ability to embed them into this site. Sorry, you're going to have to click through from now on..._
