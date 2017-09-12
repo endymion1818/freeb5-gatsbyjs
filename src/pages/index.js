@@ -46,6 +46,41 @@ export default ({ data }) => {
           </Link>
         </div>
       )}
+      <div>
+      <h2>Babylon 5 Now Streaming in the US!</h2>
+      <p>This is the day we have been fighting for! Babylon 5 is now showing in the US on Go90. The #FreeBabylon5 campaign even got a mention in their promo advert which you can watch here.</p>
+
+      <p>Thank you Go90 for fulfilling our primary campaign goal and streaming Babylon 5 in the US.</p>
+
+      <a href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
+      </div>
+      <div className="masthead masthead-home2">
+      <h2>New to Babylon 5?</h2>
+      <p>Babylon 5 has something for everyone. The story focuses on the relationships and entwined destinies of a multitude of charachters. Some find love, some face tragedy.</p>
+
+      <p>There are epic plotlines, rich alien cultures, and bucket loads of space battles.</p>
+
+      <a href="https://go90.com/babylon5">Where to Watch</a>
+      </div>
+      <div className="container">
+        <div className="alert">Looking for news about the Babylon 5 Movie? You'll find that here »</div>
+      </div>
+      <div className="masthead masthead-home2">
+      <h2>Why is Babylon 5 Important?</h2>
+
+      <p>Babylon 5 was a watershed moment for television.</p>
+
+      <p>It was the first sci-fi show to feature story arcs that continued past 2-hour specials. It was the first to use only computer-generated spaceship effects. Its story inspired a generation.</p>
+
+      <p>Without Babylon 5, there would probably be no Battlestar Galactica, no Firefly, and no Marvel Cinematic Universe.</p>
+
+      <p>But it's rarely on air anywhere and isn't shown on major internet TV services.</p>
+
+      <p>You can help change that.</p>
+
+      <a href="/about/">About the Campaign</a>
+
+      </div>
     </div>
   )
 }

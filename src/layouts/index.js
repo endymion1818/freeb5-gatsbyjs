@@ -14,6 +14,31 @@ export default ({ children, data }) =>
     padding={rhythm(2)}
     paddingTop={rhythm(1.5)}
   >
+  <header>
+  <Link to={`/`}>
+    <g.H3
+      marginBottom={rhythm(2)}
+      display={`inline-block`}
+      fontStyle={`normal`}
+    >
+      {data.site.siteMetadata.title}
+    </g.H3>
+  </Link>
+  <Link className={linkStyle} to={`/about/`}>
+    About
+  </Link>
+  <Link className={linkStyle} to={`/where-to-watch/`}>
+    Watch
+  </Link>
+  <Link className={linkStyle} to={`/news-room/`}>
+    News
+  </Link>
+  <Link className={linkStyle} to={`/jumppoint/`}>
+    Community
+  </Link>
+  </header>
+    {children()}
+    <footer>
     <Link to={`/`}>
       <g.H3
         marginBottom={rhythm(2)}
@@ -23,19 +48,26 @@ export default ({ children, data }) =>
         {data.site.siteMetadata.title}
       </g.H3>
     </Link>
-    <Link className={linkStyle} to={`/about/`}>
+    <Link to={`/about/`}>
       About
     </Link>
-    <Link className={linkStyle} to={`/where-to-watch/`}>
+    <Link to={`/where-to-watch/`}>
       Watch
     </Link>
-    <Link className={linkStyle} to={`/news-room/`}>
+    <Link to={`/news-room/`}>
       News
     </Link>
-    <Link className={linkStyle} to={`/jumppoint/`}>
+    <Link to={`/jumppoint/`}>
       Community
     </Link>
-    {children()}
+    <p>All content © the respective copyright owners.</p>
+
+    <p>Babylon 5, characters, names, and all related indicia are trademarks of Warner Bros. Entertainment, Inc. ©1994-2013 All Rights Reserved.</p>
+
+    <p>Contact: freebabylon5@aol.com</p>
+
+    <p>Website by Benjamin Read</p>
+    </footer>
   </g.Div>
 
   export const query = graphql`
