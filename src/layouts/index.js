@@ -26,9 +26,18 @@ export default ({ children, data }) =>
     <Link className={linkStyle} to={`/about/`}>
       About
     </Link>
+    <Link className={linkStyle} to={`/where-to-watch/`}>
+      Watch
+    </Link>
+    <Link className={linkStyle} to={`/news-room/`}>
+      News
+    </Link>
+    <Link className={linkStyle} to={`/jumppoint/`}>
+      Community
+    </Link>
     {children()}
   </g.Div>
-  
+
   export const query = graphql`
     query LayoutQuery {
       site {

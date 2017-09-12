@@ -7,18 +7,20 @@ import { rhythm } from "../utils/typography"
 export default ({ data }) => {
   return (
     <div>
-    ### Seen the show? Now see how deep the Jump Gate goes &#8230;
+    <h2>Seen the show? Now see how deep the Jump Gate goes &#8230;</h2>
 
-    The JumpPoint is where you&#8217;ll find access to Babylon 5 forums, web pages and other content where you can  find in-depth insight into the making of the show, explore plot points and further details from fans and those who worked on the show.
+    <p>The JumpPoint is where you&#8217;ll find access to Babylon 5 forums, web pages and other content where you can  find in-depth insight into the making of the show, explore plot points and further details from fans and those who worked on the show.</p>
 
-    Beware: the sites and content in the JumpPoint are not spoiler-free!
+    <p>Beware: the sites and content in the JumpPoint are not spoiler-free!</p>
 
-    - [JMSNews](http://jmsnews.com/forums/forumdisplay.php?f=9)
-    - [Gateworld Forum](http://forum.gateworld.net/threads/87851-Free-Babylon-5/page2)
-    - [TrekBBS](http://www.trekbbs.com/)
-    - [ISN News](http://www.isnnews.net/forums/forumdisplay.php?f=7)
+    <ul>
+      <li><a href="http://jmsnews.com/forums/forumdisplay.php?f=9">JMSNews</a></li>
+      <li><a href="http://forum.gateworld.net/threads/87851-Free-Babylon-5/page2">Gateworld Forum</a></li>
+      <li><a href="http://www.trekbbs.com/">TrekBBS</a></li>
+      <li><a href="http://www.isnnews.net/forums/forumdisplay.php?f=7">ISN News</a></li>
+    </ul>
 
-    _Note from Webmaster: As more sites move to HTTPS, I'm losing the ability to embed them into this site. Sorry, you're going to have to click through from now on..._
+    <p>Note from Webmaster: As more sites move to HTTPS, I'm losing the ability to embed them into this site. Sorry, you're going to have to click through from now on...</p>
     </div>
   )
 }

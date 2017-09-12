@@ -4,8 +4,8 @@ import Link from "gatsby-link"
 
 import { rhythm } from "../utils/typography"
 
-export default ({ data }) => {
-  return (
+export default ({ data }) =>
+    <div>
     Click on the text to reveal the answer.
 
     <div class="panel-group" id="accordion">
@@ -107,5 +107,13 @@ export default ({ data }) => {
         </div>
       </div>
     </div>
-  )
-}
+    </div>
+    export const query = graphql`
+      query faqQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
