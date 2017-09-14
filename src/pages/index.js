@@ -17,7 +17,7 @@ export default ({ data }) => {
       </p>
 
       <p className="text-center">
-        Please <a className="btn btn-join" title="Join Us!" href="http://freeb5:8888/join/"><strong>Join us</strong></a> and help #FreeBabylon5
+        Please <a className="btn btn-join" title="Join Us!" href="/join/"><strong>Join us</strong></a> and help #FreeBabylon5
       </p>
 
       <p>

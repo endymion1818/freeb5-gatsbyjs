@@ -2,7 +2,7 @@ import React from "react"
 import g from "glamorous"
 import { css } from "glamor"
 import Link from "gatsby-link"
-
+// import bg from "./pg-bckg.png"
 import { rhythm } from "../utils/typography"
 
 const linkStyle = css({ float: `right` })
@@ -13,6 +13,7 @@ export default ({ children, data }) =>
     maxWidth={700}
     padding={rhythm(2)}
     paddingTop={rhythm(1.5)}
+    backgroundImage="url(./pg-bckg.png)"
   >
   <header>
   <Link to={`/`}>
