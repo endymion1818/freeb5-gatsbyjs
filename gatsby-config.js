@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    pathPrefix: '/',
     title: `#FreeBabylon5`,
   },
   plugins: [
