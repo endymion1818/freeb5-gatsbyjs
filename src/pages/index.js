@@ -1,29 +1,38 @@
 import React from "react"
 import g from "glamorous"
+import { css } from "glamor"
 import Link from "gatsby-link"
 
 import { rhythm } from "../utils/typography"
 
+const containerStyle = css({ maxWidth: `1200px`, padding: rhythm(2) })
+
 export default ({ data }) => {
   return (
     <div>
-    <div className="col-md-12 mission-text">
-      <h1 className="center">
-        Babylon 5 is a game-changing, ground breaking, emmy-award winning TV series that is in danger of becoming lost and forgotten.
-      </h1>
+    <div
+      className={containerStyle}
+    >
+      <div className="mission-text">
+        <h1 className="center">
+          Babylon 5 is a game-changing, ground breaking, emmy-award winning TV series that is in danger of becoming lost and forgotten.
+        </h1>
 
-      <p className="text-center">
-        We are not going to let that happen.
-      </p>
+        <p className="text-center">
+          We are not going to let that happen.
+        </p>
 
-      <p className="text-center">
-        Please <a className="btn btn-join" title="Join Us!" href="/join/"><strong>Join us</strong></a> and help #FreeBabylon5
-      </p>
+        <p className="text-center">
+          Please <a className="btn btn-join" title="Join Us!" href="/join/"><strong>Join us</strong></a> and help #FreeBabylon5
+        </p>
 
-      <p>
-        &nbsp;
-      </p>
+        <p>
+        </p>
+      </div>
     </div>
+    <div
+      className={containerStyle}
+    >
       <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
         Recent Posts
       </g.H1>
@@ -46,7 +55,10 @@ export default ({ data }) => {
           </Link>
         </div>
       )}
-      <div>
+      </div>
+      <div
+        className={containerStyle}
+      >
       <h2>Babylon 5 Now Streaming in the US!</h2>
       <p>This is the day we have been fighting for! Babylon 5 is now showing in the US on Go90. The #FreeBabylon5 campaign even got a mention in their promo advert which you can watch here.</p>
 
@@ -54,7 +66,7 @@ export default ({ data }) => {
 
       <a href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
       </div>
-      <div className="masthead masthead-home2">
+      <div className={containerStyle}>
       <h2>New to Babylon 5?</h2>
       <p>Babylon 5 has something for everyone. The story focuses on the relationships and entwined destinies of a multitude of charachters. Some find love, some face tragedy.</p>
 
@@ -62,10 +74,12 @@ export default ({ data }) => {
 
       <a href="https://go90.com/babylon5">Where to Watch</a>
       </div>
-      <div className="container">
+      <div className={containerStyle}>
         <div className="alert">Looking for news about the Babylon 5 Movie? You'll find that here »</div>
       </div>
-      <div className="masthead masthead-home2">
+      <div
+        className={containerStyle}
+      >
       <h2>Why is Babylon 5 Important?</h2>
 
       <p>Babylon 5 was a watershed moment for television.</p>
