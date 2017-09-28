@@ -9,11 +9,13 @@ const Container = styled.section`
 const Heading = styled.h2`
   font-weight: bold;
   text-align: center;
+  font-family: 'SerpentineMedium', sans-serif;
 `;
 const WelcomeHeading = styled.h1`
   font-weight: bold;
   text-align: center;
   font-size: 1.5em;
+  font-family: 'SerpentineMedium', sans-serif;
 `;
 
 const Banner = styled.div`

@@ -1,14 +1,16 @@
 import React from "react"
 import Link from "gatsby-link"
 import styled from "styled-components"
+import './global-styles.js'
 
-import font from "./serpentine.woff2"
-import bgimg from "./pg-bckg.png"
 
 document.body.style.margin = "0";
+document.body.style.backgroundImage = "url(logo)";
 
 const Wrapper = styled.section`
 	background: black;
+  background-image: url(./pg-bckg.png);
+  font-family: sans-serif;
 `;
 
 const Container = styled.section`
@@ -42,36 +44,49 @@ const StyledLink = styled(Link)`
   text-align: center;
   text-decoration: none;
   border-radius: 15px;
+  color: white;
+  transition: all 0.25s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: gray;
+  }
 
   &:last-child {
     background-color: #BF0B12;
     color: black;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #ad1b21;
+    }
   }
 `;
-const SiteTitle = styled.div`
-  text-align: center;
+const SiteTitle = styled(Link)`
   font-size: 32px;
+  font-family: 'SerpentineMedium', sans-serif;
+  text-decoration: none;
 `;
 
 export default ({ children, data }) =>
   <Wrapper>
   <Header>
-  <Link to={`/`}>
-    <SiteTitle>
+    <SiteTitle to={`/`}>
       {data.site.siteMetadata.title}
     </SiteTitle>
-  </Link>
   <Navbar>
-    <StyledLink className="navlink" to={`/about/`}>
+    <StyledLink to={`/about/`}>
       About
     </StyledLink>
-    <StyledLink className="navlink" to={`/where-to-watch/`}>
+    <StyledLink to={`/where-to-watch/`}>
       Watch
     </StyledLink>
-    <StyledLink className="navlink" to={`/news-room/`}>
+    <StyledLink to={`/news-room/`}>
       News
     </StyledLink>
-    <StyledLink className="navlink" to={`/jumppoint/`}>
+    <StyledLink to={`/jumppoint/`}>
       Community
     </StyledLink>
   </Navbar>
@@ -79,16 +94,16 @@ export default ({ children, data }) =>
     {children()}
     <Footer>
     <Navbar>
-      <Link className="navlink" to={`/about/`}>
+      <Link to={`/about/`}>
         About
       </Link>
-      <Link className="navlink" to={`/where-to-watch/`}>
+      <Link to={`/where-to-watch/`}>
         Watch
       </Link>
-      <Link className="navlink" to={`/news-room/`}>
+      <Link to={`/news-room/`}>
         News
       </Link>
-      <Link className="navlink" to={`/jumppoint/`}>
+      <Link to={`/jumppoint/`}>
         Community
       </Link>
     </Navbar>
