@@ -1,49 +1,97 @@
 import React from "react"
 import Link from "gatsby-link"
 import styled from "styled-components"
+
 import font from "./serpentine.woff2"
 import bgimg from "./pg-bckg.png"
 
+document.body.style.margin = "0";
+
+const Wrapper = styled.section`
+	background: black;
+`;
+
+const Container = styled.section`
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+`;
+const Header = Container.extend`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+`;
+const Footer = Container.extend``;
+
+const Navbar = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+const StyledLink = styled(Link)`
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+
+  &:last-child {
+    background-color: #BF0B12;
+    color: black;
+  }
+`;
+const SiteTitle = styled.div`
+  text-align: center;
+  font-size: 32px;
+`;
 
 export default ({ children, data }) =>
-  <div>
-  <header>
+  <Wrapper>
+  <Header>
   <Link to={`/`}>
-    <h3>
+    <SiteTitle>
       {data.site.siteMetadata.title}
-    </h3>
+    </SiteTitle>
   </Link>
-  <div>
-    <Link to={`/about/`}>
+  <Navbar>
+    <StyledLink className="navlink" to={`/about/`}>
       About
-    </Link>
-    <Link to={`/where-to-watch/`}>
+    </StyledLink>
+    <StyledLink className="navlink" to={`/where-to-watch/`}>
       Watch
-    </Link>
-    <Link to={`/news-room/`}>
+    </StyledLink>
+    <StyledLink className="navlink" to={`/news-room/`}>
       News
-    </Link>
-    <Link to={`/jumppoint/`}>
+    </StyledLink>
+    <StyledLink className="navlink" to={`/jumppoint/`}>
       Community
-    </Link>
-  </div>
-  </header>
+    </StyledLink>
+  </Navbar>
+  </Header>
     {children()}
-    <footer>
-    <div>
-      <Link to={`/about/`}>
+    <Footer>
+    <Navbar>
+      <Link className="navlink" to={`/about/`}>
         About
       </Link>
-      <Link to={`/where-to-watch/`}>
+      <Link className="navlink" to={`/where-to-watch/`}>
         Watch
       </Link>
-      <Link to={`/news-room/`}>
+      <Link className="navlink" to={`/news-room/`}>
         News
       </Link>
-      <Link to={`/jumppoint/`}>
+      <Link className="navlink" to={`/jumppoint/`}>
         Community
       </Link>
-    </div>
+    </Navbar>
     <div>
       <Link to={`/`}>
         <h3>
@@ -58,8 +106,8 @@ export default ({ children, data }) =>
 
       <p>Website by Benjamin Read</p>
     </div>
-    </footer>
-  </div>
+    </Footer>
+  </Wrapper>
 
   export const query = graphql`
     query LayoutQuery {

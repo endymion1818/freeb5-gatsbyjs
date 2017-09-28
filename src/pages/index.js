@@ -1,33 +1,49 @@
 import React from "react"
 import Link from "gatsby-link"
+import styled from "styled-components"
 
-const containerStyle = 'display: block'
+const Container = styled.section`
+  padding: 2em;
+  color: white;
+`;
+const Heading = styled.h2`
+  font-weight: bold;
+  text-align: center;
+`;
+const WelcomeHeading = styled.h1`
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+`;
+
+const Banner = styled.div`
+  min-height: 80px;
+  padding: 100px;
+`;
 
 export default ({ data }) => {
   return (
     <div>
-    <div>
-      <div>
-        <h1>
+    <Container>
+      <Banner>
+        <WelcomeHeading>
           Babylon 5 is a game-changing, ground breaking, emmy-award winning TV series that is in danger of becoming lost and forgotten.
-        </h1>
+        </WelcomeHeading>
 
-        <p className="text-center">
+        <p>
           We are not going to let that happen.
         </p>
 
-        <p className="text-center">
-          Please <a className="btn btn-join" title="Join Us!" href="/join/"><strong>Join us</strong></a> and help #FreeBabylon5
+        <p>
+          Please <a title="Join Us!" href="/join/"><strong>Join us</strong></a> and help #FreeBabylon5
         </p>
 
         <p>
         </p>
-      </div>
-    </div>
-    <div
-      className={containerStyle}
-    >
-      <h1 display={"inline-block"} borderBottom={"1px solid"}>
+      </Banner>
+    </Container>
+    <Container>
+      <h1>
         Recent Posts
       </h1>
       <h4>
@@ -35,10 +51,7 @@ export default ({ data }) => {
       </h4>
       {data.allMarkdownRemark.edges.map(({ node }) =>
         <div>
-        <Link
-          to={node.fields.slug}
-          css={{ textDecoration: `none`, color: `inherit` }}
-        >
+        <Link>
           <h3>
             {node.frontmatter.title}{" "}
             <span color="#BBB">— {node.frontmatter.date}</span>
@@ -49,46 +62,45 @@ export default ({ data }) => {
           </Link>
         </div>
       )}
-      </div>
-      <div
-        className={containerStyle}
-      >
-      <h2>Babylon 5 Now Streaming in the US!</h2>
+      </Container>
+      <Container>
+      <Heading>Babylon 5 Now Streaming in the US!</Heading>
       <p>This is the day we have been fighting for! Babylon 5 is now showing in the US on Go90. The #FreeBabylon5 campaign even got a mention in their promo advert which you can watch here.</p>
 
       <p>Thank you Go90 for fulfilling our primary campaign goal and streaming Babylon 5 in the US.</p>
 
       <a href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
-      </div>
-      <div className={containerStyle}>
-      <h2>New to Babylon 5?</h2>
-      <p>Babylon 5 has something for everyone. The story focuses on the relationships and entwined destinies of a multitude of charachters. Some find love, some face tragedy.</p>
+      </Container>
+      <Container>
+      <Banner>
+        <Heading>New to Babylon 5?</Heading>
+        <p>Babylon 5 has something for everyone. The story focuses on the relationships and entwined destinies of a multitude of charachters. Some find love, some face tragedy.</p>
 
-      <p>There are epic plotlines, rich alien cultures, and bucket loads of space battles.</p>
+        <p>There are epic plotlines, rich alien cultures, and bucket loads of space battles.</p>
 
-      <a href="https://go90.com/babylon5">Where to Watch</a>
-      </div>
-      <div className={containerStyle}>
-        <div className="alert">Looking for news about the Babylon 5 Movie? You'll find that here »</div>
-      </div>
-      <div
-        className={containerStyle}
-      >
-      <h2>Why is Babylon 5 Important?</h2>
+        <a href="https://go90.com/babylon5">Where to Watch</a>
+      </Banner>
+      </Container>
+      <Container>
+        <div>Looking for news about the Babylon 5 Movie? You'll find that here »</div>
+      </Container>
+      <Container>
+        <Banner>
+          <Heading>Why is Babylon 5 Important?</Heading>
 
-      <p>Babylon 5 was a watershed moment for television.</p>
+          <p>Babylon 5 was a watershed moment for television.</p>
 
-      <p>It was the first sci-fi show to feature story arcs that continued past 2-hour specials. It was the first to use only computer-generated spaceship effects. Its story inspired a generation.</p>
+          <p>It was the first sci-fi show to feature story arcs that continued past 2-hour specials. It was the first to use only computer-generated spaceship effects. Its story inspired a generation.</p>
 
-      <p>Without Babylon 5, there would probably be no Battlestar Galactica, no Firefly, and no Marvel Cinematic Universe.</p>
+          <p>Without Babylon 5, there would probably be no Battlestar Galactica, no Firefly, and no Marvel Cinematic Universe.</p>
 
-      <p>But it's rarely on air anywhere and isn't shown on major internet TV services.</p>
+          <p>But it's rarely on air anywhere and isn't shown on major internet TV services.</p>
 
-      <p>You can help change that.</p>
+          <p>You can help change that.</p>
 
-      <a href="/about/">About the Campaign</a>
-
-      </div>
+          <a href="/about/">About the Campaign</a>
+        </Banner>
+      </Container>
     </div>
   )
 }
