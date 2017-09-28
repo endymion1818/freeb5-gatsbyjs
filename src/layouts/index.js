@@ -1,75 +1,54 @@
 import React from "react"
-import g from "glamorous"
-import { css } from "glamor"
 import Link from "gatsby-link"
-import { rhythm } from "../utils/typography"
+import styled from "styled-components"
 import font from "./serpentine.woff2"
+import bgimg from "./pg-bckg.png"
 
-const headerLinkStyle = css({ float: `right`, padding: rhythm(0.5) })
-const footerLinkStyle = css({ display: `block`, padding: rhythm(0.75) })
-const containerStyle = css({ maxWidth: `1200px`, padding: rhythm(2) })
-const twoColStyle = css({ maxWidth: `1200px`, padding: rhythm(2), display: `grid`, gridTemplateColumns: `50% 50%`})
 
 export default ({ children, data }) =>
-  <g.Div
-    margin={`0 auto`}
-    backgroundImage="url(./pg-bckg.png)"
-  >
-  <header
-    className={twoColStyle}
-    fontFamily={font}
-  >
+  <div>
+  <header>
   <Link to={`/`}>
-    <g.H3
-      display={`inline-block`}
-      fontStyle={`normal`}
-      padding={rhythm(0.5)}
-    >
+    <h3>
       {data.site.siteMetadata.title}
-    </g.H3>
+    </h3>
   </Link>
   <div>
-    <Link className={headerLinkStyle} to={`/about/`}>
+    <Link to={`/about/`}>
       About
     </Link>
-    <Link className={headerLinkStyle} to={`/where-to-watch/`}>
+    <Link to={`/where-to-watch/`}>
       Watch
     </Link>
-    <Link className={headerLinkStyle} to={`/news-room/`}>
+    <Link to={`/news-room/`}>
       News
     </Link>
-    <Link className={headerLinkStyle} to={`/jumppoint/`}>
+    <Link to={`/jumppoint/`}>
       Community
     </Link>
   </div>
   </header>
     {children()}
-    <footer
-      className={twoColStyle}
-    >
+    <footer>
     <div>
-      <Link className={footerLinkStyle} to={`/about/`}>
+      <Link to={`/about/`}>
         About
       </Link>
-      <Link className={footerLinkStyle} to={`/where-to-watch/`}>
+      <Link to={`/where-to-watch/`}>
         Watch
       </Link>
-      <Link className={footerLinkStyle} to={`/news-room/`}>
+      <Link to={`/news-room/`}>
         News
       </Link>
-      <Link className={footerLinkStyle} to={`/jumppoint/`}>
+      <Link to={`/jumppoint/`}>
         Community
       </Link>
     </div>
     <div>
       <Link to={`/`}>
-        <g.H3
-          marginBottom={rhythm(2)}
-          display={`inline-block`}
-          fontStyle={`normal`}
-        >
+        <h3>
           {data.site.siteMetadata.title}
-        </g.H3>
+        </h3>
       </Link>
       <p>All content © the respective copyright owners.</p>
 
@@ -80,7 +59,7 @@ export default ({ children, data }) =>
       <p>Website by Benjamin Read</p>
     </div>
     </footer>
-  </g.Div>
+  </div>
 
   export const query = graphql`
     query LayoutQuery {

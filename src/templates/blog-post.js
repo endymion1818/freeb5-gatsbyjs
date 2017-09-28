@@ -1,7 +1,4 @@
 import React from "react"
-import { css } from "glamor"
-import { rhythm } from "../utils/typography"
-const containerStyle = css({ maxWidth: `1200px`, padding: rhythm(2) })
 
 export default ({ data }) => {
   const post = data.markdownRemark

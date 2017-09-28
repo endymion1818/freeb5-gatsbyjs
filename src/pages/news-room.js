@@ -1,8 +1,6 @@
 import React from "react"
-import g from "glamorous"
 import Link from "gatsby-link"
 
-import { rhythm } from "../utils/typography"
 
 export default ({ data }) => {
   return (

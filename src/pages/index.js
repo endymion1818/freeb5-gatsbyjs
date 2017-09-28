@@ -1,20 +1,14 @@
 import React from "react"
-import g from "glamorous"
-import { css } from "glamor"
 import Link from "gatsby-link"
 
-import { rhythm } from "../utils/typography"
-
-const containerStyle = css({ maxWidth: `1200px`, padding: rhythm(2) })
+const containerStyle = 'display: block'
 
 export default ({ data }) => {
   return (
     <div>
-    <div
-      className={containerStyle}
-    >
-      <div className="mission-text">
-        <h1 className="center">
+    <div>
+      <div>
+        <h1>
           Babylon 5 is a game-changing, ground breaking, emmy-award winning TV series that is in danger of becoming lost and forgotten.
         </h1>
 
@@ -33,9 +27,9 @@ export default ({ data }) => {
     <div
       className={containerStyle}
     >
-      <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
+      <h1 display={"inline-block"} borderBottom={"1px solid"}>
         Recent Posts
-      </g.H1>
+      </h1>
       <h4>
         {data.allMarkdownRemark.totalCount} Posts
       </h4>
@@ -45,10 +39,10 @@ export default ({ data }) => {
           to={node.fields.slug}
           css={{ textDecoration: `none`, color: `inherit` }}
         >
-          <g.H3 marginBottom={rhythm(1 / 4)}>
+          <h3>
             {node.frontmatter.title}{" "}
-            <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
-          </g.H3>
+            <span color="#BBB">— {node.frontmatter.date}</span>
+          </h3>
           <p>
             {node.excerpt}
           </p>

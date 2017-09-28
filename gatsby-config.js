@@ -11,13 +11,7 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-plugin-glamor`,
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
   ],
 }
