@@ -15,6 +15,16 @@ const Container = styled.section`
   margin: 0 auto;
   color: white;
 `;
+const Main = styled.main`
+  @media (min-width: 768px) {
+    flex: 2;
+  }
+`;
+const Aside = styled.aside`
+  @media (min-width: 768px) {
+    flex: 1;
+  }
+`;
 const Header = Container.extend`
   display: flex;
   flex-direction: column;

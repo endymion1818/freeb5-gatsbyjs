@@ -8,15 +8,32 @@ const Container = styled.section`
   margin: 0 auto;
   color: white;
   min-height: 80vh;
-`;
 
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`;
+const Main = styled.main`
+  @media (min-width: 768px) {
+    flex: 2;
+  }
+`;
+const Aside = styled.aside`
+  @media (min-width: 768px) {
+    flex: 1;
+  }
+`;
 export default ({ data }) =>
   <Container>
-  Thanks for offering to donate to the #FreeBabylon5 campaign. Your donation will go towards funding the production of badges and other material to promote the #FreeBabylon5 campaign.
+    <Main>
+      Thanks for offering to donate to the #FreeBabylon5 campaign. Your donation will go towards funding the production of badges and other material to promote the #FreeBabylon5 campaign.
 
-  We accept donations through Paypal to our account:
+      We accept donations through Paypal to our account:
 
-  ### freebabylon5@aol.com
+      ### freebabylon5@aol.com
 
-  If you would like to donate using a method other than Paypal, <a href="/contact-us/" title="Contact Us">please contact us</a> to arrange.
+      If you would like to donate using a method other than Paypal, <a href="/contact-us/" title="Contact Us">please contact us</a> to arrange.
+    </Main>
+    <Aside>
+    </Aside>
   </Container>
