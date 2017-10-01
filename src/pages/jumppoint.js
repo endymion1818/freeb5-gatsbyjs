@@ -1,9 +1,19 @@
 import React from "react"
 import Link from "gatsby-link"
+import styled from "styled-components"
+import "../global-styles.js"
+
+const Container = styled.section`
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  min-height: 80vh;
+`;
 
 export default ({ data }) => {
   return (
-    <div>
+    <Container>
     <h2>Seen the show? Now see how deep the Jump Gate goes &#8230;</h2>
 
     <p>The JumpPoint is where you&#8217;ll find access to Babylon 5 forums, web pages and other content where you can  find in-depth insight into the making of the show, explore plot points and further details from fans and those who worked on the show.</p>
@@ -18,6 +28,6 @@ export default ({ data }) => {
     </ul>
 
     <p>Note from Webmaster: As more sites move to HTTPS, I'm losing the ability to embed them into this site. Sorry, you're going to have to click through from now on...</p>
-    </div>
+    </Container>
   )
 }

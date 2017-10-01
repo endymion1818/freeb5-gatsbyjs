@@ -1,8 +1,18 @@
 import React from "react"
 import Link from "gatsby-link"
 
+import styled from "styled-components"
+import '../global-styles.js'
+
+const Container = styled.section`
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+`;
+
 export default ({ data }) =>
-    <div>
+    <Container>
     How to send a letter to a TV station, to Warner Bros. or to anybody you’re asking to re-run Babylon 5:
 
       * Be polite and maybe a little formal. This is a business letter. If you can find a name of the head of programming, great. Otherwise address it to the station or Programming Director.
@@ -38,13 +48,4 @@ export default ({ data }) =>
 
      [1]: http://freeb5:8888/wp-content/uploads/2013/11/Letter_Samples.docx
      [2]: http://freeb5:8888/wp-content/uploads/2013/11/Letter_Elements.docx
-    </div>
-    export const query = graphql`
-      query lwgQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
+    </Container>

@@ -8,19 +8,34 @@ const Container = styled.section`
 `;
 const Heading = styled.h2`
   font-weight: bold;
-  text-align: center;
   font-family: 'SerpentineMedium', sans-serif;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
 `;
 const WelcomeHeading = styled.h1`
   font-weight: bold;
-  text-align: center;
   font-size: 1.5em;
   font-family: 'SerpentineMedium', sans-serif;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
 `;
 
 const Banner = styled.div`
   min-height: 80px;
   padding: 100px;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+`;
+
+const Alert = styled.div`
+  background-color: red;
+  
 `;
 
 export default ({ data }) => {
@@ -84,7 +99,7 @@ export default ({ data }) => {
       </Banner>
       </Container>
       <Container>
-        <div>Looking for news about the Babylon 5 Movie? You'll find that here »</div>
+        <Alert>Looking for news about the Babylon 5 Movie? You'll find that here »</Alert>
       </Container>
       <Container>
         <Banner>

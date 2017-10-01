@@ -1,13 +1,21 @@
 import React from "react"
 import Link from "gatsby-link"
+import styled from "styled-components"
+import '../global-styles.js'
 
+const Container = styled.section`
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+`;
 
 export default ({ data }) => {
   return (
-    <div>
-      <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
+    <Container>
+      <h1 display={"inline-block"} borderBottom={"1px solid"}>
         All Articles:
-      </g.H1>
+      </h1>
       <h4>
         {data.allMarkdownRemark.totalCount} Posts
       </h4>
@@ -18,17 +26,17 @@ export default ({ data }) => {
           css={{ textDecoration: `none`, color: `inherit` }}
         >
           <span>{node.frontmatter.type}</span>
-          <g.H3 marginBottom={rhythm(1 / 4)}>
+          <h3>
             {node.frontmatter.title}{" "}
-            <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
-          </g.H3>
+            <span color="#BBB">— {node.frontmatter.date}</span>
+          </h3>
           <p>
             {node.excerpt}
           </p>
           </Link>
         </article>
       )}
-    </div>
+    </Container>
   )
 }
 

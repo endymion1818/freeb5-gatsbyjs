@@ -1,11 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import styled from "styled-components"
-import './global-styles.js'
-
-
-document.body.style.margin = "0";
-document.body.style.backgroundImage = "url(logo)";
+import '../global-styles.js'
 
 const Wrapper = styled.section`
 	background: black;
@@ -29,7 +25,17 @@ const Header = Container.extend`
     align-items: center;
   }
 `;
-const Footer = Container.extend``;
+const Footer = Container.extend`
+
+	@media (min-width: 768px) {
+		display: flex;
+
+		> * {
+			flex: 1;
+			margin: 15px;
+		}
+	}
+`;
 
 const Navbar = styled.div`
   display: flex;
@@ -39,6 +45,11 @@ const Navbar = styled.div`
     flex-direction: row;
   }
 `;
+const NavbarFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const StyledLink = styled(Link)`
   padding: 15px;
   text-align: center;
@@ -67,6 +78,7 @@ const StyledLink = styled(Link)`
 const SiteTitle = styled(Link)`
   font-size: 32px;
   font-family: 'SerpentineMedium', sans-serif;
+	text-transform: uppercase;
   text-decoration: none;
 `;
 
@@ -93,26 +105,24 @@ export default ({ children, data }) =>
   </Header>
     {children()}
     <Footer>
-    <Navbar>
-      <Link to={`/about/`}>
+    <NavbarFooter>
+      <StyledLink to={`/about/`}>
         About
-      </Link>
-      <Link to={`/where-to-watch/`}>
+      </StyledLink>
+      <StyledLink to={`/where-to-watch/`}>
         Watch
-      </Link>
-      <Link to={`/news-room/`}>
+      </StyledLink>
+      <StyledLink to={`/news-room/`}>
         News
-      </Link>
-      <Link to={`/jumppoint/`}>
+      </StyledLink>
+      <StyledLink to={`/jumppoint/`}>
         Community
-      </Link>
-    </Navbar>
+      </StyledLink>
+    </NavbarFooter>
     <div>
-      <Link to={`/`}>
-        <h3>
-          {data.site.siteMetadata.title}
-        </h3>
-      </Link>
+		<SiteTitle to={`/`}>
+      {data.site.siteMetadata.title}
+    </SiteTitle>
       <p>All content © the respective copyright owners.</p>
 
       <p>Babylon 5, characters, names, and all related indicia are trademarks of Warner Bros. Entertainment, Inc. ©1994-2013 All Rights Reserved.</p>

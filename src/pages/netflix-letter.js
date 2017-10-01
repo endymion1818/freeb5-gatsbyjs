@@ -1,7 +1,16 @@
 import React from "react"
 
+import styled from "styled-components"
+import '../global-styles.js'
+
+const Container = styled.section`
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+`;
 export default ({ data }) =>
-  <div>
+  <Container>
   Following is an actual letter sent to the Netflix Head of Content. Contact information follows the letter.
 
   Dear Ted Sarandos,   I am writing to you on behalf of the fan campaign #FreeBabylon5, with the aim of getting the classic science fiction series Babylon 5 added to the Netflix catalogue of TV shows available for streaming.   Why now? What’s changed?  In a recent episode of Breaking Bad, one of your most popular streaming titles, there was a reference to the series.
@@ -47,13 +56,4 @@ export default ({ data }) =>
   John Doe
 
   #FreeBabylon5
-  </div>
-  export const query = graphql`
-    query netflixQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `
+  </Container>

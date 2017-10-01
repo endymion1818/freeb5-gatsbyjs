@@ -1,9 +1,17 @@
 import React from "react"
 import Link from "gatsby-link"
+import styled from "styled-components"
+import '../global-styles.js'
+
+const Container = styled.section`
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+`;
 
 export default ({ data }) =>
-    <div>
-    Click on the text to reveal the answer.
+    <Container>
 
     <div class="panel-group" id="accordion">
       <div class="panel panel-white">
@@ -104,13 +112,4 @@ export default ({ data }) =>
         </div>
       </div>
     </div>
-    </div>
-    export const query = graphql`
-      query faqQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
+    </Container>

@@ -1,7 +1,17 @@
 import React from "react"
+import styled from "styled-components"
+import '../global-styles.js'
+
+const Container = styled.section`
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  min-height: 80vh;
+`;
 
 export default ({ data }) =>
-  <div>
+  <Container>
     <h1>About {data.site.siteMetadata.title}</h1>
     <h2>What Is Babylon 5?</h2>
     <p>Babylon 5 is TV series. “Oh, is that all?” You might say. But the fact is that it’s made a lot of difference to the lives of its’ fans. And it’s made a huge difference to TV series ever since, within its genre and without.</p>
@@ -44,7 +54,7 @@ export default ({ data }) =>
     <h3>Join up!</h3>
 
     <p>Join us, and find out what’s going on with the campaign, download and use our resources. And don’t forget to follow us to keep up with campaign news.</p>
-  </div>
+  </Container>
   export const query = graphql`
     query AboutQuery {
       site {
