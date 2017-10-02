@@ -46,14 +46,11 @@ export default ({ data }) => {
         </h1>
         {data.allMarkdownRemark.edges.map(({ node }) =>
           <article>
-          <Link
-            to={node.fields.slug}
-            css={{ textDecoration: `none`, color: `inherit` }}
-          >
+          <Link to={node.fields.slug}>
             <h3>
               {node.frontmatter.title}{" "}
-              <span color="#BBB">— {node.frontmatter.date}</span>
             </h3>
+            <span color="#BBB">— {node.frontmatter.date}</span>
             </Link>
             <p>
               {node.excerpt}

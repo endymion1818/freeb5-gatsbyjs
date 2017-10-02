@@ -6,6 +6,22 @@ const Container = styled.section`
   padding: 2em;
   color: white;
 `;
+const postContainer = Container.extend`
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`;
+const Main = styled.main`
+  @media (min-width: 768px) {
+    flex: 2;
+  }
+`;
+const Aside = styled.aside`
+  @media (min-width: 768px) {
+    flex: 1;
+  }
+`;
 const Heading = styled.h2`
   font-weight: bold;
   font-family: 'SerpentineMedium', sans-serif;
@@ -26,31 +42,57 @@ const WelcomeHeading = styled.h1`
 
 const Banner = styled.div`
   min-height: 80px;
-  padding: 100px;
+  padding: 10px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 
   @media (min-width: 768px) {
     text-align: center;
+    padding: 100px;
   }
 `;
 const BannerMasthead = Banner.extend`
-  background-image: url(./homemasthead.jpg);
+  background: url(./homemasthead.jpg) no-repeat center center;
+  background-size: 100%;
 `;
 const BannerJumppoint = Banner.extend`
-  background-image: url(./jumppoint.jpg);
+  background: url(./jumppoint.jpg) no-repeat center center;
+  background-size: 100%;
 `;
 const BannerAbout = Banner.extend`
-  background-image: url(./charachters.jpg);
+  background: url(./charachters.jpg) no-repeat center center;
+  background-size: 100%;
 `;
+const StyledLink = styled(Link)`
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  color: black;
+  background-color: white;
+  transition: all 0.25s ease-in-out;
 
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: gray;
+  }
+`;
 const Alert = styled.div`
   background-color: #ebccd1;
   border: 1px solid #ebccd1;
   border-radius: 4px;
   padding: 15px;
   color: #a94442;
-
 `;
+const Article = styled.article`
+  color: white;
+  padding-bottom: 20px;
 
+  > a {
+    color: white;
+    text-decoration: none;
+  }
+`;
 export default ({ data }) => {
   return (
     <div>
@@ -71,24 +113,29 @@ export default ({ data }) => {
         </p>
       </Container>
     </BannerMasthead>
-    <Container>
+    <postContainer>
       <h2>
         Recent Posts
       </h2>
       {data.allMarkdownRemark.edges.map(({ node }) =>
-        <div>
-        <Link>
+        <Article>
+        <Link to={node.fields.slug}>
           <h3>
             {node.frontmatter.title}{" "}
-            <span color="#BBB">— {node.frontmatter.date}</span>
           </h3>
+          </Link>
+          <span color="#BBB">— {node.frontmatter.date}</span>
           <p>
             {node.excerpt}
           </p>
-          </Link>
-        </div>
+          <br/>
+          <StyledLink to={node.fields.slug}>View post >></StyledLink>
+        </Article>
       )}
-      </Container>
+      </postContainer>
+      <Aside>
+      &nbsp;
+      </Aside>
       <Container>
       <Heading>Babylon 5 Now Streaming in the US!</Heading>
       <p>This is the day we have been fighting for! Babylon 5 is now showing in the US on Go90. The #FreeBabylon5 campaign even got a mention in their promo advert which you can watch here.</p>
@@ -97,21 +144,21 @@ export default ({ data }) => {
 
       <a href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
       </Container>
-      <Container>
       <BannerJumppoint>
+      <Container>
         <Heading>New to Babylon 5?</Heading>
         <p>Babylon 5 has something for everyone. The story focuses on the relationships and entwined destinies of a multitude of charachters. Some find love, some face tragedy.</p>
 
         <p>There are epic plotlines, rich alien cultures, and bucket loads of space battles.</p>
 
         <a href="https://go90.com/babylon5">Where to Watch</a>
-      </BannerJumppoint>
       </Container>
+      </BannerJumppoint>
       <Container>
         <Alert>Looking for news about the Babylon 5 Movie? You'll find that here »</Alert>
       </Container>
-      <Container>
-        <BannerAbout>
+      <BannerAbout>
+        <Container>
           <Heading>Why is Babylon 5 Important?</Heading>
 
           <p>Babylon 5 was a watershed moment for television.</p>
@@ -125,8 +172,8 @@ export default ({ data }) => {
           <p>You can help change that.</p>
 
           <a href="/about/">About the Campaign</a>
-        </BannerAbout>
-      </Container>
+        </Container>
+      </BannerAbout>
     </div>
   )
 }
