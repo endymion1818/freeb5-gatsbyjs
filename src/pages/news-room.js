@@ -42,11 +42,8 @@ export default ({ data }) => {
     <Container>
       <Main>
         <h1 display={"inline-block"} borderBottom={"1px solid"}>
-          All Articles:
+          All Articles ({data.allMarkdownRemark.totalCount}):
         </h1>
-        <h4>
-          {data.allMarkdownRemark.totalCount} Posts
-        </h4>
         {data.allMarkdownRemark.edges.map(({ node }) =>
           <article>
           <Link

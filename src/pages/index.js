@@ -32,21 +32,33 @@ const Banner = styled.div`
     text-align: center;
   }
 `;
+const BannerMasthead = Banner.extend`
+  background-image: url(./homemasthead.jpg);
+`;
+const BannerJumppoint = Banner.extend`
+  background-image: url(./jumppoint.jpg);
+`;
+const BannerAbout = Banner.extend`
+  background-image: url(./charachters.jpg);
+`;
 
 const Alert = styled.div`
-  background-color: red;
-  
+  background-color: #ebccd1;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  padding: 15px;
+  color: #a94442;
+
 `;
 
 export default ({ data }) => {
   return (
     <div>
-    <Container>
-      <Banner>
+      <BannerMasthead>
+      <Container>
         <WelcomeHeading>
           Babylon 5 is a game-changing, ground breaking, emmy-award winning TV series that is in danger of becoming lost and forgotten.
         </WelcomeHeading>
-
         <p>
           We are not going to let that happen.
         </p>
@@ -57,15 +69,12 @@ export default ({ data }) => {
 
         <p>
         </p>
-      </Banner>
-    </Container>
+      </Container>
+    </BannerMasthead>
     <Container>
-      <h1>
+      <h2>
         Recent Posts
-      </h1>
-      <h4>
-        {data.allMarkdownRemark.totalCount} Posts
-      </h4>
+      </h2>
       {data.allMarkdownRemark.edges.map(({ node }) =>
         <div>
         <Link>
@@ -89,20 +98,20 @@ export default ({ data }) => {
       <a href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
       </Container>
       <Container>
-      <Banner>
+      <BannerJumppoint>
         <Heading>New to Babylon 5?</Heading>
         <p>Babylon 5 has something for everyone. The story focuses on the relationships and entwined destinies of a multitude of charachters. Some find love, some face tragedy.</p>
 
         <p>There are epic plotlines, rich alien cultures, and bucket loads of space battles.</p>
 
         <a href="https://go90.com/babylon5">Where to Watch</a>
-      </Banner>
+      </BannerJumppoint>
       </Container>
       <Container>
         <Alert>Looking for news about the Babylon 5 Movie? You'll find that here »</Alert>
       </Container>
       <Container>
-        <Banner>
+        <BannerAbout>
           <Heading>Why is Babylon 5 Important?</Heading>
 
           <p>Babylon 5 was a watershed moment for television.</p>
@@ -116,7 +125,7 @@ export default ({ data }) => {
           <p>You can help change that.</p>
 
           <a href="/about/">About the Campaign</a>
-        </Banner>
+        </BannerAbout>
       </Container>
     </div>
   )

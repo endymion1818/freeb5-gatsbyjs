@@ -28,6 +28,8 @@ const Aside = styled.aside`
 const Header = Container.extend`
   display: flex;
   flex-direction: column;
+	background-color: rgba(255,255,255,0.2);
+	padding: 1em;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -90,6 +92,8 @@ const SiteTitle = styled(Link)`
   font-family: 'SerpentineMedium', sans-serif;
 	text-transform: uppercase;
   text-decoration: none;
+	color: white;
+	text-shadow: -4px 0 blue, 0 4px blue, 4px 0 blue, 0 -4px blue;
 `;
 
 export default ({ children, data }) =>
