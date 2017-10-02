@@ -1,7 +1,11 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "freeb5-gatsby",
   "description": "Gatsby hello world starter",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endymion1818/freeb5-gatsbyjs.git"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
@@ -10,11 +14,8 @@
   "dependencies": {
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.4.1",
-    "gatsby-plugin-glamor": "^1.6.7",
-    "gatsby-plugin-typography": "^1.7.9",
+    "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-source-filesystem": "^1.4.12",
-    "gatsby-transformer-remark": "^1.7.7",
-    "glamorous": "^4.8.0",
-    "typography-theme-kirkham": "^0.16.3"
+    "gatsby-transformer-remark": "^1.7.7"
   }
 }
