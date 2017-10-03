@@ -3,9 +3,11 @@ import Link from "gatsby-link"
 import styled from "styled-components"
 import '../global-styles.js'
 
+import pgbg from './pg-bckg.png';
+
 const Wrapper = styled.section`
 	background: black;
-  background-image: url(./pg-bckg.png);
+  background-image: url(${pgbg});
   font-family: sans-serif;
 `;
 

@@ -2,6 +2,10 @@ import React from "react"
 import Link from "gatsby-link"
 import styled from "styled-components"
 
+import homemasthead from './homemasthead.jpg';
+import jumppoint from './jumppoint.jpg';
+import charachters from '../layouts/pg-bckg.png';
+
 const Container = styled.section`
   padding: 2em;
   color: white;
@@ -41,9 +45,11 @@ const WelcomeHeading = styled.h1`
 `;
 
 const Banner = styled.div`
-  min-height: 80px;
+  height: 100vh;
   padding: 10px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
 
   @media (min-width: 768px) {
     text-align: center;
@@ -51,15 +57,15 @@ const Banner = styled.div`
   }
 `;
 const BannerMasthead = Banner.extend`
-  background: url(./homemasthead.jpg) no-repeat center center;
+  background: url(${homemasthead}) no-repeat center center;
   background-size: 100%;
 `;
 const BannerJumppoint = Banner.extend`
-  background: url(./jumppoint.jpg) no-repeat center center;
+  background: url(${jumppoint}) no-repeat center center;
   background-size: 100%;
 `;
 const BannerAbout = Banner.extend`
-  background: url(./charachters.jpg) no-repeat center center;
+  background: url(${charachters}) no-repeat center center;
   background-size: 100%;
 `;
 const StyledLink = styled(Link)`
