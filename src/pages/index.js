@@ -4,26 +4,32 @@ import styled from "styled-components"
 
 import homemasthead from './homemasthead.jpg';
 import jumppoint from './jumppoint.jpg';
-import charachters from '../layouts/pg-bckg.png';
+import charachters from './charachters.jpg';
 
 const Container = styled.section`
   padding: 2em;
   color: white;
+  max-width: 1200px;
+  margin: 0 auto;
 `;
-const postContainer = Container.extend`
+const PostContainer = styled.div`
 
   @media (min-width: 768px) {
     display: flex;
+    flex-direction: row;
+
+    > article {
+      margin: 10px;
+    }
   }
 `;
-const Main = styled.main`
-  @media (min-width: 768px) {
-    flex: 2;
-  }
-`;
-const Aside = styled.aside`
-  @media (min-width: 768px) {
-    flex: 1;
+const Article = styled.article`
+  color: white;
+  padding-bottom: 20px;
+
+  > a {
+    color: white;
+    text-decoration: none;
   }
 `;
 const Heading = styled.h2`
@@ -45,28 +51,19 @@ const WelcomeHeading = styled.h1`
 `;
 
 const Banner = styled.div`
-  height: 100vh;
-  padding: 10px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  display: flex;
-  align-items: center;
+  position: relative;
 
   @media (min-width: 768px) {
-    text-align: center;
-    padding: 100px;
+    > section {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
   }
-`;
-const BannerMasthead = Banner.extend`
-  background: url(${homemasthead}) no-repeat center center;
-  background-size: 100%;
-`;
-const BannerJumppoint = Banner.extend`
-  background: url(${jumppoint}) no-repeat center center;
-  background-size: 100%;
-`;
-const BannerAbout = Banner.extend`
-  background: url(${charachters}) no-repeat center center;
-  background-size: 100%;
 `;
 const StyledLink = styled(Link)`
   padding: 15px;
@@ -83,6 +80,36 @@ const StyledLink = styled(Link)`
     background-color: gray;
   }
 `;
+const StyledLinkRed = StyledLink.extend`
+  background-color: #BF0B12;
+  color: white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #a94442;
+  }
+`;
+const StyledLinkBlue = StyledLink.extend`
+  background-color: #0d3e8e;
+  color: white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #0d168e;
+  }
+`;
+const StyledLinkBlack = StyledLink.extend`
+  background-color: black;
+  color: white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #292f33;
+  }
+`;
 const Alert = styled.div`
   background-color: #ebccd1;
   border: 1px solid #ebccd1;
@@ -90,39 +117,38 @@ const Alert = styled.div`
   padding: 15px;
   color: #a94442;
 `;
-const Article = styled.article`
-  color: white;
-  padding-bottom: 20px;
-
-  > a {
-    color: white;
-    text-decoration: none;
-  }
-`;
 export default ({ data }) => {
   return (
     <div>
-      <BannerMasthead>
+      <Banner>
       <Container>
-        <WelcomeHeading>
-          Babylon 5 is a game-changing, ground breaking, emmy-award winning TV series that is in danger of becoming lost and forgotten.
-        </WelcomeHeading>
-        <p>
-          We are not going to let that happen.
-        </p>
-
-        <p>
-          Please <a title="Join Us!" href="/join/"><strong>Join us</strong></a> and help #FreeBabylon5
-        </p>
-
-        <p>
-        </p>
+        <div>
+          <WelcomeHeading>
+            Babylon 5 is a game-changing, ground breaking, emmy-award winning TV series that is in danger of becoming lost and forgotten.
+          </WelcomeHeading>
+          <p>
+            We are not going to let that happen.
+          </p>
+          <p>
+            Please <StyledLinkRed title="Join Us!" href="/join/"><strong>Join us</strong></StyledLinkRed> and help #FreeBabylon5
+          </p>
+        </div>
       </Container>
-    </BannerMasthead>
-    <postContainer>
-      <h2>
-        Recent Posts
-      </h2>
+      <img src={homemasthead} alt="Babylon 5 space station" width="100%"/>
+    </Banner>
+    <Container style={{ textAlign: 'center' }}>
+      <Heading>Babylon 5 Now Streaming in the US!</Heading>
+      <p>This is the day we have been fighting for! Babylon 5 is now showing in the US on Go90. The #FreeBabylon5 campaign even got a mention in their promo advert which you can watch here.</p>
+
+      <p>Thank you Go90 for fulfilling our primary campaign goal and streaming Babylon 5 in the US.</p>
+      <br/>
+      <StyledLinkRed href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</StyledLinkRed>
+      </Container>
+    <Container>
+    <h2>
+      Recent Posts
+    </h2>
+    <PostContainer>
       {data.allMarkdownRemark.edges.map(({ node }) =>
         <Article>
         <Link to={node.fields.slug}>
@@ -130,56 +156,52 @@ export default ({ data }) => {
             {node.frontmatter.title}{" "}
           </h3>
           </Link>
-          <span color="#BBB">— {node.frontmatter.date}</span>
+          <span color="#BBB">Published on {node.frontmatter.date}</span>
           <p>
             {node.excerpt}
           </p>
           <br/>
-          <StyledLink to={node.fields.slug}>View post >></StyledLink>
+          <StyledLinkBlack to={node.fields.slug}>View post >></StyledLinkBlack>
         </Article>
       )}
-      </postContainer>
-      <Aside>
-      &nbsp;
-      </Aside>
-      <Container>
-      <Heading>Babylon 5 Now Streaming in the US!</Heading>
-      <p>This is the day we have been fighting for! Babylon 5 is now showing in the US on Go90. The #FreeBabylon5 campaign even got a mention in their promo advert which you can watch here.</p>
-
-      <p>Thank you Go90 for fulfilling our primary campaign goal and streaming Babylon 5 in the US.</p>
-
-      <a href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
+      </PostContainer>
       </Container>
-      <BannerJumppoint>
+      <Banner>
       <Container>
-        <Heading>New to Babylon 5?</Heading>
-        <p>Babylon 5 has something for everyone. The story focuses on the relationships and entwined destinies of a multitude of charachters. Some find love, some face tragedy.</p>
+        <div>
+          <Heading>New to Babylon 5?</Heading>
+          <p>Babylon 5 has something for everyone. The story focuses on the relationships and entwined destinies of a multitude of charachters. Some find love, some face tragedy.</p>
 
-        <p>There are epic plotlines, rich alien cultures, and bucket loads of space battles.</p>
-
-        <a href="https://go90.com/babylon5">Where to Watch</a>
+          <p>There are epic plotlines, rich alien cultures, and bucket loads of space battles.</p>
+          <br/>
+          <StyledLinkBlue href="https://go90.com/babylon5">Where to Watch</StyledLinkBlue>
+        </div>
       </Container>
-      </BannerJumppoint>
+      <img src={jumppoint} alt="Babylon 5 space ships exiting a hyperspace vortex" width="100%"/>
+      </Banner>
       <Container>
         <Alert>Looking for news about the Babylon 5 Movie? You'll find that here »</Alert>
       </Container>
-      <BannerAbout>
+      <Banner>
         <Container>
-          <Heading>Why is Babylon 5 Important?</Heading>
+          <div>
+            <Heading>Why is Babylon 5 Important?</Heading>
 
-          <p>Babylon 5 was a watershed moment for television.</p>
+            <p>Babylon 5 was a watershed moment for television.</p>
 
-          <p>It was the first sci-fi show to feature story arcs that continued past 2-hour specials. It was the first to use only computer-generated spaceship effects. Its story inspired a generation.</p>
+            <p>It was the first sci-fi show to feature story arcs that continued past 2-hour specials. It was the first to use only computer-generated spaceship effects. Its story inspired a generation.</p>
 
-          <p>Without Babylon 5, there would probably be no Battlestar Galactica, no Firefly, and no Marvel Cinematic Universe.</p>
+            <p>Without Babylon 5, there would probably be no Battlestar Galactica, no Firefly, and no Marvel Cinematic Universe.</p>
 
-          <p>But it's rarely on air anywhere and isn't shown on major internet TV services.</p>
+            <p>But it's rarely on air anywhere and isn't shown on major internet TV services.</p>
 
-          <p>You can help change that.</p>
-
-          <a href="/about/">About the Campaign</a>
+            <p>You can help change that.</p>
+            <br/>
+            <StyledLinkBlack href="/about/">About the Campaign</StyledLinkBlack>
+          </div>
         </Container>
-      </BannerAbout>
+        <img src={charachters} alt="Some of Babylon 5's principal charachters including Commander Sheridan, Doctor Franklin and G'Kar" width="100%"/>
+      </Banner>
     </div>
   )
 }

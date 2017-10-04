@@ -27,9 +27,14 @@ const Aside = styled.aside`
     flex: 1;
   }
 `;
-const Header = Container.extend`
-  display: flex;
-  flex-direction: column;
+const Header = styled.header`
+
+`;
+const HeaderContainer = Container.extend`
+	padding: 0.2em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
 	background-color: rgba(255,255,255,0.2);
 	padding: 1em;
 
@@ -101,23 +106,25 @@ const SiteTitle = styled(Link)`
 export default ({ children, data }) =>
   <Wrapper>
   <Header>
-    <SiteTitle to={`/`}>
-      {data.site.siteMetadata.title}
-    </SiteTitle>
-  <Navbar>
-    <StyledLink to={`/about/`}>
-      About
-    </StyledLink>
-    <StyledLink to={`/where-to-watch/`}>
-      Watch
-    </StyledLink>
-    <StyledLink to={`/news-room/`}>
-      News
-    </StyledLink>
-    <StyledLink to={`/jumppoint/`}>
-      Community
-    </StyledLink>
-  </Navbar>
+    <HeaderContainer>
+			<SiteTitle to={`/`}>
+				{data.site.siteMetadata.title}
+			</SiteTitle>
+			<Navbar>
+				<StyledLink to={`/about/`}>
+					About
+				</StyledLink>
+				<StyledLink to={`/where-to-watch/`}>
+					Watch
+				</StyledLink>
+				<StyledLink to={`/news-room/`}>
+					News
+				</StyledLink>
+				<StyledLink to={`/jumppoint/`}>
+					Community
+				</StyledLink>
+			</Navbar>
+		</HeaderContainer>
   </Header>
     {children()}
     <Footer>
@@ -136,6 +143,7 @@ export default ({ children, data }) =>
       </StyledLink>
     </NavbarFooter>
     <div>
+		<br/>
 		<SiteTitle to={`/`}>
       {data.site.siteMetadata.title}
     </SiteTitle>
