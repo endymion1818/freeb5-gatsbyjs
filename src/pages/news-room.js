@@ -23,12 +23,19 @@ const Aside = styled.aside`
     flex: 1;
   }
 `;
-const StyledLink = styled(Link)`
+const TextLink = styled(Link)`
+  color: #428bca;
+`;
+const ArticleTitle = styled.h3`
+  font-family: 'SerpentineMedium', sans-serif;
+`;
+const ButtonLink = styled(Link)`
   padding: 15px;
   text-align: center;
   text-decoration: none;
   border-radius: 15px;
   color: white;
+  background-color: black;
   transition: all 0.25s ease-in-out;
 
   &:hover,
@@ -47,16 +54,16 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) =>
           <article>
           <Link to={node.fields.slug}>
-            <h3>
+            <ArticleTitle>
               {node.frontmatter.title}{" "}
-            </h3>
+            </ArticleTitle>
             <span color="#BBB">— {node.frontmatter.date}</span>
             </Link>
             <p>
               {node.excerpt}
             </p>
             <br/>
-            <StyledLink to={node.fields.slug}>View post >></StyledLink>
+            <ButtonLink to={node.fields.slug}>View post >></ButtonLink>
           </article>
         )}
       </Main>

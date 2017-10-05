@@ -28,14 +28,13 @@ const Aside = styled.aside`
   }
 `;
 const Header = styled.header`
-
+	background-color: rgba(255,255,255,0.2);
 `;
 const HeaderContainer = Container.extend`
 	padding: 0.2em;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(255,255,255,0.2);
 	padding: 1em;
 
   @media (min-width: 768px) {
@@ -151,9 +150,9 @@ export default ({ children, data }) =>
 
       <p>Babylon 5, characters, names, and all related indicia are trademarks of Warner Bros. Entertainment, Inc. ©1994-2013 All Rights Reserved.</p>
 
-      <p>Contact: freebabylon5@aol.com</p>
+      <p>Contact: <a href="mailto:freebabylon5@aol.com">freebabylon5@aol.com</a></p>
 
-      <p>Website by Benjamin Read</p>
+      <p>Website by <a href="https://deliciousreverie.co.uk">Benjamin Read</a></p>
     </div>
     </Footer>
   </Wrapper>
