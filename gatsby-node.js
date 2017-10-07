@@ -13,6 +13,46 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   }
 }
 
+const createCategoryPages = (createPage, edges) => {
+  const tagTemplate = path.resolve(`src/templates/catgories.js`);
+  const posts = {};
+
+  edges
+    .forEach(({ node }) => {
+      if (node.frontmatter.categories) {
+        node.frontmatter.categories
+          .forEach(categories => {
+            if (!posts[categories]) {
+              posts[categories] = [];
+            }
+            posts[categories].push(node);
+          });
+      }
+    });
+
+  createPage({
+    path: '/categories',
+    component: component: path.resolve(`./src/templates/categories.js`),
+    context: {
+      posts
+    }
+  });
+
+  Object.keys(posts)
+    .forEach(categoryName => {
+      const post = posts[categoryName];
+      createPage({
+        path: `/tags/${categoryName}`,
+        component: categoryTemplate,
+        context: {
+          posts,
+          post,
+          tag: categoryName
+        }
+      })
+    });
+};
+
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
   return new Promise((resolve, reject) => {

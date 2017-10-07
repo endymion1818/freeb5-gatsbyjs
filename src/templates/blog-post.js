@@ -7,16 +7,37 @@ const Container = styled.section`
   max-width: 1200px;
   margin: 0 auto;
   color: white;
-`;
 
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+  a {
+    color: #428bca;
+  }
+`;
+const Main = styled.main`
+  @media (min-width: 768px) {
+    flex: 2;
+  }
+`;
+const Aside = styled.aside`
+  @media (min-width: 768px) {
+    flex: 1;
+  }
+`;
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Container>
-      <h1>
-        {post.frontmatter.title}
-      </h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Main>
+        <h1>
+          {post.frontmatter.title}
+        </h1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </Main>
+      <Aside>
+      </Aside>
     </Container>
   )
 }

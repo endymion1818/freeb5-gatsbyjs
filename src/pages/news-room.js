@@ -3,6 +3,8 @@ import Link from "gatsby-link"
 import styled from "styled-components"
 import '../global-styles.js'
 
+import Categories from '../components/categories'
+
 const Container = styled.section`
   padding: 2em;
   max-width: 1200px;
@@ -29,6 +31,17 @@ const TextLink = styled(Link)`
 const ArticleTitle = styled.h3`
   font-family: 'SerpentineMedium', sans-serif;
 `;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  color: white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: gray;
+  }
+`;
 const ButtonLink = styled(Link)`
   padding: 15px;
   text-align: center;
@@ -53,28 +66,31 @@ export default ({ data }) => {
         </h1>
         {data.allMarkdownRemark.edges.map(({ node }) =>
           <article>
-          <Link to={node.fields.slug}>
+          <StyledLink to={node.fields.slug}>
             <ArticleTitle>
               {node.frontmatter.title}{" "}
             </ArticleTitle>
-            <span color="#BBB">— {node.frontmatter.date}</span>
-            </Link>
+            </StyledLink>
+            <span color="#BBB">{node.frontmatter.date}</span>
+            <Categories list={node.frontmatter.categories || []} />
             <p>
               {node.excerpt}
             </p>
             <br/>
             <ButtonLink to={node.fields.slug}>View post >></ButtonLink>
+            <br/><br/>
+            <hr clear="both"/>
           </article>
         )}
       </Main>
       <Aside>
-        Search, Categories and Tags
+
       </Aside>
     </Container>
   )
 }
 
-export const query = graphql`
+export const blogQuery = graphql`
   query blogQuery {
     allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       totalCount
@@ -84,6 +100,7 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             type
+            categories
           }
           fields {
             slug

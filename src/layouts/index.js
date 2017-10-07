@@ -150,9 +150,9 @@ export default ({ children, data }) =>
 
       <p>Babylon 5, characters, names, and all related indicia are trademarks of Warner Bros. Entertainment, Inc. ©1994-2013 All Rights Reserved.</p>
 
-      <p>Contact: <a href="mailto:freebabylon5@aol.com">freebabylon5@aol.com</a></p>
+      <p>Contact: <a style={{ color: '#428bca' }} href="mailto:freebabylon5@aol.com">freebabylon5@aol.com</a></p>
 
-      <p>Website by <a href="https://deliciousreverie.co.uk">Benjamin Read</a></p>
+      <p>Website by <a style={{ color: '#428bca' }} href="https://deliciousreverie.co.uk">Benjamin Read</a></p>
     </div>
     </Footer>
   </Wrapper>

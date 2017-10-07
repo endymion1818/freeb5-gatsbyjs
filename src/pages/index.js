@@ -58,11 +58,19 @@ const Banner = styled.div`
       position: absolute;
       top: 0;
       height: 100%;
+      width: 100%;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       text-align: center;
     }
+  }
+  @media (min-width: 992px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 const StyledLink = styled(Link)`
