@@ -72,7 +72,6 @@ export default ({ data }) => {
             </ArticleTitle>
             </StyledLink>
             <span color="#BBB">{node.frontmatter.date}</span>
-            <Categories list={node.frontmatter.categories || []} />
             <p>
               {node.excerpt}
             </p>
@@ -111,3 +110,4 @@ export const blogQuery = graphql`
     }
   }
 `
+// <Categories list={node.frontmatter.categories || []} />

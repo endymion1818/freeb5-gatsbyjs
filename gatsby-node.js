@@ -32,7 +32,7 @@ const createCategoryPages = (createPage, edges) => {
 
   createPage({
     path: '/categories',
-    component: component: path.resolve(`./src/templates/categories.js`),
+    component: path.resolve(`./src/templates/categories.js`),
     context: {
       posts
     }
@@ -42,7 +42,7 @@ const createCategoryPages = (createPage, edges) => {
     .forEach(categoryName => {
       const post = posts[categoryName];
       createPage({
-        path: `/tags/${categoryName}`,
+        path: `/categories/${categoryName}`,
         component: categoryTemplate,
         context: {
           posts,
