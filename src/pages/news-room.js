@@ -110,4 +110,3 @@ export const blogQuery = graphql`
     }
   }
 `
-// <Categories list={node.frontmatter.categories || []} />

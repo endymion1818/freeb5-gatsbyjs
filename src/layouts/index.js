@@ -155,6 +155,11 @@ export default ({ children, data }) =>
       <p>Website by <a style={{ color: '#428bca' }} href="https://deliciousreverie.co.uk">Benjamin Read</a></p>
     </div>
     </Footer>
+		<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
+		<script>
+			var client = algoliasearch("WV1TKB4KIF", "e389621e9b37d03e1e3b34eda9f66473");
+			var index = client.initIndex('freb5');
+		</script>
   </Wrapper>
 
   export const query = graphql`
