@@ -24,6 +24,9 @@ const Aside = styled.aside`
     flex: 1;
   }
 `;
+const TextLink = styled(Link)`
+  color: #428bca;
+`;
 export default ({ data }) =>
     <Container>
     <Main>
@@ -31,17 +34,17 @@ export default ({ data }) =>
 
       <h2>United States</h2>
 
-      <p>In April 2017 we heard that [Go90][5] streaming service from Verizon will stream Babylon 5 as part of a deal with Warner Bros.</p>
+      <p>In April 2017 we heard that <TextLink href="https://go90.com/babylon5">Go90 streaming service from Verizon</TextLink> will stream Babylon 5 as part of a deal with Warner Bros.</p>
 
       <p>US TV channel Comet TV has been showing The Lost Tales as well. Please tell us if this is still happening.</p>
 
       <h2>International</h2>
 
-      <p>TV stations in New Zealand and Germany have recently aired all 5 seasons. Please [let us know][7] if you hear of anywhere else that&#8217;s showing the series!</p>
+      <p>TV stations in New Zealand and Germany have recently aired all 5 seasons. Please let us know if you hear of anywhere else that&#8217;s showing the series!</p>
 
       <h2>Let us know!</h2>
 
-      We&#8217;ll try to keep you updated when we hear of airings. In the meantime, <a href="https://facebook.com/freebabylon5">keep in touch via our Facebook page</a>, as it&#8217;s likely that announcements will be made there first!
+      We&#8217;ll try to keep you updated when we hear of airings. In the meantime, <TextLink href="https://facebook.com/freebabylon5">keep in touch via our Facebook page</TextLink>, as it&#8217;s likely that announcements will be made there first!
     </Main>
     <Aside>
     </Aside>

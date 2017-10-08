@@ -59,13 +59,14 @@ const Banner = styled.div`
       top: 0;
       left: 0;
       height: 100%;
-      width: 100%;
+      max-width: 100%;
 
       display: flex;
       align-items: center;
       justify-content: center;
 
       text-align: center;
+      text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
     }
   }
   @media (min-width: 992px) {
@@ -73,6 +74,9 @@ const Banner = styled.div`
     align-items: center;
     justify-content: center;
   }
+`;
+const TextLink = styled(Link)`
+  color: #428bca;
 `;
 const StyledLink = styled(Link)`
   padding: 15px;
@@ -125,6 +129,10 @@ const Alert = styled.div`
   border-radius: 4px;
   padding: 15px;
   color: #a94442;
+
+  a {
+    color: #a94442;
+  }
 `;
 export default ({ data }) => {
   return (
@@ -139,7 +147,7 @@ export default ({ data }) => {
             We are not going to let that happen.
           </p>
           <p>
-            Please <StyledLinkRed title="Join Us!" href="/join/"><strong>Join us</strong></StyledLinkRed> and help #FreeBabylon5
+            Please <StyledLinkRed title="Join Us!" to="/join/"><strong>Join us</strong></StyledLinkRed> and help #FreeBabylon5
           </p>
         </div>
       </Container>
@@ -151,7 +159,7 @@ export default ({ data }) => {
 
       <p>Thank you Go90 for fulfilling our primary campaign goal and streaming Babylon 5 in the US.</p>
       <br/>
-      <StyledLinkRed href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</StyledLinkRed>
+      <a href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
       </Container>
     <Container>
     <h2>
@@ -183,13 +191,13 @@ export default ({ data }) => {
 
           <p>There are epic plotlines, rich alien cultures, and bucket loads of space battles.</p>
           <br/>
-          <StyledLinkBlue href="https://go90.com/babylon5">Where to Watch</StyledLinkBlue>
+          <StyledLinkBlue to="/where-to-watch/">Where to Watch</StyledLinkBlue>
         </div>
       </Container>
       <img src={jumppoint} alt="Babylon 5 space ships exiting a hyperspace vortex" width="100%"/>
       </Banner>
       <Container>
-        <Alert>Looking for news about the Babylon 5 Movie? You'll find that here »</Alert>
+        <Alert><Link to="/movie-news/">Looking for news about the Babylon 5 Movie? You'll find that here</Link></Alert>
       </Container>
       <Banner>
         <Container>
@@ -206,7 +214,7 @@ export default ({ data }) => {
 
             <p>You can help change that.</p>
             <br/>
-            <StyledLinkBlack href="/about/">About the Campaign</StyledLinkBlack>
+            <StyledLinkBlack to="/about/">About the Campaign</StyledLinkBlack>
           </div>
         </Container>
         <img src={charachters} alt="Some of Babylon 5's principal charachters including Commander Sheridan, Doctor Franklin and G'Kar" width="100%"/>

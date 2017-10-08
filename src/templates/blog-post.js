@@ -34,6 +34,7 @@ export default ({ data }) => {
         <h1>
           {post.frontmatter.title}
         </h1>
+        Posted on: <span>{post.frontmatter.date}</span>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Main>
       <Aside>
@@ -49,6 +50,7 @@ export const query = graphql`
       frontmatter {
         title
         type
+        date(formatString: "DD MMMM, YYYY")
       }
     }
   }
