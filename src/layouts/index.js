@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "gatsby-link"
+import {Helmet} from "react-helmet"
 import styled from "styled-components"
 import '../global-styles.js'
 
@@ -104,6 +105,11 @@ const SiteTitle = styled(Link)`
 
 export default ({ children, data }) =>
   <Wrapper>
+	<Helmet>
+		<meta charSet="utf-8" />
+		<title>{data.site.siteMetadata.title}</title>
+		<link rel="canonical" href="https://freebabylon5.com" />
+	</Helmet>
   <Header>
     <HeaderContainer>
 			<SiteTitle to={`/`}>
