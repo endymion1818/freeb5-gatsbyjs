@@ -82,6 +82,9 @@ const StyledLink = styled(Link)`
   &:focus {
     background-color: gray;
   }
+	&.active {
+		background-color: #daaf09;
+	}
 
   &:last-child {
     background-color: #BF0B12;
@@ -116,16 +119,16 @@ export default ({ children, data }) =>
 				{data.site.siteMetadata.title}
 			</SiteTitle>
 			<Navbar>
-				<StyledLink to={`/about/`}>
+				<StyledLink activeClassName="active" to={`/about/`}>
 					About
 				</StyledLink>
-				<StyledLink to={`/where-to-watch/`}>
+				<StyledLink activeClassName="active" to={`/where-to-watch/`}>
 					Watch
 				</StyledLink>
-				<StyledLink to={`/news-room/`}>
+				<StyledLink activeClassName="active" to={`/news-room/`}>
 					News
 				</StyledLink>
-				<StyledLink to={`/jumppoint/`}>
+				<StyledLink activeClassName="active" to={`/jumppoint/`}>
 					Community
 				</StyledLink>
 			</Navbar>
@@ -134,16 +137,16 @@ export default ({ children, data }) =>
     {children()}
     <Footer>
     <NavbarFooter>
-      <StyledLink to={`/about/`}>
+      <StyledLink activeClassName="active" to={`/about/`}>
         About
       </StyledLink>
-      <StyledLink to={`/where-to-watch/`}>
+      <StyledLink activeClassName="active" to={`/where-to-watch/`}>
         Watch
       </StyledLink>
-      <StyledLink to={`/news-room/`}>
+      <StyledLink activeClassName="active" to={`/news-room/`}>
         News
       </StyledLink>
-      <StyledLink to={`/jumppoint/`}>
+      <StyledLink activeClassName="active" to={`/jumppoint/`}>
         Community
       </StyledLink>
     </NavbarFooter>
