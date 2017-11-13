@@ -18,6 +18,11 @@ const Container = styled.section`
   }
 `;
 const Main = styled.main`
+  min-height: 80vh;
+  
+  img {
+    max-width: 100%;
+  }
   @media (min-width: 768px) {
     flex: 2;
   }
