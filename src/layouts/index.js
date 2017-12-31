@@ -19,6 +19,11 @@ const Container = styled.section`
   color: white;
 `;
 const Main = styled.main`
+	background: rgba(255, 255, 255, 0.75);
+	color: black;
+	padding: 15px;
+	border-radius: 15px;
+	
   @media (min-width: 768px) {
     flex: 2;
   }
@@ -88,7 +93,7 @@ const StyledLink = styled(Link)`
 
   &:last-child {
     background-color: #BF0B12;
-    color: black;
+    color: white;
 
     &:hover,
     &:active,
@@ -122,14 +127,14 @@ export default ({ children, data }) =>
 				<StyledLink activeClassName="active" to={`/about/`}>
 					About
 				</StyledLink>
-				<StyledLink activeClassName="active" to={`/where-to-watch/`}>
-					Watch
-				</StyledLink>
 				<StyledLink activeClassName="active" to={`/news-room/`}>
 					News
 				</StyledLink>
 				<StyledLink activeClassName="active" to={`/jumppoint/`}>
 					Community
+				</StyledLink>
+				<StyledLink activeClassName="active" to={`/where-to-watch/`}>
+					Watch
 				</StyledLink>
 			</Navbar>
 		</HeaderContainer>
@@ -140,14 +145,14 @@ export default ({ children, data }) =>
       <StyledLink activeClassName="active" to={`/about/`}>
         About
       </StyledLink>
-      <StyledLink activeClassName="active" to={`/where-to-watch/`}>
-        Watch
-      </StyledLink>
       <StyledLink activeClassName="active" to={`/news-room/`}>
         News
       </StyledLink>
       <StyledLink activeClassName="active" to={`/jumppoint/`}>
         Community
+      </StyledLink>
+			<StyledLink activeClassName="active" to={`/where-to-watch/`}>
+        Watch
       </StyledLink>
     </NavbarFooter>
     <div>

@@ -14,6 +14,11 @@ const Container = styled.section`
   }
 `;
 const Main = styled.main`
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+
   @media (min-width: 768px) {
     flex: 2;
   }

@@ -16,6 +16,7 @@ const Container = styled.section`
   }
 `;
 const Main = styled.main`
+
   @media (min-width: 768px) {
     flex: 2;
   }
@@ -34,7 +35,7 @@ const ArticleTitle = styled.h3`
 const StyledLink = styled(Link)`
   text-decoration: none;
   transition: all 0.25s ease-in-out;
-  color: white;
+  color: black;
 
   &:hover,
   &:active,
@@ -57,15 +58,22 @@ const ButtonLink = styled(Link)`
     background-color: gray;
   }
 `;
+const Article = styled.article`
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px 0;
+`;
 export default ({ data }) => {
   return (
     <Container>
       <Main>
-        <h1 display={"inline-block"} borderBottom={"1px solid"}>
+        <h1 display={"inline-block"}>
           All Articles ({data.allMarkdownRemark.totalCount}):
         </h1>
         {data.allMarkdownRemark.edges.map(({ node }) =>
-          <article>
+          <Article>
           <StyledLink to={node.fields.slug}>
             <ArticleTitle>
               {node.frontmatter.title}{" "}
@@ -76,10 +84,9 @@ export default ({ data }) => {
               {node.excerpt}
             </p>
             <br/>
-            <ButtonLink to={node.fields.slug}>View post >></ButtonLink>
+            <ButtonLink to={node.fields.slug}>View post</ButtonLink>
             <br/><br/>
-            <hr clear="both"/>
-          </article>
+          </Article>
         )}
       </Main>
       <Aside>

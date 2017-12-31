@@ -59,7 +59,7 @@ const Banner = styled.div`
       top: 0;
       right: 0;
       bottom: 0;
-      left: 0; 
+      left: 0;
 
       display: flex;
       align-items: center;
@@ -134,12 +134,19 @@ const Alert = styled.div`
     color: #a94442;
   }
 `;
+const BannerContent = styled.div`
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+`;
 export default ({ data }) => {
   return (
     <div>
       <Banner>
       <Container>
-        <div>
+        <BannerContent>
           <WelcomeHeading>
             Babylon 5 is a game-changing, ground breaking, emmy-award winning TV series that is in danger of becoming lost and forgotten.
           </WelcomeHeading>
@@ -149,17 +156,19 @@ export default ({ data }) => {
           <p>
             Please <StyledLinkRed title="Join Us!" to="/join/"><strong>Join us</strong></StyledLinkRed> and help #FreeBabylon5
           </p>
-        </div>
+        </BannerContent>
       </Container>
       <img src={homemasthead} alt="Babylon 5 space station" width="100%"/>
     </Banner>
     <Container style={{ textAlign: 'center' }}>
-      <Heading>Babylon 5 Now Streaming in the US!</Heading>
-      <p>This is the day we have been fighting for! Babylon 5 is now showing in the US on Go90. The #FreeBabylon5 campaign even got a mention in their promo advert which you can watch here.</p>
+       <BannerContent>
+         <Heading>Babylon 5 Now Streaming in the US!</Heading>
+         <p>This is the day we have been fighting for! Babylon 5 is now showing in the US on Go90. The #FreeBabylon5 campaign even got a mention in their promo advert which you can watch here.</p>
 
-      <p>Thank you Go90 for fulfilling our primary campaign goal and streaming Babylon 5 in the US.</p>
-      <br/>
-      <a href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
+         <p>Thank you Go90 for fulfilling our primary campaign goal and streaming Babylon 5 in the US.</p>
+         <br/>
+         <a className="bodylink" href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
+       </BannerContent>
       </Container>
     <Container>
     <h2>
@@ -178,21 +187,21 @@ export default ({ data }) => {
             {node.excerpt}
           </p>
           <br/>
-          <StyledLinkBlack to={node.fields.slug}>View post >></StyledLinkBlack>
+          <StyledLinkBlack to={node.fields.slug}>View post</StyledLinkBlack>
         </Article>
       )}
       </PostContainer>
       </Container>
       <Banner>
       <Container>
-        <div>
+        <BannerContent>
           <Heading>New to Babylon 5?</Heading>
           <p>Babylon 5 has something for everyone. The story focuses on the relationships and entwined destinies of a multitude of charachters. Some find love, some face tragedy.</p>
 
           <p>There are epic plotlines, rich alien cultures, and bucket loads of space battles.</p>
           <br/>
           <StyledLinkBlue to="/where-to-watch/">Where to Watch</StyledLinkBlue>
-        </div>
+        </BannerContent>
       </Container>
       <img src={jumppoint} alt="Babylon 5 space ships exiting a hyperspace vortex" width="100%"/>
       </Banner>
@@ -201,7 +210,7 @@ export default ({ data }) => {
       </Container>
       <Banner>
         <Container>
-          <div>
+          <BannerContent>
             <Heading>Why is Babylon 5 Important?</Heading>
 
             <p>Babylon 5 was a watershed moment for television.</p>
@@ -215,7 +224,7 @@ export default ({ data }) => {
             <p>You can help change that.</p>
             <br/>
             <StyledLinkBlack to="/about/">About the Campaign</StyledLinkBlack>
-          </div>
+          </BannerContent>
         </Container>
         <img src={charachters} alt="Some of Babylon 5's principal charachters including Commander Sheridan, Doctor Franklin and G'Kar" width="100%"/>
       </Banner>

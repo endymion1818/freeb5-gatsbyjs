@@ -15,6 +15,11 @@ const Container = styled.section`
 `;
 
 const Main = styled.main`
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+
   @media (min-width: 768px) {
     flex: 2;
   }
@@ -40,7 +45,7 @@ export default ({ data }) =>
 
       <h2>International</h2>
 
-      <p>TV stations in New Zealand and Germany have recently aired all 5 seasons. Please let us know if you hear of anywhere else that&#8217;s showing the series!</p>
+      <p>TV stations in the UK, New Zealand and Germany have recently aired all 5 seasons. Please let us know if you hear of anywhere else that&#8217;s showing the series!</p>
 
       <h2>Let us know!</h2>
 
