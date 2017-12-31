@@ -23,7 +23,7 @@ const Main = styled.main`
 	color: black;
 	padding: 15px;
 	border-radius: 15px;
-	
+
   @media (min-width: 768px) {
     flex: 2;
   }
@@ -131,7 +131,7 @@ export default ({ children, data }) =>
 					News
 				</StyledLink>
 				<StyledLink activeClassName="active" to={`/jumppoint/`}>
-					Community
+					Links
 				</StyledLink>
 				<StyledLink activeClassName="active" to={`/where-to-watch/`}>
 					Watch
@@ -149,7 +149,7 @@ export default ({ children, data }) =>
         News
       </StyledLink>
       <StyledLink activeClassName="active" to={`/jumppoint/`}>
-        Community
+        Links
       </StyledLink>
 			<StyledLink activeClassName="active" to={`/where-to-watch/`}>
         Watch
