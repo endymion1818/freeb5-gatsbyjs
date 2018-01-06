@@ -37,7 +37,7 @@ export default ({ data }) =>
     <Main>
       <h1>Babylon 5 Movie News</h1>
       <h2>Yes, the movie is still happening, here's the latest:</h2>
-      <p>in 2017 we heard that <TextLink to="/post/movie-reboot-wb/">WB is basically no longer interested in making a movie.</TextLink></p>
+      <p>in 2017 we heard that <TextLink to="/post/movie-reboot-wb/">WB is not currently interested in promoting Babylon 5.</TextLink></p>
       <p>Prior to that the news was that <TextLink to="/post/babylon-5-movie-still-planned/">the movie is still planned, under the guise of creator Joe Straczynski's StudioJMS.</TextLink></p>
       <p>Originally, we heard that Straczynski was planning to make a movie at SDCC, which fan <TextLink to="/post/b5-movie-news-announcement-transcript/">Jan transcribed and posted on JMSNews</TextLink></p>
     </Main>
