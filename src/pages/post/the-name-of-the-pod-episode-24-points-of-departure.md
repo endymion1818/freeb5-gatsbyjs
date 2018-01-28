@@ -1,5 +1,5 @@
 ---
-title: The Name of the Pod Episode 66 - Points of Departure
+title: The Name of the Pod Episode 24 - Points of Departure
 author: Ranger 3ndymion
 type: post
 date: 2018-01-28T21:10:45+00:00
