@@ -128,10 +128,27 @@ const Alert = styled.div`
   border: 1px solid #ebccd1;
   border-radius: 4px;
   padding: 15px;
-  color: #a94442;
+  color: #821716;
 
   a {
-    color: #a94442;
+    color: #821716;
+  }
+  h3 {
+    margin-top: 0;
+  }
+`;
+const AlertBlue = styled.div`
+  background-color: #5797d6;
+  border: 1px solid #5797d6;
+  border-radius: 4px;
+  padding: 15px;
+  color: black;
+
+  a {
+    color: black;
+  }
+  h3 {
+    margin-top: 0;
   }
 `;
 const BannerContent = styled.div`
@@ -169,7 +186,16 @@ export default ({ data }) => {
          <br/>
          <a className="bodylink" href="https://www.go90.com/shows/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
        </BannerContent>
-      </Container>
+    </Container>
+    <Container>
+      <BannerContent>
+        <Heading>Babylon 5 Also Showing on Pick in the UK!</Heading>
+        <p>For the first time since it's original run 25 years ago, Babylon 5 is now showing not only on Go90 in the US, but on Pick in the UK as well!</p>
+
+        <p>If you're in the UK, you can watch the show by visiting the free channel from your set top box.</p>
+        <br/>
+      </BannerContent>
+    </Container>
     <Container>
     <h2>
       Recent Posts
@@ -205,8 +231,12 @@ export default ({ data }) => {
       </Container>
       <img src={jumppoint} alt="Babylon 5 space ships exiting a hyperspace vortex" width="100%"/>
       </Banner>
-      <Container>
-        <Alert><Link to="/movie-news/">Looking for news about the Babylon 5 Movie? You'll find that here</Link></Alert>
+      <Container style={{ textAlign: 'center' }}>
+        <Alert>
+          <h3>Babylon 5 Movie Planned</h3>
+          <p>Show creator JMS still plans to make a Babylon 5 movie. </p>
+          <Link to="/movie-news/">Click here for more information.</Link>
+        </Alert>
       </Container>
       <Banner>
         <Container>
@@ -228,6 +258,13 @@ export default ({ data }) => {
         </Container>
         <img src={charachters} alt="Some of Babylon 5's principal charachters including Commander Sheridan, Doctor Franklin and G'Kar" width="100%"/>
       </Banner>
+      <Container style={{ textAlign: 'center' }}>
+        <AlertBlue>
+          <h3>Babylon 5 in HD?</h3>
+          <p>If you're a fan of the show, it's probably likely that you would love to  Watch the show in gorgeous hi-definition. This sadly is more difficult that it might seem. A while ago, a technical explanation came to light ...</p>
+          <Link to="/theres-no-blu-ray-edition/">Click here for more information.</Link>
+        </AlertBlue>
+      </Container>
     </div>
   )
 }
