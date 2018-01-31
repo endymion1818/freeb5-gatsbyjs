@@ -39,7 +39,7 @@ export default ({ data }) =>
 
       <h2>United States</h2>
 
-      <p>In April 2017 we heard that <TextLink href="https://go90.com/babylon5">Go90 streaming service from Verizon</TextLink> will stream Babylon 5 as part of a deal with Warner Bros.</p>
+      <p>In April 2017 we heard that <TextLink href="https://www.go90.com/shows/babylon5">Go90 streaming service from Verizon</TextLink> will stream Babylon 5 as part of a deal with Warner Bros.</p>
 
       <p>US TV channel Comet TV has been showing The Lost Tales as well. Please tell us if this is still happening.</p>
 

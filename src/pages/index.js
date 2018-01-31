@@ -167,7 +167,7 @@ export default ({ data }) => {
 
          <p>Thank you Go90 for fulfilling our primary campaign goal and streaming Babylon 5 in the US.</p>
          <br/>
-         <a className="bodylink" href="https://go90.com/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
+         <a className="bodylink" href="https://www.go90.com/shows/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
        </BannerContent>
       </Container>
     <Container>
