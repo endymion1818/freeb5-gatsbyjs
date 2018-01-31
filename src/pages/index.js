@@ -262,7 +262,7 @@ export default ({ data }) => {
         <AlertBlue>
           <h3>Babylon 5 in HD?</h3>
           <p>If you're a fan of the show, it's probably likely that you would love to  Watch the show in gorgeous hi-definition. This sadly is more difficult that it might seem. A while ago, a technical explanation came to light ...</p>
-          <Link to="/theres-no-blu-ray-edition/">Click here for more information.</Link>
+          <Link to="/post/theres-no-blu-ray-edition/">Click here for more information.</Link>
         </AlertBlue>
       </Container>
     </div>
