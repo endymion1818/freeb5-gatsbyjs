@@ -229,9 +229,6 @@ export default ({ data }) => {
       </Container>
       <img src={jumppoint} alt="Babylon 5 space ships exiting a hyperspace vortex" width="100%"/>
       </Banner>
-      <Container>
-        <Alert><Link to="/movie-news/">Looking for news about the Babylon 5 Movie? You'll find that here</Link></Alert>
-      </Container>
      <Container style={{ textAlign: 'center' }}>
         <Alert>
           <h3>Babylon 5 Movie Planned</h3>
