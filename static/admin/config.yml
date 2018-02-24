@@ -5,7 +5,7 @@ backend:
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
-collections: posts
+collections:
 
   - name: "post"
     label: "Post"
@@ -15,5 +15,6 @@ collections: posts
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "categories", widget: "array" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
