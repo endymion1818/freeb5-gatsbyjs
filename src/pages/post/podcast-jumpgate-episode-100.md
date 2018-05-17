@@ -1,5 +1,5 @@
 ---
-title: Podcast: Jumpgate Episode 100 - The Gathering
+title: Podcast Jumpgate Episode 100 - The Gathering
 author: Ranger 3ndymion
 type: post
 date: 2018-02-05T21:10:45+00:00
