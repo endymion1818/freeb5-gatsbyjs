@@ -187,7 +187,6 @@ export default ({ data }) => {
        </BannerContent>
       </Container>
     <Container>
-    <Container>
     <h2>
       Recent Posts
     </h2>
