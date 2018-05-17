@@ -1,5 +1,5 @@
 ---
-title: Podcast: Jumpgate Episode 101: No Compromises
+title: Podcast: Jumpgate Episode 101 - No Compromises
 author: Ranger 3ndymion
 type: post
 date: 2018-02-22T21:10:45+00:00
