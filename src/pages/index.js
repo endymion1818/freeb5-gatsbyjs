@@ -178,23 +178,16 @@ export default ({ data }) => {
     </Banner>
     <Container style={{ textAlign: 'center' }}>
        <BannerContent>
-         <Heading>Babylon 5 Now Streaming in the US!</Heading>
-         <p>This is the day we have been fighting for! Babylon 5 is now showing in the US on Go90. The #FreeBabylon5 campaign even got a mention in their promo advert which you can watch here.</p>
+         <Heading>Babylon 5 on Amazon Prime</Heading>
+         <p>Shortly after hearing that 2 shows in the US and UK respectively had stopped showing the series, we heard that Amazon Prime will soon begin showing on their streaming channel</p>
 
-         <p>Thank you Go90 for fulfilling our primary campaign goal and streaming Babylon 5 in the US.</p>
+         <p>At this stage it's unclear whether this is an international deal or something more regional. More news about this when we get it.</p>
          <br/>
-         <a className="bodylink" href="https://www.go90.com/shows/babylon5">Watch Babylon 5 Now — for Free!  (US Only)</a>
+         <a className="bodylink" href="https://www.primevideo.com/">Watch Babylon 5 Now </a>
        </BannerContent>
       </Container>
     <Container>
     <Container>
-    <BannerContent>
-      <Heading>Babylon 5 Also Showing on Pick in the UK!</Heading>
-      <p>For the first time since it's original run 25 years ago, Babylon 5 is now showing not only on Go90 in the US, but on Pick in the UK as well!</p>
-      <p>If you're in the UK, you can watch the show by visiting the free channel from your set top box.</p>
-      <br/>
-    </BannerContent>
-  </Container>
     <h2>
       Recent Posts
     </h2>
