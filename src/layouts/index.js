@@ -103,12 +103,16 @@ const StyledLink = styled(Link)`
   }
 `;
 const SiteTitle = styled(Link)`
-  font-size: 32px;
+  font-size: 22px;
   font-family: 'SerpentineMedium', sans-serif;
 	text-transform: uppercase;
   text-decoration: none;
 	color: white;
-	text-shadow: -4px 0 blue, 0 4px blue, 4px 0 blue, 0 -4px blue;
+  text-shadow: -4px 0 blue, 0 4px blue, 4px 0 blue, 0 -4px blue;
+  
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 export default ({ children, data }) =>
