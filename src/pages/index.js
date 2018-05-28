@@ -183,7 +183,6 @@ export default ({ data }) => {
 
          <p>At this stage it's unclear whether this is an international deal or something more regional. More news about this when we get it.</p>
          <br/>
-         <a className="bodylink" href="https://www.primevideo.com/">Watch Babylon 5 Now </a>
        </BannerContent>
       </Container>
     <Container>
