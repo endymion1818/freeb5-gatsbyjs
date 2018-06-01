@@ -179,10 +179,9 @@ export default ({ data }) => {
     <Container style={{ textAlign: 'center' }}>
        <BannerContent>
          <Heading>Babylon 5 on Amazon Prime</Heading>
-         <p>Shortly after hearing that 2 shows in the US and UK respectively had stopped showing the series, we heard that Amazon Prime will soon begin showing on their streaming channel</p>
-
-         <p>At this stage it's unclear whether this is an international deal or something more regional. More news about this when we get it.</p>
+         <p>Shortly after hearing that 2 shows in the US and UK respectively had stopped showing the series, we heard that Amazon Prime have begun showing the series on their streaming channel, Prime Video!</p>
          <br/>
+         <a className="bodylink" href="https://www.primevideo.com/">Watch Babylon 5 Now </a>
        </BannerContent>
       </Container>
     <Container>
