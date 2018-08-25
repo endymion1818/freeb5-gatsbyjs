@@ -28,10 +28,4 @@ Universal City, CA 91608
 
 Please post [on our Facebook page][1] when you&#8217;ve written and mailed your letter!
 
-[<img src="http://freeb5:8888/wp-content/uploads/2014/01/1505017_442234935902724_2069341805_n-300x201.jpg" alt="1505017_442234935902724_2069341805_n" width="300" height="201" class="alignnone size-medium wp-image-287" />][2]
-
-[<img src="http://freeb5:8888/wp-content/uploads/2014/01/1497673_442234889236062_2041843250_n.png" alt="1497673_442234889236062_2041843250_n" width="255" height="197" class="alignnone size-medium wp-image-293" />][3]
-
  [1]: https://www.facebook.com/FreeBabylon5
- [2]: http://freeb5:8888/wp-content/uploads/2014/01/1505017_442234935902724_2069341805_n.jpg
- [3]: http://freeb5:8888/wp-content/uploads/2014/01/1497673_442234889236062_2041843250_n.png

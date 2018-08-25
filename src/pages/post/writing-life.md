@@ -24,7 +24,6 @@ In the _Babylon 5_ episode “Comes the Inquisitor,” the character of Delenn i
 
 Your name, your job, the different hats you must wear throughout your life – spouse, parent, leader, student – all of these help define _what_ you are, but not _who_ you are. If all of that were stripped away, and there was nothing left but you and your words, who would you be? This is not about what other people call you. What do you call yourself?
 
-[<img class="aligncenter size-medium wp-image-1014" src="http://freeb5:8888/wp-content/uploads/2014/09/who-are-you-2-300x168.png" alt="who are you 2" width="300" height="168" />][1]
 
 **Your voice**
 
@@ -45,9 +44,3 @@ Who are you?
 <p style="text-align: center;">
   <em>“How do you know the chosen ones? No greater love hath a man than he lay down his life for his brother. Not for millions, not for glory, not for fame. For one person. In the dark, where no one will ever know or see. … When the darkness comes, know this. You are the right people, in the right place, at the right time.” -Sebastian, “Comes the Inquisitor”</em>
 </p>
-
-<p style="text-align: center;">
-  <a href="http://freeb5:8888/wp-content/uploads/2014/09/who-are-you.png"><img class="aligncenter size-medium wp-image-1015" src="http://freeb5:8888/wp-content/uploads/2014/09/who-are-you-300x168.png" alt="who are you" width="300" height="168" /></a>
-</p>
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/09/who-are-you-2.png

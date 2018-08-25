@@ -10,6 +10,4 @@ categories:
 
 Just sent in an application to Loscon 41 for a panel and fan table over Thanksgiving weekend. JMS will be Writer Guest of Honor.
 
-<a href="http://loscon.org/41/" target="_blank" rel="nofollow nofollow">http://loscon.org/41/</a> The con will be just a few days after the 16th anniversary of &#8216;Sleeping in Light&#8217; airing.[<img class="aligncenter size-full wp-image-767" src="http://freeb5:8888/wp-content/uploads/2014/07/1457747_668525309849002_1428838215_n.jpg" alt="1457747_668525309849002_1428838215_n" width="160" height="160" />][1]
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/07/1457747_668525309849002_1428838215_n.jpg
+<a href="http://loscon.org/41/" target="_blank" rel="nofollow nofollow">http://loscon.org/41/</a> The con will be just a few days after the 16th anniversary of &#8216;Sleeping in Light&#8217; airing.

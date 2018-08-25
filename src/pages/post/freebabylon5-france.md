@@ -21,8 +21,6 @@ Great work @ripleyaeryn_, please keep us up-to-date with the latest campaign new
 
 You can follow #FreeBabylon5 France on Twitter: [@FreeBabylon5FR][2]
 
-[<img src="http://freeb5:8888/wp-content/uploads/2014/01/Screen-Shot-2014-01-31-at-21.20.03.png" alt="Screen Shot 2014-01-31 at 21.20.03" width="998" height="559" class="alignnone size-full wp-image-381" />][3]
-
  [1]: https://twitter.com/ripleyaeryn_
  [2]: https://twitter.com/FreeBabylon5FR
  [3]: http://freebabylon5fr.blogspot.fr

@@ -46,9 +46,6 @@ categories:
   Despite how much humans can be resistant to change, as a rule we embrace it. New clothes, new technologies, new experiences. The idea of actively avoiding change in every area of life is not something we relate to well. An alien race that doesn’t even understand the concept of change makes for an interesting dynamic in a story. As the character of Delenn (a Minbari) remarks to John Sheridan: “Curious thing about humans – Minbari cities remain untouched and unchanged for centuries. I leave for three days, and you redecorate.”
 </p>
 
-<p style="color: #666666;">
-  <a href="http://freeb5:8888/wp-content/uploads/2014/09/neroon.jpg"><img class="aligncenter size-medium wp-image-983" src="http://freeb5:8888/wp-content/uploads/2014/09/neroon-300x168.jpg" alt="neroon" width="300" height="168" /></a>
-</p>
 
 <p style="color: #666666;">
   <strong style="font-style: inherit;">Similarity – the human element</strong>
@@ -81,11 +78,6 @@ categories:
 <p style="color: #666666;">
   Your story does not have to have a romantic relationship, or a mentor/protégé relationship. But the closer the characters from different races are, the more opportunities you have for developing the Otherness and the Humanity of your fantasy people.
 </p>
-
-<p style="color: #666666;">
-  <a href="http://freeb5:8888/wp-content/uploads/2014/09/SheridanKosh01.jpg"><img class="aligncenter size-medium wp-image-984" src="http://freeb5:8888/wp-content/uploads/2014/09/SheridanKosh01-300x199.jpg" alt="SheridanKosh01" width="300" height="199" /></a>
-</p>
-
 <p style="color: #666666; text-align: center;">
   <em style="font-weight: inherit;">“We are all born as molecules, in the hearts of a billion stars… Over a billion years, we, foolish molecules, forget who we are and where we came from. In desperate acts of ego, we give ourselves names, fight over lines on maps, and pretend that our light is better than everyone else’s.”</em><br /> <em style="font-weight: inherit;"> – Delenn, “And All my Dreams, Torn Asunder”</em>
 </p>

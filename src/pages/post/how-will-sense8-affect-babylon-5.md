@@ -19,8 +19,6 @@ Well, the site is receiving a certain volume of traffic from people searching fo
 
 Here&#8217;s a screenshot of the Google search results:
 
-[<img class="alignnone size-full wp-image-1226" src="http://freeb5:8888/wp-content/uploads/2015/06/Screen-Shot-2015-06-13-at-22.16.22.png" alt="Screen Shot 2015-06-13 at 22.16.22" width="563" height="622" />][3]
-
 So that&#8217;s 30 more hits than we would have seen without Sense8 around, and it&#8217;s interesting that at no.4 is people searching for &#8220;sense8 JMS&#8221;.
 
 So if you enjoyed Sense8, it&#8217;ll be worth mentioning the link with Babylon 5 &#8230; in any case, it&#8217;ll be interesting to see if Babylon 5 gets any more exposure because of this.
@@ -29,4 +27,3 @@ From a purely selfish standpoint, I hope this doesn&#8217;t make JMS too busy to
 
  [1]: http://www.netflix.com/WiMovie/80025744
  [2]: https://www.facebook.com/pages/Fans-of-J-Michael-Straczynski/139652459402959
- [3]: http://freeb5:8888/wp-content/uploads/2015/06/Screen-Shot-2015-06-13-at-22.16.22.png

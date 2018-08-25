@@ -16,9 +16,6 @@ The first two conventions were small local conventions in Copenhagen, Denmark wi
 
 The third was Fedcon in Düsseldorf, Germany, a media oriented convention with about 5000 attendees. I did get to give away a fair amount of the #FreeBabylon5 stuff, since I met a fair amount of B5 fans there.
 
-<div id="attachment_942" style="width: 310px" class="wp-caption alignnone">
-  <a href="http://freeb5:8888/wp-content/uploads/2014/08/Loncon3B5web.jpg"><img class="size-medium wp-image-942" src="http://freeb5:8888/wp-content/uploads/2014/08/Loncon3B5web-300x278.jpg" alt="#FreeBabylon5, Fans" width="300" height="278" /></a>
-
   <p class="wp-caption-text">
     B5 fans with #FreeBabylon5 stuff at Loncon3
   </p>

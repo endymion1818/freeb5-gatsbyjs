@@ -14,7 +14,6 @@ Apply here:
 
 <http://www.cthreefoundation.org/babylon-5-photo-raffle.html>
 
-[<img src="http://freeb5:8888/wp-content/uploads/2014/08/1407026084.jpg" alt="1407026084" width="440" height="300" class="alignnone size-full wp-image-902" />][1]
 
 <div id="fb-root">
 </div>

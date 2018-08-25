@@ -14,6 +14,4 @@ The blog has been going for a while, and as a result contains some great costume
 
 [Check it out!][1]
 
-<img src="http://freebabylon5.com/wp-content/uploads/2016/10/14481883_1120927351275795_4191963519952263399_o-225x300.jpg" alt="14481883_1120927351275795_4191963519952263399_o" width="225" height="300" class="alignnone size-medium wp-image-1434" />
-
  [1]: http://b5cosplay.tumblr.com/page/3

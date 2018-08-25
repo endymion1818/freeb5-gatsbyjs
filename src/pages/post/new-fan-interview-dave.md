@@ -6,7 +6,6 @@ categories:
   - Articles from the Community
 
 ---
-[<img class="aligncenter size-medium wp-image-914" src="http://freeb5:8888/wp-content/uploads/2014/08/1601549_10152543373733709_226232825_n-300x300.jpg" alt="1601549_10152543373733709_226232825_n" width="300" height="300" />][1]
 
 Following on from my interview with Ems last week, another new fan that I had the chance to interview recently is Dave.
 
@@ -51,5 +50,3 @@ DAVE: I think the #FreeBabylon5 campaign is a very important one. It&#8217;s a s
 &nbsp;
 
 New fans of the show such as Dave, really do highlight the importance of the #FreeBabylon5 campaign. There is a message for anyone to get out of the show and much enjoyment to be had also. More fans proves that people are interested in Babylon 5 and gives us campaigners all the more reason to continue with our efforts.
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/08/1601549_10152543373733709_226232825_n.jpg

@@ -23,9 +23,7 @@ By the time the thunderclap went out on 15th January, there were 547 supporters.
 
 ### Results
 
-The results were astounding. We reached a staggering 191,470 people with the shoutout. A percentage of those people would have an interest in finding out more about the campaign, but I don&#8217;t think we could&#8217;ve hoped for better results than this:
-
-[<img class="alignnone size-large wp-image-511" alt="Screen Shot 2014-03-07 at 22.04.27" src="http://freeb5:8888/wp-content/uploads/2014/03/Screen-Shot-2014-03-07-at-22.04.27-1024x233.png" width="770" height="175" />][1]
+The results were astounding. We reached a staggering 191,470 people with the shoutout. A percentage of those people would have an interest in finding out more about the campaign, but I don&#8217;t think we could&#8217;ve hoped for better results than this.
 
 &nbsp;
 
@@ -33,11 +31,8 @@ The graph above shows the peak in visitors on that day, which eventually totalle
 
 ### Geography
 
-[<img alt="Screen Shot 2014-03-07 at 21.43.57" src="http://freeb5:8888/wp-content/uploads/2014/03/Screen-Shot-2014-03-07-at-21.43.57-1024x573.png" width="616" height="344" />][2]
-
 As we expected, most visitors came from the US, but we were pleased to discover we have potential fans in many other parts of the world, too.
 
-[<img alt="Screen Shot 2014-03-07 at 21.45.43" src="http://freeb5:8888/wp-content/uploads/2014/03/Screen-Shot-2014-03-07-at-21.45.43-1024x577.png" width="616" height="346" />][3]
 
 In the US we have most fans (and potential fans) in California (194), Texas (167), Florida (106), and New York (118).
 
@@ -55,8 +50,5 @@ What we do now is what we&#8217;ve got to decide. Please contact us on [Faceboo
 
 The battle may have been won, but the war is far from over.
 
- [1]: http://freeb5:8888/wp-content/uploads/2014/03/Screen-Shot-2014-03-07-at-22.04.27.png
- [2]: http://freeb5:8888/wp-content/uploads/2014/03/Screen-Shot-2014-03-07-at-21.43.57.png
- [3]: http://freeb5:8888/wp-content/uploads/2014/03/Screen-Shot-2014-03-07-at-21.45.43.png
- [4]: http://watch.uktv.co.uk
- [5]: https://www.facebook.com/FreeBabylon5
+http://watch.uktv.co.uk
+https://www.facebook.com/FreeBabylon5

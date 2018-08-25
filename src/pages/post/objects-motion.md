@@ -34,8 +34,6 @@ There have been some accidents along the way (who doesn&#8217;t remember when I 
 
 The pinnacle of this work has been for me the fantastic gift of the &#8220;Babylon 5 At Twenty&#8221; book that was given to me by JMS&#8217; [Babylon 5 Books][1]. If you, JMS, or Sandra are reading this, thank you so much for that treasured gift.
 
-[<img class="alignnone size-large wp-image-1096" src="http://freeb5:8888/wp-content/uploads/2014/11/IMG_5050-1024x768.jpg" alt="IMG_5050" width="770" height="577" />][2]
-
 #####  If you haven&#8217;t managed to purchase the Babylon 5 at Twenty book from [Babylon 5 Books][1], I can highly recommend it.
 
 ###
@@ -55,6 +53,5 @@ I look forward to seeing that happen, and to the planned reboot, with keen antic
 Be seeing you.
 
  [1]: http://www.cafepress.com/b5books
- [2]: http://freeb5:8888/wp-content/uploads/2014/11/IMG_5050.jpg
  [3]: https://github.com/endymion1818/FreeB5/tree/master
  [4]: https://twitter.com/muzzlehatch_

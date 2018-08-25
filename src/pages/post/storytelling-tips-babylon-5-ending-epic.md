@@ -23,10 +23,6 @@ categories:
 </p>
 
 <p style="color: #666666">
-  <a href="http://freeb5:8888/wp-content/uploads/2014/08/Sleeping-in-Light.png"><img class="aligncenter size-medium wp-image-961" src="http://freeb5:8888/wp-content/uploads/2014/08/Sleeping-in-Light-300x168.png" alt="Sleeping in Light" width="300" height="168" /></a>
-</p>
-
-<p style="color: #666666">
   <b>Tying up loose ends</b>
 </p>
 
@@ -84,8 +80,4 @@ categories:
 
 <p style="color: #666666" align="center">
   <i>“Every part of this station has somebody’s fingerprints on it, layers and layers of people’s lives. There were times I thought none of us would get out alive. Some of us didn’t. But we did everything we said we were going to do, and nobody can take that away from us.” – Zack Allen, “Sleeping in Light”</i>
-</p>
-
-<p style="color: #666666" align="center">
-  <a href="http://freeb5:8888/wp-content/uploads/2014/08/Babylon5.png"><img class="aligncenter size-medium wp-image-962" src="http://freeb5:8888/wp-content/uploads/2014/08/Babylon5-300x168.png" alt="Babylon5" width="300" height="168" /></a>
 </p>

@@ -14,6 +14,4 @@ And in case you didn&#8217;t already hear, Babylon 5 is back on UK TV screens vi
 
 Have you liked the Facebook page yet? Like us now at [facebook.com/FreeBabylon5][1]
 
-[<img class="alignnone size-full wp-image-516" alt="Screen Shot 2014-03-09 at 18.39.04" src="http://freeb5:8888/wp-content/uploads/2014/03/Screen-Shot-2014-03-09-at-18.39.04.png" width="854" height="545" />][1]
-
  [1]: https://www.facebook.com/FreeBabylon5

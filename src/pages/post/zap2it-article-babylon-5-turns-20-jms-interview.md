@@ -15,8 +15,5 @@ The interview reflects on the shows&#8217; lasting legacy, including how open JM
 
 First reported on Twitter (as far as we know) by Jay Fulber Harvey ([@jayfulberharvey][2]). Thanks for the find, Jay!
 
-[Read the article here &raquo;][1][<img src="http://freeb5:8888/wp-content/uploads/2014/01/Screen-Shot-2014-01-31-at-21.34.02.png" alt="Screen Shot 2014-01-31 at 21.34.02" width="650" height="635" class="alignnone size-full wp-image-389" />][3]
-
  [1]: http://blog.zap2it.com/frominsidethebox/2014/01/babylon-5-turns-20-creator-j-michael-straczynski-reflects-on-the-shows-legacy.html
  [2]: https://twitter.com/jayfublerharvey
- [3]: http://freeb5:8888/wp-content/uploads/2014/01/Screen-Shot-2014-01-31-at-21.34.02.png

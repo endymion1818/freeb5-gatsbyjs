@@ -22,9 +22,3 @@ JMS: The streaming rights to Babylon 5 are with Warner Bros. and I have no frick
 There’s this great [story from] the Civil War. There was this General who didn’t want to take his forces into battle because he didn’t want to lose his army. Lincoln sent him a telegram saying “If you’re not going to use the army, can I borrow it for a while?” So if they’re not going to use it, let us do something.
 
 * * *
-
-&nbsp;
-
-[<img class="aligncenter size-medium wp-image-910" src="http://freeb5:8888/wp-content/uploads/2014/08/10448254_546824212110462_7805143648638643407_n-300x224.jpg" alt="10448254_546824212110462_7805143648638643407_n" width="300" height="224" />][1]
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/08/10448254_546824212110462_7805143648638643407_n.jpg

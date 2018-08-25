@@ -41,7 +41,3 @@ What do you want?
 <p style="text-align: center;">
   <em>“The question is its own purpose. What do you want?” -Morden, “Signs and Portents”</em>
 </p>
-
-<p style="text-align: center;">
-  <a href="http://freeb5:8888/wp-content/uploads/2014/10/Morden.jpg"><img class="aligncenter size-medium wp-image-1023" src="http://freeb5:8888/wp-content/uploads/2014/10/Morden-300x169.jpg" alt="Morden" width="300" height="169" /></a>
-</p>

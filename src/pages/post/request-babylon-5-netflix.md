@@ -12,8 +12,4 @@ categories:
 
 Well, what are you waiting for?!
 
-[Request Babylon 5 on Netflix here!][1]{.btn.btn-danger}
-
-[<img src="http://freebabylon5.com/wp-content/uploads/2016/12/10338400_699861556806726_1864051159303916339_o-1024x672.jpg" alt="" width="1024" height="672" class="alignnone size-large wp-image-1460" />][1]
-
- [1]: https://help.netflix.com/en/titlerequest
+https://help.netflix.com/en/titlerequest

@@ -26,6 +26,4 @@ As a thank you Mojo is offering to produce some of his emma-award winning artwor
 
 So please, no matter what you can spare, [support Mojo&#8217;s Last Wishes on gofundme.com][1]
 
-[<img src="http://freeb5:8888/wp-content/uploads/2016/01/Screen-Shot-2016-01-06-at-08.39.10-1024x646.png" alt="Screen Shot 2016-01-06 at 08.39.10" width="770" height="486" class="alignnone size-large wp-image-1280" />][1]
-
  [1]: https://www.gofundme.com/p8fk64hv

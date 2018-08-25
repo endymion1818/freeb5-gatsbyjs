@@ -36,9 +36,6 @@ Now, 140 characters isn’t much but it&#8217;s enough. Here’s what I’m goin
 
 Exactly 140 characters! Here are the Netflix Verified Twitter accounts that I was able to find. Netflix is spreading to more countries all the time! Be sure to add any that I’ve missed in the comments on the [#freebabylon5 Facebook page][1].
 
-[<img src="http://freeb5:8888/wp-content/uploads/2015/05/11391562_10153565734502985_922783554255539734_n.jpg" alt="11391562_10153565734502985_922783554255539734_n" width="960" height="630" class="alignnone size-full wp-image-1197" />][2]
-
 Image courtesy of Nick Michalak
 
  [1]: https://www.facebook.com/FreeBabylon5?fref=photo
- [2]: http://freeb5:8888/wp-content/uploads/2015/05/11391562_10153565734502985_922783554255539734_n.jpg

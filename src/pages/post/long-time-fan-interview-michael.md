@@ -8,8 +8,6 @@ categories:
 ---
 As well as attracting new fans, Babylon 5 is a show that has the ability to keep the interest of long time fans, even those that have been watching from the very first time it aired (the First Ones, I like to call them). Many long time fans have rewatched the show over and over again and still love it as much as they did in the beginning!  One such fan is Michael Truelove (Twitter username <a href="https://twitter.com/MikeyDT1979" target="_blank">@MikeyDT1979</a>), who I had the pleasure of interviewing recently! I will let him introduce himself, and then proceed to the interview!
 
-[<img class="aligncenter size-medium wp-image-927" src="http://freeb5:8888/wp-content/uploads/2014/08/michael-169x300.jpeg" alt="michael" width="169" height="300" />][1]
-
 * * *
 
 I have been a Sci-Fi fan as far back in my life as I can remember. I have watched just about every major Sci-Fi TV show that has ever been made from all series of Star Trek to both versions of Battlestar Galactica, Farscape, X-Files and many others in between. I have been watching Babylon 5 from day 1. I was channel hopping 20 years ago on a Sunday evening and this new, vibrant and very different Sci-Fi show landed on my TV on Channel 4. It was the episode &#8220;Midnight On The Firing Line&#8221;, the first episode of the series proper, i did not see &#8220;The Gathering&#8221; until it became available on VHS tape about 6 months later.
@@ -53,5 +51,3 @@ MIKE: I think the #FreeBabylon5 campaign is wonderful, a show of this brilliance
 * * *
 
 Such loyalty to Babylon 5 is a trait common to many long-time fans and further underlines the importance that we continue in our efforts to FreeBabylon5.  Some, who do not own VHS or DVDs of Babylon 5 would jump at the chance to rewatch either on Netflix or during reruns, and, can introduce it to new fans in the process. So count this as a Call to Arms, my fellow fans. Pick up those pens and write those letters to your local TV Stations and to Netflix. #FreeBabylon5
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/08/michael.jpeg

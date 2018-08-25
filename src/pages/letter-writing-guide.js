@@ -65,8 +65,6 @@ export default ({ data }) =>
 
       To let you know more about me, I’m a [ \___ ] year old [ insert profession ] who enjoys [ insert hobbies ]. I enjoy watching [ insert programs that you like, both current and re-runs ]. If your station adds Babylon 5 to its programming, you can be sure that I’ll be tuning in and pointing all of my friends to your channel as well.
 
-       [1]: http://freeb5:8888/wp-content/uploads/2013/11/Letter_Samples.docx
-       [2]: http://freeb5:8888/wp-content/uploads/2013/11/Letter_Elements.docx
     </Main>
     <Aside>
     </Aside>

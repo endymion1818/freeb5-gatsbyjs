@@ -27,9 +27,6 @@ Her 10 reasons are:
 Her article also contains some great YouTube clips from the show that add a lot to her descriptions.
 
 Check it out!
-
-[<img class="alignnone size-full wp-image-370" alt="Screen Shot 2014-01-30 at 16.49.08" src="http://freeb5:8888/wp-content/uploads/2014/01/Screen-Shot-2014-01-30-at-16.49.08.png" width="1063" height="867" />][1]
-
 &nbsp;
 
- [1]: http://www.caffeinatedlife.net/blog/2013/11/13/sci-fi-month-10-reasons-why-you-should-watch-babylon-5/
+http://www.caffeinatedlife.net/blog/2013/11/13/sci-fi-month-10-reasons-why-you-should-watch-babylon-5/

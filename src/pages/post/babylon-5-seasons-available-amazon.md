@@ -15,7 +15,3 @@ Cost of the each season is $15.99, and the movie collection for $14.99!
 Visit <a href="http://www.amazon.com/s/ref=nb_sb_ss_c_0_7?url=search-alias%3Dmovies-tv&field-keywords=babylon+5&sprefix=babylon%2Caps%2C171" target="_blank">amazon.com</a> and get yours now!
 
 &nbsp;
-
-[<img class="aligncenter size-medium wp-image-897" src="http://freeb5:8888/wp-content/uploads/2014/08/download-14-300x150.jpg" alt="download (14)" width="300" height="150" />][1]
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/08/download-14.jpg

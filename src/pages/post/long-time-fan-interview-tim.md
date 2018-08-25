@@ -14,8 +14,6 @@ Another long-time fan (a first one) who is very enthusiastic about Babylon5 is T
 
 So, a little bit about me. Hi, I&#8217;m Tim, I&#8217;m 29 and I am something of a sci-fi junkie. Babylon 5 was my first foray into science-fiction and everything just kind of snow-balled from there. I love watching any of the Trek, Stargate, Farscape, BattlestarGalactica&#8230; you name it, chances are I like it. But however many additional shows get added to the list, I always wind up back with Babylon 5. Of late, I have also enjoyed discussing my sci-fi love with lots of other like-minded folks on Twitter (<a href="https://twitter.com/parks8472" target="_blank">@parks8472</a>) Most recently I have posted pics and quotes from every episode of B5 (starting with The Gathering and culminating with Sleeping in Light) It was fun, although took some work to include a decent quote, the episode titles (some of them are ridiculously long LOL) and #FreeBabylon5 all in 140 characters.
 
-[<img class="aligncenter size-medium wp-image-974" src="http://freeb5:8888/wp-content/uploads/2014/09/Snapshot_20140901-300x225.jpg" alt="Tim" width="300" height="225" />][1]
-
 ANA: I loved your quote pictures! Good job! When did you first watch Babylon 5 and how many times have you watched it since!
 
 TIM: I started watching Babylon 5 when Season 3 first aired in the UK in 1996. It started a month or so after my Dad passed away and I was (at age 10) slightly adrift without any kind of male role model. Anyway, I digress; one weekend we had visitors for the weekend and Sunday evening rolled around and one of them asked if could watch something on the TV; that something, of course, turned out to be &#8216;Matters of Honor&#8217; I stuck around to watch it, not so much out of interest but because I was kind of lonely and I was hooked by the end of the opening credits. From there, every Sunday for the next few months became Babylon 5 night and I got more and more engrossed with each episode. I started to get caught up with the first two seasons on VHS in the week between parts 1 and 2 of &#8216;War Without End&#8217; I would love to be able to tell you how many times I have watched it the intervening 18 years&#8230; but I have lost count.
@@ -55,5 +53,3 @@ TIM: I think the #FreeBabylon5 campaign is a fantastic idea, spreading awareness
 &nbsp;
 
 Wouldn’t it be amazing if more young people had the opportunity to grow up with Babylon 5 in their lives as Tim did?  This is yet another huge reason to continue our letter writing campaigns and pushing to get Babylon 5 back on the air. #FreeBabylon5
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/09/Snapshot_20140901.jpg

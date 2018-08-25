@@ -14,8 +14,6 @@ Trying to banish insomnia is sometimes an impossible dream — as I know some of
 
 So I picked up an old issue of Titan Publishing&#8217;s Babylon 5 Magazine. The _very first issue_, as it happens, published in the UK in May 1996. Here, take a look:
 
-[<img class="alignnone size-medium wp-image-683" src="http://freeb5:8888/wp-content/uploads/2014/07/photo1-216x300.jpg" alt="photo1" width="216" height="300" />][1]
-
 The first page contains an introduction by JMS entitled &#8220;When Dreams Grow Teeth&#8221;. In part, JMS writes:
 
 &#8220;Just as those series that preceded Babylon 5 changed the world [&#8230;], just as they changed millions of lives, B5 is now touching millions more, as the inheritor of the dream.&#8221;
@@ -45,8 +43,6 @@ And **that&#8217;s** where this dream grows its wings.
 Where do we stand after a mere 10 months&#8217; campaigning? I&#8217;m sure you&#8217;d agree the campaign has grown teeth!
 
 Three countries have already responded to the call to #FreeBabylon5 — [the UK][2], [Denmark][3] and [Germany][4] — UKTV&#8217;s Watch channel even produced a trailer featuring the campaign — and we have no doubt that more countries will follow.
-
-[<img class="alignnone size-medium wp-image-130" src="http://freeb5:8888/wp-content/uploads/2013/11/watchpromo-300x183.jpg" alt="watchpromo" width="300" height="183" />][5]
 
 We also now have a presence at major conventions across the US and internationally, thanks to avid fans that I am pleased to know and support. And we have this website, an attempt to focus the campaign, gauge interest, centralise the campaign and act [as a hub to other sites and mediums that are still discussing the show][6].
 
@@ -79,14 +75,3 @@ It certainly feels great being a part of _this_ process.
 Let&#8217;s not give up the fight now. That would be premature.
 
 #FreeBabylon5.
-
-<img class="alignnone size-full wp-image-711" src="http://freeb5:8888/wp-content/uploads/2014/07/photo-2.jpg" alt="photo-2" width="700" height="970" />
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/07/photo1.jpg
- [2]: http://freeb5:8888/uktvs-watch-channel-rerunning-season-1/
- [3]: http://freeb5:8888/babylon-5-danish-6eren/
- [4]: http://freeb5:8888/babylon-5-tv-germany/
- [5]: http://freeb5:8888/wp-content/uploads/2013/11/watchpromo.jpg
- [6]: http://freeb5:8888/jumppoint/ "JumpPoint"
- [7]: http://freeb5:8888/resources/letter-writing-guide/ "Letter Writing Guide"
- [8]: http://freeb5:8888/san-diego-comic-con-details/

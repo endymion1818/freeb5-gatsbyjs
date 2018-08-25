@@ -18,8 +18,6 @@ I think you could say I&#8217;ve been a scifi fan all my life, as a child I watc
 
 My twitter handle is <a href="https://twitter.com/AnnetteKroeze" target="_blank">@AnnetteKroeze</a>.
 
-[<img class="aligncenter size-medium wp-image-933" src="http://freeb5:8888/wp-content/uploads/2014/08/Annette-300x238.jpeg" alt="Annette" width="300" height="238" />][1]
-
 ANA:  When was the first time you watched Babylon 5 and how many times have you watched it since? How did you get into it?
 
 ANNETTE:  I watched a few eps of B5 when it first aired, but didn&#8217;t really get into it then. I was more into Star Trek DS9 at the time (which I still love as well). I&#8217;d completely forgotten that B5 existed until 2009, when I went to FedCon (the biggest scifi convention in Europe). While standing in line for a photoshoot with Nichelle Nichols I started to chat with a German girl who was B5 fan. She was very enthusiastic and I decided I wanted to see the whole series. As soon as I got home I bought the dvd boxset with all 5 seasons, all the movies and the Lost Tales. By the time I got to the end of season 1 I was completely addicted.
@@ -59,5 +57,3 @@ ANNETTE:  I support the #FreeBabylon5 campaign because I think it&#8217;s impor
 &nbsp;
 
 Annette makes an excellent point, the 25<sup>th</sup> anniversary of Babylon 5 is up and coming, and wouldn’t it be great to have reruns all over the world by then? So I leave you with this thought – pick up those pens and write letters!! #FreeBabylon5
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/08/Annette.jpeg

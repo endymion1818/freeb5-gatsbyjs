@@ -25,7 +25,3 @@ They&#8217;re back! The popular #FreeBabylon5 Ambassadorial Pouch is available o
 All proceeds support the #FreeBabylon5 campaign.
 
 Click <a href="http://www.ebay.com/sch/freebabylon5/m.html?_ipg=50&_sop=12&_rdc=1" target="_blank">here</a> to get yours today!
-
-[<img class="aligncenter size-full wp-image-864" src="http://freeb5:8888/wp-content/uploads/2014/08/10543610_545210388938511_7567271959458787468_n.jpg" alt="10543610_545210388938511_7567271959458787468_n" width="261" height="195" />][1]
-
- [1]: http://freeb5:8888/wp-content/uploads/2014/08/10543610_545210388938511_7567271959458787468_n.jpg

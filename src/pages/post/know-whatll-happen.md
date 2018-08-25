@@ -9,9 +9,6 @@ categories:
 ---
 Looks like Lyta wants \*you\* to write letters to #FreeBabylon5&#8230;right now!
 
-<div style="width: 640px; " class="wp-video">
-  <video class="wp-video-shortcode" id="video-310-2" width="640" height="360" preload="metadata" controls="controls"><source type="video/mp4" src="http://freeb5:8888/wp-content/uploads/2014/01/Lyta.mp4?_=2" /><a href="http://freeb5:8888/wp-content/uploads/2014/01/Lyta.mp4">http://freeb5:8888/wp-content/uploads/2014/01/Lyta.mp4</a></video>
-</div>
 
 Kevin Tsujihara, CEO
 

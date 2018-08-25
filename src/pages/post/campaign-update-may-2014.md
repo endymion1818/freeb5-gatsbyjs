@@ -16,13 +16,11 @@ Here&#8217;s an overview:
 
 ### Our Audience
 
-[<img class="alignnone size-large wp-image-571" src="http://freeb5:8888/wp-content/uploads/2014/05/Screen-Shot-2014-05-05-at-10.42.53-1024x157.png" alt="Screen Shot 2014-05-05 at 10.42.53" width="770" height="118" />][1]
 
 As you can see, we&#8217;re getting a steady stream of visitors to the site. That&#8217;s a total of 1,709 visits between 8 March &#8211; 4 May. That&#8217;s an overall increase of 74% new sessions. These visitors stayed an average of 1 minute 45 seconds with a bounce rate of 56.52% (a bounce rate means they left the site within 30 seconds of arriving).
 
 Can anyone tell me why we had a huge spike on March 20? Whatever that was, it led to 182 visits.
 
-[<img class="alignnone size-full wp-image-572" src="http://freeb5:8888/wp-content/uploads/2014/05/Screen-Shot-2014-05-05-at-10.43.01.png" alt="Screen Shot 2014-05-05 at 10.43.01" width="253" height="244" />][2]
 
 It&#8217;s great to see that were still reaching new audiences, with 74% new visitors over the past two months. Every single fan involved in the campaign should be commended for finding new ways of spreading the word!
 
@@ -30,9 +28,6 @@ It&#8217;s great to see that were still reaching new audiences, with 74% new vis
 
 Where have our visitors come from? The printout from Google Analytics below demonstrates that we had most of our visitors direct. That&#8217;s 625 people who have either bookmarked the site, or typed it directly into the address bar of the browser. Hello to you!
 
-Long table:
-
-[<img class="alignnone size-full wp-image-578" src="http://freeb5:8888/wp-content/uploads/2014/05/Screen-Shot-2014-05-05-at-11.13.15.png" alt="Screen Shot 2014-05-05 at 11.13.15" width="316" height="815" />][3]
 
 This shows only the first 30 rows. There are many more. But we&#8217;re getting a load of visitors from Twitter (t.co in this list &#8211; which produced 125 clicks), where there are many active fans, and Facebook (94 visits).
 
@@ -52,8 +47,5 @@ If you&#8217;d like to get more involved in the campaign, we&#8217;re looking fo
 
 There are also a number of ways you can help: please visit our &#8220;Join Us&#8221; page to see how you could have a valuable input in helping to #FreeBabylon5.
 
- [1]: http://freeb5:8888/wp-content/uploads/2014/05/Screen-Shot-2014-05-05-at-10.42.53.png
- [2]: http://freeb5:8888/wp-content/uploads/2014/05/Screen-Shot-2014-05-05-at-10.43.01.png
- [3]: http://freeb5:8888/wp-content/uploads/2014/05/Screen-Shot-2014-05-05-at-11.13.15.png
  [4]: http://www.democraticunderground.com
  [5]: https://www.facebook.com/FreeBabylon5
