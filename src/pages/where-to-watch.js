@@ -35,8 +35,13 @@ const TextLink = styled(Link)`
 export default ({ data }) =>
     <Container>
     <Main>
-      <h2>Amazon Prime Video</h2>
-      <p>We heard via comingsoon.com and other sources that Warner Bros have struck a deal to show Babylon 5 on Amazon Prime Video begining in July 2018. We're not sure how long ths deal might be available for, so if you're an Amazon Prime customer, get it whilst you can.</p>
+      <h2>US: Comet TV</h2>
+      <p>US channel, calling itself "the true home of science fiction", will soon begin showing Babylon 5 as well as Space:1999. These classic shows add to its already stellar classic lineup.</p>
+
+      <p><TextLink to="/post/babylon-5-comet-tv-us">Post on freebabylon5</TextLink> &bull; <a href="https://www.comettv.com/">Website</a></p>
+
+      <h2>US: Amazon Prime Video</h2>
+      <p>We heard via comingsoon.com and other sources that Warner Bros have struck a deal to show Babylon 5 on Amazon Prime Video in the US only begining in July 2018. We're not sure how long ths deal might be available for, so if you're an Amazon Prime customer, get it whilst you can.</p>
 
       <a href="https://www.amazon.com/Prime-Instant-Video/">Watch now!</a>
 
