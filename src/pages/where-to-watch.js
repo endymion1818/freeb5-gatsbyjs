@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "gatsby-link"
+import Link, { withPrefix } from "gatsby-link"
 import styled from "styled-components"
 import '../global-styles.js'
 
@@ -45,8 +45,8 @@ export default ({ data }) =>
 
       <a href="https://www.amazon.com/Prime-Instant-Video/">Watch now!</a>
 
-      <p>This could not have come at a better time, as we heard that Go90 in the US and Pick in the UK have recently stopped showing the series. </p>
-
+      <h2>UK: Sky One</h2>
+      <p><Link to={withPrefix('/post/back-on-tv-uk/')}>Sky One will begin showing the series from 9am on Monday 29th October</Link>. This is great news, since it's a much more watched channel than many other outlets that have been showing the series in the past. I'm really hoping there will be many new fans that find the show this way.</p>
       <h2>Let us know!</h2>
 
       <p>We&#8217;ll try to keep you updated when we hear of airings. In the meantime, <TextLink href="https://facebook.com/freebabylon5">keep in touch via our Facebook page</TextLink>, as it&#8217;s likely that announcements will be made there first!</p>
