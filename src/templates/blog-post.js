@@ -1,73 +1,101 @@
-import React from "react"
-import {Helmet} from "react-helmet"
-import styled from "styled-components"
-import '../global-styles.js'
+import React from 'react'
+import PropTypes from 'prop-types'
+import { kebabCase } from 'lodash'
+import Helmet from 'react-helmet'
+import { graphql, Link } from 'gatsby'
+import Layout from '../components/Layout'
+import Content, { HTMLContent } from '../components/Content'
 
-const Container = styled.section`
-  padding: 2em;
-  max-width: 1200px;
-  margin: 0 auto;
-  color: white;
+export const BlogPostTemplate = ({
+  content,
+  contentComponent,
+  description,
+  tags,
+  title,
+  helmet,
+}) => {
+  const PostContent = contentComponent || Content
 
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-  }
-  a {
-    color: #428bca;
-  }
-`;
-const Main = styled.main`
-  background: rgba(255, 255, 255, 0.75);
-  color: black;
-  padding: 15px;
-  border-radius: 15px;
-
-  min-height: 80vh;
-
-  img {
-    max-width: 100%;
-  }
-  @media (min-width: 768px) {
-    flex: 2;
-  }
-`;
-const Aside = styled.aside`
-  @media (min-width: 768px) {
-    flex: 1;
-  }
-`;
-export default ({ data }) => {
-  const post = data.markdownRemark
   return (
-    <Container>
-    <Helmet title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`} />
-      <Main>
-        <h1>
-          {post.frontmatter.title}
-        </h1>
-        Posted on: <span>{post.frontmatter.date}</span>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </Main>
-      <Aside>
-      </Aside>
-    </Container>
+    <section className="section">
+      {helmet || ''}
+      <div className="container content">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+              {title}
+            </h1>
+            <p>{description}</p>
+            <PostContent content={content} />
+            {tags && tags.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {tags.map(tag => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 
-export const query = graphql`
-  query BlogPostQuery($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+BlogPostTemplate.propTypes = {
+  content: PropTypes.node.isRequired,
+  contentComponent: PropTypes.func,
+  description: PropTypes.string,
+  title: PropTypes.string,
+  helmet: PropTypes.object,
+}
+
+const BlogPost = ({ data }) => {
+  const { markdownRemark: post } = data
+
+  return (
+    <Layout>
+      <BlogPostTemplate
+        content={post.html}
+        contentComponent={HTMLContent}
+        description={post.frontmatter.description}
+        helmet={
+          <Helmet
+            titleTemplate="%s | Blog"
+          >
+            <title>{`${post.frontmatter.title}`}</title>
+            <meta name="description" content={`${post.frontmatter.description}`} />
+          </Helmet>
+        }
+        tags={post.frontmatter.tags}
+        title={post.frontmatter.title}
+      />
+    </Layout>
+  )
+}
+
+BlogPost.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+  }),
+}
+
+export default BlogPost
+
+export const pageQuery = graphql`
+  query BlogPostByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
       html
       frontmatter {
+        date(formatString: "MMMM DD, YYYY")
         title
-        type
-        date(formatString: "DD MMMM, YYYY")
+        description
+        tags
       }
     }
   }
