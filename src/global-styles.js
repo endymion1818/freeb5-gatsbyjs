@@ -6,6 +6,6 @@ injectGlobal`
   }
   @font-face {
      font-family: 'SerpentineMedium';
-     src: url('/SerpentineMedium.woff');
+     src: url('./assets/serpentine.woff2');
   }
 `
