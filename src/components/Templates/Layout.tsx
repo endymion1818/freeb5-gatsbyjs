@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet"
+import * as React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 export default ({ children }) => (

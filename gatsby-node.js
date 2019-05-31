@@ -1,84 +1,66 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNodeField } = boundActionCreators
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
-  }
-}
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
 
-// const createCategoryPages = (createPage, edges) => {
-//   const tagTemplate = path.resolve(`src/templates/catgories.js`);
-//   const posts = {};
-
-//   edges
-//     .forEach(({ node }) => {
-//       if (node.frontmatter.categories) {
-//         node.frontmatter.categories
-//           .forEach(categories => {
-//             if (!posts[categories]) {
-//               posts[categories] = [];
-//             }
-//             posts[categories].push(node);
-//           });
-//       }
-//     });
-
-//   createPage({
-//     path: '/categories',
-//     component: path.resolve(`./src/templates/categories.js`),
-//     context: {
-//       posts
-//     }
-//   });
-
-//   Object.keys(posts)
-//     .forEach(categoryName => {
-//       const post = posts[categoryName];
-//       createPage({
-//         path: `/categories/${categoryName}`,
-//         component: categoryTemplate,
-//         context: {
-//           posts,
-//           post,
-//           tag: categoryName
-//         }
-//       })
-//     });
-// };
-
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
-  return new Promise((resolve, reject) => {
-    graphql(`
+  const blogPostTemplate = path.resolve(`./src/components/Templates/Post.tsx`)
+  return graphql(
+    `
       {
-        allMarkdownRemark {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+        ) {
           edges {
             node {
               fields {
                 slug
               }
+              frontmatter {
+                title
+              }
             }
           }
         }
       }
-    `).then(result => {
-      result.data.allMarkdownRemark.edges.map(({ node }) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve(`./src/templates/Post.tsx`),
-          context: {
-            slug: node.fields.slug,
-          },
-        })
+    `
+  ).then(result => {
+    if (result.errors) {
+      throw result.errors
+    }
+
+    // Create blog posts pages.
+    const posts = result.data.allMarkdownRemark.edges
+
+    posts.forEach((post, index) => {
+      const previous = index === posts.length - 1 ? null : posts[index + 1].node
+      const next = index === 0 ? null : posts[index - 1].node
+
+      createPage({
+        path: post.node.fields.slug,
+        component: blogPostTemplate,
+        context: {
+          slug: post.node.fields.slug,
+          previous,
+          next,
+        },
       })
-      resolve()
     })
+
+    return null
   })
+}
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
 }
