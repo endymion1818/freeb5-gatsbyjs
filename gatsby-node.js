@@ -13,45 +13,45 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   }
 }
 
-const createCategoryPages = (createPage, edges) => {
-  const tagTemplate = path.resolve(`src/templates/catgories.js`);
-  const posts = {};
+// const createCategoryPages = (createPage, edges) => {
+//   const tagTemplate = path.resolve(`src/templates/catgories.js`);
+//   const posts = {};
 
-  edges
-    .forEach(({ node }) => {
-      if (node.frontmatter.categories) {
-        node.frontmatter.categories
-          .forEach(categories => {
-            if (!posts[categories]) {
-              posts[categories] = [];
-            }
-            posts[categories].push(node);
-          });
-      }
-    });
+//   edges
+//     .forEach(({ node }) => {
+//       if (node.frontmatter.categories) {
+//         node.frontmatter.categories
+//           .forEach(categories => {
+//             if (!posts[categories]) {
+//               posts[categories] = [];
+//             }
+//             posts[categories].push(node);
+//           });
+//       }
+//     });
 
-  createPage({
-    path: '/categories',
-    component: path.resolve(`./src/templates/categories.js`),
-    context: {
-      posts
-    }
-  });
+//   createPage({
+//     path: '/categories',
+//     component: path.resolve(`./src/templates/categories.js`),
+//     context: {
+//       posts
+//     }
+//   });
 
-  Object.keys(posts)
-    .forEach(categoryName => {
-      const post = posts[categoryName];
-      createPage({
-        path: `/categories/${categoryName}`,
-        component: categoryTemplate,
-        context: {
-          posts,
-          post,
-          tag: categoryName
-        }
-      })
-    });
-};
+//   Object.keys(posts)
+//     .forEach(categoryName => {
+//       const post = posts[categoryName];
+//       createPage({
+//         path: `/categories/${categoryName}`,
+//         component: categoryTemplate,
+//         context: {
+//           posts,
+//           post,
+//           tag: categoryName
+//         }
+//       })
+//     });
+// };
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -72,7 +72,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       result.data.allMarkdownRemark.edges.map(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`./src/templates/blog-post.js`),
+          component: path.resolve(`./src/templates/Post.tsx`),
           context: {
             slug: node.fields.slug,
           },

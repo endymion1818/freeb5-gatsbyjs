@@ -4,6 +4,7 @@ module.exports = {
     title: `#FreeBabylon5.com`,
   },
   plugins: [
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
