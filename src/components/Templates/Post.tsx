@@ -3,17 +3,26 @@ import {graphql} from 'gatsby'
 import Layout from './Layout'
 import { Helmet } from 'react-helmet'
 
-export interface IPostTemplateProps {
-    data: {
-        site: {
-            siteMetadata: {
-                title: string
-            }
+interface IPostTemplateProps {
+  data: {
+    site: {
+      siteMetadata: {
+        title: string
+        description: string
+        author: {
+          name: string
+          url: string
         }
-        markdownRemark: {
-            html: string
-        }  
+      }
     }
+    markdownRemark: {
+      html: string
+      excerpt: string
+      frontmatter: {
+        title: string
+      }
+    }
+  }
 }
 
 export const frontmatter = {
