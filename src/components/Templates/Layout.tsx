@@ -18,8 +18,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-
-
 const Layout: React.SFC = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -45,3 +43,4 @@ const Layout: React.SFC = ({ children }) => (
     )}
   />
 )
+export default Layout

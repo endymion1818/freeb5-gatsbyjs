@@ -15,6 +15,12 @@
     "typecheck": "tsc --noEmit",
     "test": "react-scripts test"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint:fix",
+      "pre-push": "yarn lint"
+    }
+  },
   "dependencies": {
     "@material-ui/core": "^4.0.1",
     "@types/react-helmet": "^5.0.8",
