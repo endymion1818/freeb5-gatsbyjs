@@ -4,5 +4,5 @@
         "prettier --write '**.*.{ts, tsx}",
         "git add"
     ],
-    
+    "*.{js, jsx, json}": ["prettier --write 'src/**/*.{js,jsx}", "git add"]
 }
