@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet"
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import { createGlobalStyle } from "styled-components"
+import { graphql, StaticQuery } from 'gatsby'
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { createGlobalStyle } from 'styled-components'
 import serpentine from '../../assets/serpentine.woff2'
 
-interface StaticQueryProps {
+interface IStaticQueryProps {
   site: {
     siteMetadata: {
       title: string
@@ -49,17 +49,14 @@ const Layout: React.SFC = ({ children }) => (
         }
       }
     `}
-    render={(data: StaticQueryProps) => (
+    render={(data: IStaticQueryProps) => (
       <>
         <GlobalStyle />
         <Helmet>
-            <title>{data.site.siteMetadata.title}</title>
-            <meta name="description" content="FreeBabylon5"/>
-
+          <title>{data.site.siteMetadata.title}</title>
+          <meta name="description" content="FreeBabylon5" />
         </Helmet>
-        <div className="layout">
-          {children}
-        </div>
+        <div className="layout">{children}</div>
       </>
     )}
   />

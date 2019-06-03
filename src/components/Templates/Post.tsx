@@ -1,7 +1,7 @@
-import React, {FC} from 'react'
-import {graphql} from 'gatsby'
-import Layout from './Layout'
+import { graphql } from 'gatsby'
+import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
+import Layout from './Layout'
 
 interface IPostTemplateProps {
   data: {
@@ -25,22 +25,21 @@ interface IPostTemplateProps {
   }
 }
 
-export const frontmatter = {
+export const frontmatter = {}
 
-}
- 
-const PostTemplate: FC<IPostTemplateProps> = ({data}) => {
-    const {html} = data.markdownRemark
-    return (
+const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
+  const { html } = data.markdownRemark
+  return (
     <Layout>
-        <Helmet>
-            <title>{data.site.siteMetadata.title}</title>
-            <meta name="description" content="#FreeBabylon5"/>
-        </Helmet>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Helmet>
+        <title>{data.site.siteMetadata.title}</title>
+        <meta name="description" content="#FreeBabylon5" />
+      </Helmet>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
-);}
- 
+  )
+}
+
 export default PostTemplate
 
 export const query = graphql`

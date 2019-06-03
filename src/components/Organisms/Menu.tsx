@@ -1,16 +1,16 @@
-import React from 'react';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
+import AppBar from '@material-ui/core/AppBar'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import FormGroup from '@material-ui/core/FormGroup'
+import IconButton from '@material-ui/core/IconButton'
+import Menu from '@material-ui/core/Menu'
+import MenuItem from '@material-ui/core/MenuItem'
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
+import Switch from '@material-ui/core/Switch'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import AccountCircle from '@material-ui/icons/AccountCircle'
+import MenuIcon from '@material-ui/icons/Menu'
+import React from 'react'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,25 +23,25 @@ const useStyles = makeStyles((theme: Theme) =>
     title: {
       flexGrow: 1,
     },
-  }),
-);
+  })
+)
 
 function MenuAppBar() {
-  const classes = useStyles();
-  const [auth, setAuth] = React.useState(true);
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
+  const classes = useStyles()
+  const [auth, setAuth] = React.useState(true)
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
+  const open = Boolean(anchorEl)
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setAuth(event.target.checked);
+    setAuth(event.target.checked)
   }
 
   function handleMenu(event: React.MouseEvent<HTMLElement>) {
-    setAnchorEl(event.currentTarget);
+    setAnchorEl(event.currentTarget)
   }
 
   function handleClose() {
-    setAnchorEl(null);
+    setAnchorEl(null)
   }
 
   return (
@@ -63,7 +63,7 @@ function MenuAppBar() {
         </Toolbar>
       </AppBar>
     </div>
-  );
+  )
 }
 
-export default MenuAppBar;
+export default MenuAppBar

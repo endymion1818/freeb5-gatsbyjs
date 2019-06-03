@@ -10,10 +10,10 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint:fix": "yarn lint --fix",
+    "format": "prettier --write '**/*.{js, jsx, ts, tsx}'",
+    "test": "jest --config ./etc/test/jest/config.js",
     "typecheck": "tsc --noEmit",
-    "test": "react-scripts test"
+    "lint": "tslint -c ./tslint.json 'src/**.{ts, tsx}'"
   },
   "husky": {
     "hooks": {
@@ -30,12 +30,20 @@
     "gatsby-plugin-twitter": "^2.0.13",
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-transformer-remark": "^2.3.12",
+    "react": "^16.8.6",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.2.1"
   },
   "devDependencies": {
     "@types/react-helmet": "^5.0.8",
     "@types/styled-components": "^4.1.15",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
     "gatsby-plugin-typescript": "^2.0.15",
     "husky": "^2.3.0",
     "lint-staged": "^8.1.7",
