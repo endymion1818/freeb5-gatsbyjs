@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 export interface IWrapperProps {
+  /**
+   * background colour
+   * @default 'white'
+   */
   backgroundColour?: string
 }
 
