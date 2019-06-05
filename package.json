@@ -12,12 +12,11 @@
     "serve": "gatsby serve",
     "format": "prettier --write '**/*.{js, jsx, ts, tsx}'",
     "test": "jest --config ./etc/test/jest/config.js",
-    "typecheck": "tsc --noEmit",
     "lint": "tslint -c ./tslint.json 'src/**.{ts, tsx}'"
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn typecheck && yarn lint && yarn yest",
+      "pre-push": "yarn lint && yarn yest",
       "pre-commit": "lint-staged -c ./lintstaged.json"
     }
   },
