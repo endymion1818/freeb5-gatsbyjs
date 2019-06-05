@@ -9,10 +9,10 @@ export interface IRowProps {
   size?: number
   /**
    * breakpoint
-   *  @default variable.EBREAKPOINT.MEDIUM
+   *  @default variable.EBREAKPOINT.LARGE
    */
 
-  breakpoint?: string
+  breakpoint?: variable.EBREAKPOINT
 }
 
 const Row = styled.div<IRowProps>`
@@ -47,7 +47,7 @@ const Row = styled.div<IRowProps>`
 
 Row.defaultProps = {
   size: 1,
-  breakpoint: '75rem',
+  breakpoint: variable.EBREAKPOINT.LARGE,
 }
 
 export default Row

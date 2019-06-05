@@ -12,6 +12,7 @@ export enum EBREAKPOINT {
   LARGE = '75em',
 }
 export enum ESIZE {
+  ZERO = '0rem',
   SINGLE = '1rem',
   SINGLEPLUSHALF = '1.5rem',
   DOUBLE = '2rem',

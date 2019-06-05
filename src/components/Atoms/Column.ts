@@ -1,26 +1,27 @@
 import styled from 'styled-components'
+import * as variable from '../constants'
 
 export interface IColumnProps {
   /**
    * alignment along vertical axis
-   * @default center
+   * @default variable.EFLEXALIGN.CENTER
    */
-  verticalAlign?: string
+  verticalAlign?: variable.EFLEXALIGN
   /**
    * gap above top of item
-   * @default 0
+   * @default variable.ESIZE.ZERO
    */
-  bufferTop?: string
+  bufferTop?: variable.ESIZE
   /**
    * gap below bottom of item
-   * @default 0
+   * @default variable.ESIZE.ZERO
    */
-  bufferBottom?: string
+  bufferBottom?: variable.ESIZE
   /**
    * text alignment
-   * @default left
+   * @default variable.ETEXTALIGN.LEFT
    */
-  textAlign?: string
+  textAlign?: variable.ETEXTALIGN
 }
 
 const Column = styled.div<IColumnProps>`
@@ -55,9 +56,9 @@ const Column = styled.div<IColumnProps>`
 `
 
 Column.defaultProps = {
-  verticalAlign: 'center',
-  textAlign: 'left',
-  bufferTop: '0rem',
-  bufferBottom: '0rem',
+  verticalAlign: variable.EFLEXALIGN.CENTER,
+  textAlign: variable.ETEXTALIGN.LEFT,
+  bufferTop: variable.ESIZE.ZERO,
+  bufferBottom: variable.ESIZE.ZERO,
 }
 export default Column

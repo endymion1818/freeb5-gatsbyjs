@@ -1,8 +1,32 @@
 import React, { FC } from 'react'
 import Column from '../Atoms/Column'
 import Row from '../Atoms/Row'
+import * as variable from '../constants'
 
-export interface IRenderContentProps {
+export interface IEvenColumnsGlobalProps {
+  /**
+   * text alignment
+   * @default variable.ETEXTALIGN.LEFT
+   */
+  textAlign?: variable.ETEXTALIGN
+  /**
+   * buffer top
+   * @default variable.ESIZE
+   */
+  bufferTop?: variable.ESIZE
+  /**
+   * buffer bottom
+   * @default variable.ESIZE
+   */
+  bufferBottom?: variable.ESIZE
+  /**
+   * vertical align
+   * @default variable.EFLEXALIGN.TOP
+   */
+  verticalAlign?: variable.EFLEXALIGN
+}
+
+export interface IRenderContentProps extends IEvenColumnsGlobalProps {
   /**
    * an array of objects with JSX elements
    * @default <>&nbsp;</>
@@ -13,35 +37,15 @@ export interface IRenderContentProps {
    * @default 0
    */
   index: number
-  /**
-   * text alignment
-   * @default 'left'
-   */
-  textAlign?: string
-  /**
-   * buffer top
-   * @default '0rem'
-   */
-  bufferTop?: string
-  /**
-   * buffer bottom
-   * @default '0rem'
-   */
-  bufferBottom?: string
-  /**
-   * vertical align
-   * @default 'top'
-   */
-  verticalAlign?: string
 }
 
 export const renderContent: FC<IRenderContentProps> = ({
   item,
   index,
   textAlign = 'left',
-  bufferBottom = '0rem',
-  bufferTop = '0rem',
-  verticalAlign = 'top',
+  bufferBottom = variable.ESIZE.ZERO,
+  bufferTop = variable.ESIZE.ZERO,
+  verticalAlign = variable.EFLEXALIGN.START,
 }) => (
   <Column
     key={index}
@@ -54,7 +58,7 @@ export const renderContent: FC<IRenderContentProps> = ({
   </Column>
 )
 
-export interface IEvenColumnsProps {
+export interface IEvenColumnsProps extends IEvenColumnsGlobalProps {
   /**
    * an array of objects with JSX elements
    * @default <>&nbsp;</>
@@ -65,26 +69,6 @@ export interface IEvenColumnsProps {
    * @default 0
    */
   index?: number
-  /**
-   * text alignment
-   * @default 'left'
-   */
-  textAlign?: string
-  /**
-   * buffer top
-   * @default '0rem'
-   */
-  bufferTop?: string
-  /**
-   * buffer bottom
-   * @default '0rem'
-   */
-  bufferBottom?: string
-  /**
-   * vertical align
-   * @default 'top'
-   */
-  verticalAlign?: string
 }
 
 const EvenColumns: FC<IEvenColumnsProps> = ({
@@ -115,10 +99,10 @@ EvenColumns.defaultProps = {
     },
   ],
   index: 0,
-  textAlign: 'left',
-  bufferTop: '0rem',
-  bufferBottom: '0rem',
-  verticalAlign: 'top',
+  textAlign: variable.ETEXTALIGN.LEFT,
+  bufferTop: variable.ESIZE.ZERO,
+  bufferBottom: variable.ESIZE.ZERO,
+  verticalAlign: variable.EFLEXALIGN.START,
 }
 
 export default EvenColumns

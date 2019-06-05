@@ -4,9 +4,9 @@ import * as variable from '../constants'
 export interface IContainerProps {
   /**
    * maximum width of container
-   * @default 1
+   * @default variable.EBREAKPOINT.LARGE
    */
-  maxWidth?: string
+  maxWidth?: variable.EBREAKPOINT
 }
 
 const Container = styled.div<IContainerProps>`
@@ -19,5 +19,5 @@ const Container = styled.div<IContainerProps>`
 export default Container
 
 Container.defaultProps = {
-  maxWidth: '75rem',
+  maxWidth: variable.EBREAKPOINT.LARGE,
 }
