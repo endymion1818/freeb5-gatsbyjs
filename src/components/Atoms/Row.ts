@@ -19,6 +19,7 @@ const Row = styled.div<IRowProps>`
   @media (min-width: ${({ breakpoint }) => breakpoint}) {
     display: grid;
     grid-template-columns: repeat(${({ size }) => (size ? size : 100)}, 1fr);
+    grid-gap: 15px;
   }
   /* IE fallback to float since Grid version is older & likely */
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

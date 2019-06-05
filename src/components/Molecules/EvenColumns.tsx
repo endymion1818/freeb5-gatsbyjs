@@ -42,7 +42,7 @@ export interface IRenderContentProps extends IEvenColumnsGlobalProps {
 export const renderContent: FC<IRenderContentProps> = ({
   item,
   index,
-  textAlign = 'left',
+  textAlign = variable.ETEXTALIGN.LEFT,
   bufferBottom = variable.ESIZE.ZERO,
   bufferTop = variable.ESIZE.ZERO,
   verticalAlign = variable.EFLEXALIGN.START,

@@ -10,10 +10,11 @@ export interface IContainerProps {
 }
 
 const Container = styled.div<IContainerProps>`
-  width: 100%;
   max-width: ${({ maxWidth }) => maxWidth};
   margin-left: auto;
   margin-right: auto;
+  padding-left: ${variable.ESIZE.SINGLE};
+  padding-right: ${variable.ESIZE.SINGLE};
 `
 
 export default Container
