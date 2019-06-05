@@ -1,6 +1,9 @@
 import { graphql } from 'gatsby'
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
+import Container from '../Atoms/Container'
+import Wrapper from '../Atoms/Wrapper'
+import EvenColumns from '../Molecules/EvenColumns'
 import Layout from './Layout'
 
 interface IPostTemplateProps {
@@ -20,22 +23,41 @@ interface IPostTemplateProps {
       excerpt: string
       frontmatter: {
         title: string
+        date: string
       }
     }
   }
 }
 
-export const frontmatter = {}
-
 const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
   const { html } = data.markdownRemark
+  const { title } = data.markdownRemark.frontmatter
+  const { date } = data.markdownRemark.frontmatter
   return (
     <Layout>
       <Helmet>
         <title>{data.site.siteMetadata.title}</title>
         <meta name="description" content="#FreeBabylon5" />
       </Helmet>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Wrapper>
+        <Container>
+          <EvenColumns
+            content={[
+              {
+                innerContent: (
+                  <>
+                    <header>
+                      <h1>{title}</h1>
+                    </header>
+                    <section dangerouslySetInnerHTML={{ __html: html }} />
+                    <footer>Published on: {date}</footer>
+                  </>
+                ),
+              },
+            ]}
+          />
+        </Container>
+      </Wrapper>
     </Layout>
   )
 }

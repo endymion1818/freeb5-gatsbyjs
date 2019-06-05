@@ -2,20 +2,12 @@ import React, { FC } from 'react'
 import Column from '../Atoms/Column'
 import Row from '../Atoms/Row'
 
-export interface IContentProps {
-  /**
-   * an array of objects with JSX elements
-   * @default <>&nbsp;</>
-   */
-  innerContent: JSX.Element
-}
-
 export interface IRenderContentProps {
   /**
    * an array of objects with JSX elements
    * @default <>&nbsp;</>
    */
-  item: IContentProps
+  item: { innerContent: JSX.Element }
   /**
    * index
    * @default 0
@@ -62,7 +54,7 @@ export const renderContent: FC<IRenderContentProps> = ({
   </Column>
 )
 
-export interface IEvenColumnsProps extends IContentProps {
+export interface IEvenColumnsProps {
   /**
    * an array of objects with JSX elements
    * @default <>&nbsp;</>
@@ -72,7 +64,7 @@ export interface IEvenColumnsProps extends IContentProps {
    * index
    * @default 0
    */
-  index: number
+  index?: number
   /**
    * text alignment
    * @default 'left'
@@ -116,6 +108,17 @@ const EvenColumns: FC<IEvenColumnsProps> = ({
   </Row>
 )
 
-Column.defaultProps = {}
+EvenColumns.defaultProps = {
+  content: [
+    {
+      innerContent: <div>test</div>,
+    },
+  ],
+  index: 0,
+  textAlign: 'left',
+  bufferTop: '0rem',
+  bufferBottom: '0rem',
+  verticalAlign: 'top',
+}
 
 export default EvenColumns

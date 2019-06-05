@@ -12,7 +12,7 @@ export interface IRowProps {
    *  @default variable.EBREAKPOINT.MEDIUM
    */
 
-  breakpoint?: variable.EBREAKPOINT
+  breakpoint?: string
 }
 
 const Row = styled.div<IRowProps>`
@@ -30,10 +30,10 @@ const Row = styled.div<IRowProps>`
       width: ${({ size }) => (size <= 1 ? 100 : (size / 10) * 100)}%;
 
       &:not(:first-child) {
-        margin-left: ${variable.ESIZE.SINGLE};
+        margin-left: 1rem;
       }
       &:not(:last-child) {
-        margin-right: ${variable.ESIZE.SINGLE};
+        margin-right: 1rem;
       }
     }
     /* clear floats */
@@ -47,7 +47,7 @@ const Row = styled.div<IRowProps>`
 
 Row.defaultProps = {
   size: 1,
-  breakpoint: variable.EBREAKPOINT.MEDIUM,
+  breakpoint: '75rem',
 }
 
 export default Row

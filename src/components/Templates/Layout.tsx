@@ -56,7 +56,7 @@ const Layout: React.SFC = ({ children }) => (
           <title>{data.site.siteMetadata.title}</title>
           <meta name="description" content="FreeBabylon5" />
         </Helmet>
-        <div className="layout">{children}</div>
+        <main className="main">{children}</main>
       </>
     )}
   />
