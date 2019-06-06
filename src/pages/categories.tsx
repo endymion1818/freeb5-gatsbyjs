@@ -41,7 +41,7 @@ const CategoriesPage: FC<ICategoriesPageProps> = ({
       <ul>
         {group.map(category => (
           <li key={category.fieldValue}>
-            <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
+            <Link to={`/categories/${kebabCase(category.fieldValue)}/`}>
               {category.fieldValue} ({category.totalCount})
             </Link>
           </li>
