@@ -16,7 +16,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn lint && yarn jest",
+      "pre-push": "yarn lint && yarn test",
       "pre-commit": "lint-staged -c ./lintstaged.json"
     }
   },
