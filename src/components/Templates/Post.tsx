@@ -22,6 +22,8 @@ interface IPostTemplateProps {
       html: string
       excerpt: string
       frontmatter: {
+        featuredImage: string
+        featuredImageAlt: string
         title: string
         date: string
       }
@@ -33,6 +35,8 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
   const { html } = data.markdownRemark
   const { title } = data.markdownRemark.frontmatter
   const { date } = data.markdownRemark.frontmatter
+  const { featuredImage } = data.markdownRemark.frontmatter
+  const { featuredImageAlt } = data.markdownRemark.frontmatter
   return (
     <Layout>
       <Helmet>
@@ -48,6 +52,7 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
                   <>
                     <header>
                       <h1>{title}</h1>
+                      {featuredImage && <img src={featuredImage} alt={featuredImageAlt} />}
                     </header>
                     <section dangerouslySetInnerHTML={{ __html: html }} />
                     <footer>Published on: {date}</footer>

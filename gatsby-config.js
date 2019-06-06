@@ -26,8 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `content`,
-        path: `${__dirname}/content`,
+        name: `post`,
+        path: `${__dirname}/src/pages/post`,
       },
     },
     `gatsby-plugin-sharp`,
