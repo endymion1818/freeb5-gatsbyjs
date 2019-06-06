@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     pathPrefix: '/',
     title: siteTitle,
+    siteUrl: `https://www.freebabylon5.com`,
   },
   plugins: [
     `gatsby-plugin-typescript`,

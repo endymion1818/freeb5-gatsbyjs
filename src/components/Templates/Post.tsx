@@ -26,6 +26,7 @@ interface IPostTemplateProps {
         featuredImageAlt: string
         title: string
         date: string
+        categories: string[]
       }
     }
   }
@@ -55,7 +56,10 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
                       {featuredImage && <img src={featuredImage} alt={featuredImageAlt} />}
                     </header>
                     <section dangerouslySetInnerHTML={{ __html: html }} />
-                    <footer>Published on: {date}</footer>
+                    <footer>
+                      <time>Published on: {date}</time>
+                      <div>Categories: </div>
+                    </footer>
                   </>
                 ),
               },
