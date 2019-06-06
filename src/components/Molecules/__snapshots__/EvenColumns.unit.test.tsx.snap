@@ -44,10 +44,11 @@ exports[`<EvenColumns /> Should render 1`] = `
   width: 100%;
 }
 
-@media (min-width:75rem) {
+@media (min-width:75em) {
   .c0 {
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    grid-gap: 15px;
   }
 }
 
