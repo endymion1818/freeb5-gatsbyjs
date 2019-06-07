@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: UK Convention Dates
 author: Ranger 3ndymion
 type: post

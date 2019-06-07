@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'SDCC Panel: “The Art of Babylon 5”'
 type: post
 date: 2014-07-15T00:19:45+00:00

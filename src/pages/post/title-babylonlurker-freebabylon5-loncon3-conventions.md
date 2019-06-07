@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: '#FreeBabylon5 at Loncon3 and other conventions'
 type: post
 date: 2014-08-26T04:53:12+00:00

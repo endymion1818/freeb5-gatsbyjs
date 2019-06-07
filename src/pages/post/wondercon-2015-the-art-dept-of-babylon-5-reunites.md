@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'WonderCon 2015: The Art Dept of Babylon 5 Reunites'
 type: post
 date: 2015-03-30T11:08:06+00:00

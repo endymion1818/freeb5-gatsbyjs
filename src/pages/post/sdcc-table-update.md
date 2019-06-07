@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: SDCC Table Update
 type: post
 date: 2014-06-12T12:50:27+00:00

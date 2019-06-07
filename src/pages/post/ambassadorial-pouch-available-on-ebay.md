@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Ambassadorial Pouch Available on Ebay
 type: post
 date: 2014-03-24T21:45:45+00:00

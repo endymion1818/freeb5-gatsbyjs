@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: One Year On
 type: post
 date: 2014-10-10T14:19:10+00:00

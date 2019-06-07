@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: '#FreeBabylon5 Megacon Orlando Report'
 author: Ranger 3ndymion
 type: post

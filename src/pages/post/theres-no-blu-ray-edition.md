@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Why There’s No Blu-Ray Edition
 author: Ranger 3ndymion
 type: post

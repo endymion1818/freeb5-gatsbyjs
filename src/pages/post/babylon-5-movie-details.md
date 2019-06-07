@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 Movie Details
 type: post
 date: 2014-07-27T18:57:07+00:00

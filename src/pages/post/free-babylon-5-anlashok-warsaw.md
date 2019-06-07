@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Free Babylon 5!! (Anla’Shok Warsaw)
 type: post
 date: 2014-02-09T20:44:19+00:00

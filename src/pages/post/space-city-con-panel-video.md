@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Space City Con Panel Video
 type: post
 date: 2014-01-27T10:37:21+00:00

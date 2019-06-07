@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Join @babylonlurker Jan at Loncon 2014
 author: Ranger 3ndymion
 type: post

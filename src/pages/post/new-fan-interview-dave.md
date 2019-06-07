@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'New Fan Interview: Dave'
 type: post
 date: 2014-08-11T15:27:36+00:00

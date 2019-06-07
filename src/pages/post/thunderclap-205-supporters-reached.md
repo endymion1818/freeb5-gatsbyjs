@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Thunderclap: 205 Supporters Reached!!'
 author: Ranger 3ndymion
 type: post

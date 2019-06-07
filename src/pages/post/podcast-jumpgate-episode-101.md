@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Podcast Jumpgate Episode 101 - No Compromises
 author: Ranger 3ndymion
 type: post

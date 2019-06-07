@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: More Ambassadorial Kits Available!
 type: post
 date: 2014-06-30T12:30:50+00:00

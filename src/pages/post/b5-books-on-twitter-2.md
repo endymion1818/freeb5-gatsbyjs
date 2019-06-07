@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: B5 Books on Twitter
 author: Ranger 3ndymion
 type: post

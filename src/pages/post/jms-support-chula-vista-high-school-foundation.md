@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'JMS: Support Chula Vista High School Foundation'
 type: post
 date: 2015-05-18T08:58:15+00:00

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Support Patricia Tallman’s Charity
 type: post
 date: 2014-11-02T14:37:02+00:00

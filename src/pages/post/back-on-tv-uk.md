@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: B5 Back on TV in the UK!
 author: Ranger 3ndymion
 type: post

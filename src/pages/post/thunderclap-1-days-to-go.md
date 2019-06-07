@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Thunderclap: 16 Days To Go!'
 type: post
 date: 2013-12-30T20:54:00+00:00

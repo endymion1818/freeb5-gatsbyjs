@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: The Audio Guide to Babylon 5 Episode 99 - Phoenix Rising
 author: Ranger 3ndymion
 type: post

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: More Auctions Starting Friday 10AM (EST)
 author: Ranger 3ndymion
 type: post

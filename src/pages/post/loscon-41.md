@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Loscon 41
 type: post
 date: 2014-09-25T16:32:42+00:00

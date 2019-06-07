@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Convention Season Campaign
 type: post
 date: 2014-02-14T20:42:09+00:00

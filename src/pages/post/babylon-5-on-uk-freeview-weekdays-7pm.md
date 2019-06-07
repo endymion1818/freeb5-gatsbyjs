@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 Now Showing On UK's Pick Channel, Weekdays 7PM
 author: Ranger 3ndymion
 type: post

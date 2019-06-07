@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Walter Koenig on Reddit
 type: post
 date: 2015-12-15T08:31:26+00:00

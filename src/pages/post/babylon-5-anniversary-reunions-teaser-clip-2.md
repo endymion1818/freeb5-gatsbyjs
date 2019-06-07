@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Babylon 5: Anniversary Reunions Teaser Clip #2'
 type: post
 date: 2015-06-13T20:42:39+00:00

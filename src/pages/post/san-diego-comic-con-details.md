@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: San Diego Comic Con Details
 type: post
 date: 2014-07-05T07:30:22+00:00

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Petition Warner Brothers for B5 in HD!
 author: Ranger 3ndymion
 type: post

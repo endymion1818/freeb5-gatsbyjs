@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 Seasons Available on Amazon
 type: post
 date: 2014-08-07T06:33:01+00:00

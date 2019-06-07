@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: The Name of the Pod Episode 24 - Points of Departure
 author: Ranger 3ndymion
 type: post

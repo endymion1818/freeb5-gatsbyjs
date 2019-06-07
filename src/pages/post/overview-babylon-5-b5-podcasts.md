@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Overview of Babylon 5 Podcasts
 type: post
 date: 2014-08-01T07:09:16+00:00

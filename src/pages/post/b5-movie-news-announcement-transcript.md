@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'B5 Movie News: Announcement Transcript'
 type: post
 date: 2014-08-08T15:28:34+00:00

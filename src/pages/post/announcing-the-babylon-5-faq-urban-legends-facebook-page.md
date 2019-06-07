@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Announcing The Babylon 5 FAQ & Urban Legends Facebook page'
 author: Ranger 3ndymion
 type: post

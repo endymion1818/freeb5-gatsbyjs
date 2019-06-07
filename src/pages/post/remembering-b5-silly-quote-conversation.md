@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Remembering The Silly B5 Quote Conversation
 type: post
 date: 2014-09-14T14:40:10+00:00

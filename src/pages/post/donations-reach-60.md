@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Donations Reach 60%!!
 type: post
 date: 2014-06-21T16:22:08+00:00

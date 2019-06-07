@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: B5 Books on Twitter
 type: post
 date: 2015-03-01T16:06:20+00:00

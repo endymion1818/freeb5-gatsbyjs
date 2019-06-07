@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: JMS on Michael O’Hare’s battle
 author: Ranger 3ndymion
 type: post

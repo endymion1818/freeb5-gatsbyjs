@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: '#FreeBabylon5 at CafePress'
 type: post
 date: 2014-01-24T21:51:03+00:00

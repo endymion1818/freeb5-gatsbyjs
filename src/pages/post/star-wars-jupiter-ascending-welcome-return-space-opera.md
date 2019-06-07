@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Star Wars and Jupiter Ascending – A Welcome Return to Space Opera
 type: post
 date: 2014-10-10T14:18:42+00:00

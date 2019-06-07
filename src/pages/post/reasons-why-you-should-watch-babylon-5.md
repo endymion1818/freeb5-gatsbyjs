@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 10 Reasons Why You Should Watch Babylon 5
 author: Ranger 3ndymion
 type: post

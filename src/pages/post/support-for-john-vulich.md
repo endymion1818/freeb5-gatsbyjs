@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Support for John Vulich
 author: Ranger 3ndymion
 type: post

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: '#FreeBabylon5 T-Shirt Available!'
 type: post
 date: 2014-09-06T14:19:11+00:00

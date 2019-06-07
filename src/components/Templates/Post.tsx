@@ -59,7 +59,7 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
                     <header>
                       <h1>{title}</h1>
                       {featuredImage && (
-                        <Img sizes={featuredImage.childImageSharp.sizes} alt={featuredImageAlt} />
+                        <Img fluid={featuredImage.childImageSharp.fluid} alt={featuredImageAlt} />
                       )}
                     </header>
                     <section dangerouslySetInnerHTML={{ __html: html }} />
@@ -93,11 +93,11 @@ export const query = graphql`
         title
         type
         date(formatString: "DD MMMM, YYYY")
-        featuredimage {
+        featuredImage {
           publicURL
           childImageSharp {
-            sizes(maxWidth: 1240) {
-              srcSet
+            fluid(maxWidth: 1240) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Comic Con Schedule Unveiled!
 type: post
 date: 2014-07-11T07:30:54+00:00

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Mojo’s Last Wishes
 type: post
 date: 2016-01-06T08:57:52+00:00

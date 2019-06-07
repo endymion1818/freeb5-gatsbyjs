@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Request Babylon 5 on Netflix
 author: Ranger 3ndymion
 type: post

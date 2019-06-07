@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Claudia Christian at Space City Con
 author: Ranger 3ndymion
 type: post

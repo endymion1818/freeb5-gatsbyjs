@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Thunderclap Report
 author: Ranger 3ndymion
 type: post

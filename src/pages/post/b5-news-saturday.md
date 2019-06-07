@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: B5 News on Saturday?
 type: post
 date: 2014-07-25T16:21:34+00:00

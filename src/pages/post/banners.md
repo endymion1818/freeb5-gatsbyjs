@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Banners Up!
 type: post
 date: 2014-06-26T11:52:05+00:00

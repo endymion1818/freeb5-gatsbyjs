@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Zap2it article: “Babylon 5 turns 20” – JMS interview'
 author: Ranger 3ndymion
 type: post

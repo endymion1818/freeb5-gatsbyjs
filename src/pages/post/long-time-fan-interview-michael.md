@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Long-time Fan Interview: Michael'
 type: post
 date: 2014-08-18T04:01:20+00:00

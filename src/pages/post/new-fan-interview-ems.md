@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'New Fan Interview: Ems'
 type: post
 date: 2014-08-06T19:02:16+00:00

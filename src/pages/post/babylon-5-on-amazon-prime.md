@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 on Amazon Prime!
 type: post
 date: 2018-05-17T20:07:53+00:00

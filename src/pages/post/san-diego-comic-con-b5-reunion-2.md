@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: San Diego Comic Con B5 Reunion
 author: Ranger 3ndymion
 type: post

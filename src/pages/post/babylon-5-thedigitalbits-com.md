@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 on thedigitalbits.com
 type: post
 date: 2014-01-27T08:48:11+00:00

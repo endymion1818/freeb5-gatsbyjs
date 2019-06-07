@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Podcast Roundup
 author: Ranger 3ndymion
 type: post

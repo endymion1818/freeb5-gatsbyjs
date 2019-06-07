@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Netflix Description for Sense8 Mentions Babylon 5!
 type: post
 date: 2015-06-06T21:18:47+00:00

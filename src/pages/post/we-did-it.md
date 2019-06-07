@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: We Did It!
 author: Ranger 3ndymion
 type: post

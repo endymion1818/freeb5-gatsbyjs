@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Rare B5 Signed Photo Raffle
 type: post
 date: 2014-08-08T15:20:31+00:00

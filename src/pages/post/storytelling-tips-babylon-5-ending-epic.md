@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Storytelling Tips from Babylon 5: Ending an Epic'
 type: post
 date: 2014-08-29T21:21:23+00:00

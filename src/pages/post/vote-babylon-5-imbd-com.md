@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Vote Babylon 5 on IMBD.com
 type: post
 date: 2014-05-15T14:22:28+00:00

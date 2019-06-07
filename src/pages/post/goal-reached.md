@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 21% of Goal Reached!
 type: post
 date: 2014-06-08T21:55:13+00:00

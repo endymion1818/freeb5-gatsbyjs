@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Breaking: JMS At San Diego Comic Con'
 type: post
 date: 2015-04-28T10:44:50+00:00

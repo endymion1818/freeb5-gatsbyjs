@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Shout out for #FreeBabylon5 from JMS'
 type: post
 date: 2014-08-10T17:09:53+00:00

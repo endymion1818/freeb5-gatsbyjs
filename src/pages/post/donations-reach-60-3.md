@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Donations Reach 60%!!
 author: Ranger 3ndymion
 type: post

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 20th Anniversary Commemoration
 author: Ranger 3ndymion
 type: post

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Visit Us at Space City Con, Galveston, TX!
 type: post
 date: 2013-12-04T20:17:40+00:00

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: FedCon23 Update
 author: Ranger 3ndymion
 type: post

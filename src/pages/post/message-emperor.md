@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: A Message from the Emperor …
 author: Ranger 3ndymion
 type: post

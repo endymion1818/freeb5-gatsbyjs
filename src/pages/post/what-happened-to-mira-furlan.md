@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Whatever Happened to Mira Furlan?
 author: Ranger 3ndymion
 type: post

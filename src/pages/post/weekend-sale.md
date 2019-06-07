@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Weekend Sale!
 type: post
 date: 2014-01-11T17:42:08+00:00

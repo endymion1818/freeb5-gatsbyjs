@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 To Show on Comet TV in US
 author: Ranger 3ndymion
 type: post

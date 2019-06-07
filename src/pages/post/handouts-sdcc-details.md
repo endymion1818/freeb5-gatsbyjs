@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Handouts for SDCC – Details
 type: post
 date: 2014-07-09T12:49:30+00:00

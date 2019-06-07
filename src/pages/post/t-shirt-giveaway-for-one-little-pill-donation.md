@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: T-shirt Giveaway for One Little Pill Donation
 type: post
 date: 2015-04-03T16:42:24+00:00

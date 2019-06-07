@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Vote for Z’ha’dum on Pluto
 type: post
 date: 2015-03-25T07:48:02+00:00

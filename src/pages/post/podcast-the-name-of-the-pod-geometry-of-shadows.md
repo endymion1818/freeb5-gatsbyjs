@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: The Name of the Pod - Geometry of Shadows
 author: Ranger 3ndymion
 type: post

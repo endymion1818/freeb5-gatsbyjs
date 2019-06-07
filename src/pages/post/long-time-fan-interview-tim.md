@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Long-Time Fan Interview: Tim'
 type: post
 date: 2014-09-02T06:35:42+00:00

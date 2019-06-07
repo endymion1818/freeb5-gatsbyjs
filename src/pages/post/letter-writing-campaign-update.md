@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Letter Writing Campaign Update
 type: post
 date: 2014-01-14T17:35:57+00:00

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Jerry Doyle Show Mention!
 author: Ranger 3ndymion
 type: post

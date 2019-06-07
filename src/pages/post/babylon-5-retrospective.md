@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 Retrospective
 type: post
 date: 2014-07-15T00:27:23+00:00

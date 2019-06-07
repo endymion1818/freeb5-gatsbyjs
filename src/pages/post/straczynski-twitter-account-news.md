@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Keep Your Eye on JMS Twitter Account
 author: Ranger 3ndymion
 type: post

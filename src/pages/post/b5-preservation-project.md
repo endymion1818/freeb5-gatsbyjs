@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: The BABYLON 5 Preservation Project
 author: Ranger 3ndymion 
 type: post

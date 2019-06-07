@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 on New Zealand’s The Zone
 type: post
 date: 2015-07-12T17:51:31+00:00

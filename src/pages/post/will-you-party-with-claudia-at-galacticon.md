@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Will You Party with Claudia at Galacticon?
 type: post
 date: 2015-05-29T11:34:06+00:00

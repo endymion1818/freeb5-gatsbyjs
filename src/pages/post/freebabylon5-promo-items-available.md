@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: '#FreeBabylon5 Promo Items Available'
 type: post
 date: 2013-11-17T19:15:47+00:00

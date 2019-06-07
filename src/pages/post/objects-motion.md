@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Objects In Motion
 type: post
 date: 2014-11-16T17:58:46+00:00

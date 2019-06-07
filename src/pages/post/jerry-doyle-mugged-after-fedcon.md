@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Jerry Doyle Mugged After #FedCon'
 type: post
 date: 2015-06-13T20:55:16+00:00

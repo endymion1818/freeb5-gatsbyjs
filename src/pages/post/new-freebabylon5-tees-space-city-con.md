@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'New #FreeBabylon5 Tees at Space City Con'
 type: post
 date: 2013-12-09T08:26:13+00:00

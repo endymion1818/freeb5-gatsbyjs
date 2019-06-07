@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Digital Spy Poll: Let’s Keep B5 at No.1'
 author: Ranger 3ndymion
 type: post

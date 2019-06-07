@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Thunderclap Campaign: 6 days to go!'
 type: post
 date: 2014-01-09T16:52:25+00:00

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Claudia Christian and the C3 Foundation
 type: post
 date: 2014-08-02T21:11:32+00:00

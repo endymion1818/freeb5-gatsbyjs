@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Thoughts on Jerry Doyle’s Passing
 author: Ranger 3ndymion
 type: post

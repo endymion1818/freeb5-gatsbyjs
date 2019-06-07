@@ -59,9 +59,7 @@ const Header = ({ navItems, siteTitle }) => (
     bufferBottom={variable.ESIZE.SINGLE}
   >
     <HeaderContainer>
-      <Link to="/">
-        <img src={WhiteLogo} alt={props.siteTitle} width="210" height="auto" />
-      </Link>
+      <Link to="/">#FreeBabylon5</Link>
       <MainNav>
         {navItems
           ? navItems.edges.map(item => (

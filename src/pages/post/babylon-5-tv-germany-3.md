@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 on TV in Germany!
 author: Ranger 3ndymion
 type: post

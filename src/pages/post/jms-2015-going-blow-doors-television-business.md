@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'JMS: “In 2015 we are going to blow the doors off the television business.”'
 type: post
 date: 2014-10-13T08:05:53+00:00

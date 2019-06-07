@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Babylon 5: The 20th Anniversary Cast Reunions'
 type: post
 date: 2015-05-29T12:23:53+00:00

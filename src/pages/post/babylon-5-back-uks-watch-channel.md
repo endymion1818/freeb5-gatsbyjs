@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 Back on UK’s Watch Channel!
 type: post
 date: 2014-08-12T20:07:53+00:00

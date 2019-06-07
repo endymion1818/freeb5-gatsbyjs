@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: July Site Analytics
 type: post
 date: 2014-08-04T12:26:02+00:00

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Can You Spread The Word?
 author: Ranger 3ndymion
 type: post

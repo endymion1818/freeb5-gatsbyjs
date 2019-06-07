@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: FedCon2013 – Dusseldorf Plan
 author: Ranger 3ndymion
 type: post

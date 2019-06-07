@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Rising Stars Movie Announced
 author: Ranger 3ndymion
 type: post

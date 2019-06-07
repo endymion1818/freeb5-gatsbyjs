@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: '#FreeBabylon5 France'
 author: Ranger 3ndymion
 type: post

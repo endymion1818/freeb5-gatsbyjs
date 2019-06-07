@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Away Mission, Tampa, FL Report
 author: Ranger 3ndymion
 type: post

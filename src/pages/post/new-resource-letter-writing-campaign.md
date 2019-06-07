@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: New Resource for the Letter Writing Campaign
 type: post
 date: 2014-08-31T11:32:24+00:00

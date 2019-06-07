@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Ron Thornton on Creative Bloq
 author: Ranger 3ndymion
 type: post

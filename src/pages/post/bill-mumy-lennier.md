@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Bill Mumy on becoming Lennier
 author: Ranger 3ndymion
 type: post

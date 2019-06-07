@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: SDCC 2015 Panel clips
 type: post
 date: 2015-08-05T13:12:08+00:00

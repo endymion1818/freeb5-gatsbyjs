@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Campaign Update May 2014
 type: post
 date: 2014-05-05T10:16:22+00:00

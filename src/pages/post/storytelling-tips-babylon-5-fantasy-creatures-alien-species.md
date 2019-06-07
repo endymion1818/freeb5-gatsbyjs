@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Storytelling Tips from Babylon 5: Fantasy Creatures and Alien Species'
 type: post
 date: 2014-09-08T17:02:56+00:00

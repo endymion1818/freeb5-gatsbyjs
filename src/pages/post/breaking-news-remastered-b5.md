@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: BREAKING NEWS — Remastered B5?
 author: Ranger 3ndymion
 type: post

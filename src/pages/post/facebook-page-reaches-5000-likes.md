@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Facebook Page Reaches 5,000 likes!
 type: post
 date: 2014-03-09T18:41:57+00:00

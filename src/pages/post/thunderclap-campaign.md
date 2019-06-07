@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Thunderclap Campaign
 author: Ranger 3ndymion
 type: post

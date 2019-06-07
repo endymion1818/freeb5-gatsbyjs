@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: JMS to Helm ‘Red Mars’ TV Series
 type: post
 date: 2015-12-15T08:08:41+00:00

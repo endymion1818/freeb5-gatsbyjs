@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Interview with John Iacovelli
 type: post
 date: 2014-07-09T12:57:57+00:00

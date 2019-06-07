@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Ambassadorial Pouches Still Available!
 type: post
 date: 2014-07-09T12:59:43+00:00

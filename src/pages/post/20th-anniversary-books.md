@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 20th Anniversary Books
 author: Ranger 3ndymion
 type: post

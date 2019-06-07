@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 on TV in Germany!
 type: post
 date: 2014-06-26T11:55:06+00:00

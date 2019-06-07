@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Campaign Update: BayCon & Comicpalooza'
 type: post
 date: 2014-05-29T15:33:38+00:00

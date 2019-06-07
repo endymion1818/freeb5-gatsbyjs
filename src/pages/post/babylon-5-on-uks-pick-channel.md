@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 on UK's Pick Channel
 author: Ranger 3ndymion
 type: post

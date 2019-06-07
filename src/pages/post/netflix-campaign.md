@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Netflix Campaign
 type: post
 date: 2015-05-31T21:34:13+00:00

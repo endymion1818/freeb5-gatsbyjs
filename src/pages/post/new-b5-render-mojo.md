@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: New B5 Render by Mojo
 author: Ranger 3ndymion
 type: post

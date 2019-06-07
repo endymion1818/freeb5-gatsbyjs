@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Goodbye Stephen Furst and Ron Thornton
 author: Ranger 3ndymion
 type: post

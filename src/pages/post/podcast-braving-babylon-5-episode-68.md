@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Braving Babylon 5 Episode 68 - States of the Unions
 author: Ranger 3ndymion
 type: post

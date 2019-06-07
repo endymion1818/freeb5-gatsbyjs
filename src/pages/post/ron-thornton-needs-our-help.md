@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Ron Thornton Needs Our Help
 author: Ranger 3ndymion
 type: post

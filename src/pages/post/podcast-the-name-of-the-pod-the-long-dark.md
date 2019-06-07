@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: The Name of the Pod - The Long Dark
 author: Ranger 3ndymion
 type: post

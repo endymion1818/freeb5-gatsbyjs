@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Conversations that Echo
 author: Ranger 3ndymion
 type: post

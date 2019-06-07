@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: SDCC Panel News
 type: post
 date: 2014-07-25T16:18:28+00:00

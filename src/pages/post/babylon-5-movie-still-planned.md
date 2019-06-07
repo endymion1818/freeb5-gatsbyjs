@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 Movie Still Planned
 author: Ranger 3ndymion
 type: post

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Letter Campaign update
 type: post
 date: 2014-01-06T08:46:03+00:00

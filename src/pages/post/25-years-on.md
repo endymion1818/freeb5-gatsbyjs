@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 25 Years On
 author: Ranger 3ndymion
 type: post

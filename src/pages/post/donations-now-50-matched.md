@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Donations Now 50% Matched!
 type: post
 date: 2014-06-18T20:46:57+00:00

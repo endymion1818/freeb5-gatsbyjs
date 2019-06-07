@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Let WB Know You’re a Fan!
 author: Ranger 3ndymion
 type: post

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Ron Thornton Passes Away
 author: Ranger 3ndymion
 type: post

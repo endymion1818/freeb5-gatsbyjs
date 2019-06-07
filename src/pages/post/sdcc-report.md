@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: SDCC Report
 type: post
 date: 2014-07-30T12:20:13+00:00

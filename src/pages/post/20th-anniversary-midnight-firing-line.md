@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 20th Anniversary of “Midnight on the Firing Line”
 type: post
 date: 2014-01-24T21:45:45+00:00

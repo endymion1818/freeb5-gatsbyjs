@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Fan Interview – Annette
 type: post
 date: 2014-08-24T18:51:59+00:00

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: More Auctions Starting Friday 10AM (EST)
 type: post
 date: 2014-06-27T09:16:31+00:00

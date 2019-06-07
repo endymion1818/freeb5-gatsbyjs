@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: “When Dreams Grow Teeth”
 type: post
 date: 2014-07-06T02:16:20+00:00

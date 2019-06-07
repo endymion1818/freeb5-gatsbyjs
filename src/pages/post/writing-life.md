@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'For Writing and Life: Who are You?'
 type: post
 date: 2014-09-25T16:21:36+00:00

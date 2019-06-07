@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Braving Babylon 5 Episode 66 - FanFic Fun
 author: Ranger 3ndymion
 type: post

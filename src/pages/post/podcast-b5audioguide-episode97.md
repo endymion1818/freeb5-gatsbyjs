@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: B5 Audio Guide Podcast, Episode 97
 type: post
 date: 2018-01-23T12:30:50+00:00

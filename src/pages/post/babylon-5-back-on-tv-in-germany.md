@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 Back on TV in Germany
 type: post
 date: 2015-06-13T21:09:15+00:00

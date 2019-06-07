@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 on Italian Sky Channel
 type: post
 date: 2014-07-25T16:35:39+00:00

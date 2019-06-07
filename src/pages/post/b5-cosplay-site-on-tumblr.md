@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: B5 Cosplay site on Tumblr!
 author: Ranger 3ndymion
 type: post

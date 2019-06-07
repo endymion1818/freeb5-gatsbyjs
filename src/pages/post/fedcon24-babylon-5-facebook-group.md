@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Fedcon24 Babylon 5 Facebook Group
 type: post
 date: 2015-03-29T19:51:45+00:00

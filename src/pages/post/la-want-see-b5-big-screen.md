@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: In LA? Want to see B5 on the big screen?
 type: post
 date: 2014-07-31T10:33:06+00:00

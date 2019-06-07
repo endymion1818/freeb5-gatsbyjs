@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Podcast Jumpgate Episode 100 - The Gathering
 author: Ranger 3ndymion
 type: post

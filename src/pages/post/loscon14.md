@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Loscon 14
 type: post
 date: 2014-11-26T09:28:44+00:00

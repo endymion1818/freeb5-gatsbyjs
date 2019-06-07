@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Claudia Christian Back in Sci-Fi
 author: Ranger 3ndymion
 type: post

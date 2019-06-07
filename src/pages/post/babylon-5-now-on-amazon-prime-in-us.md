@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 Now on Amazon Prime in US!
 type: post
 date: 2018-06-04T20:07:53+00:00

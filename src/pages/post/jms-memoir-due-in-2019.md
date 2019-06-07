@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: J M Straczynski Memoir Due in 2019
 author: Ranger 3ndymion
 type: post

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'IMDB Poll: Favourite TV Episode'
 type: post
 date: 2015-12-15T08:13:08+00:00

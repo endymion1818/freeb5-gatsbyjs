@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'For Writing and Life: What Do You Want?'
 type: post
 date: 2014-10-04T11:46:23+00:00

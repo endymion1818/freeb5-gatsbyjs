@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Movie / Reboot: WB Is Out'
 author: Ranger 3ndymion
 type: post

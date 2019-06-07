@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: The Audio Guide to Babylon 5 Episode 98 - A Tragedy of Telepaths
 author: Ranger 3ndymion
 type: post

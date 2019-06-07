@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Braving Babylon 5 Episode 67 - Finders Keepers
 author: Ranger 3ndymion
 type: post

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Support Patricia Tallmans Charity, Be a Santa
 author: Ranger 3ndymion
 type: post

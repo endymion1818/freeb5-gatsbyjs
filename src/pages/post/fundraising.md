@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Fundraising!
 type: post
 date: 2013-11-17T19:11:08+00:00

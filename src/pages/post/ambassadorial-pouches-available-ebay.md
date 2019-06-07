@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Ambassadorial Pouches Available again on Ebay!
 type: post
 date: 2014-08-30T12:30:50+00:00

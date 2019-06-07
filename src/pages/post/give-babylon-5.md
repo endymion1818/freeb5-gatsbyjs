@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Give Babylon 5
 type: post
 date: 2014-06-12T12:46:32+00:00

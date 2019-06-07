@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: No Surrender, No Retreat
 type: post
 date: 2014-07-15T21:23:27+00:00

@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: San Diego Comic Con B5 Reunion
 type: post
 date: 2015-07-09T20:54:28+00:00

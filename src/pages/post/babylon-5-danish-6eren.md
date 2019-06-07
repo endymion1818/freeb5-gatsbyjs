@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: Babylon 5 on Danish 6’eren
 author: Ranger 3ndymion
 type: post

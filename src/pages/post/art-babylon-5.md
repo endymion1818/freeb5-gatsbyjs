@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: The Art of Babylon 5
 type: post
 date: 2014-08-01T07:06:08+00:00

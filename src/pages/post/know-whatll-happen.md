@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: … Or You Know What’ll Happen…
 author: Ranger 3ndymion
 type: post

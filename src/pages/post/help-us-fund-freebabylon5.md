@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Help Us Fund #FreeBabylon5!'
 type: post
 date: 2014-05-29T15:35:29+00:00

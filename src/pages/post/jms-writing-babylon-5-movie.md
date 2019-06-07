@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: JMS Writing Babylon 5 Movie!
 type: post
 date: 2014-07-27T07:25:54+00:00

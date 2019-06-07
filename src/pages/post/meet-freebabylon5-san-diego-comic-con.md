@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 'Meet #FreeBabylon5 at San Diego Comic-Con'
 type: post
 date: 2014-05-15T14:26:34+00:00

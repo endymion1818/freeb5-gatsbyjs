@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: How Will Sense8 Affect Babylon 5?
 type: post
 date: 2015-06-13T21:33:41+00:00

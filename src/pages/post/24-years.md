@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: 24 Years.
 author: Ranger 3ndymion
 type: post

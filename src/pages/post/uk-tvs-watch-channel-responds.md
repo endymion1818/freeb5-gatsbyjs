@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: UK TV’s Watch Channel Responds!
 type: post
 date: 2014-07-09T12:55:12+00:00

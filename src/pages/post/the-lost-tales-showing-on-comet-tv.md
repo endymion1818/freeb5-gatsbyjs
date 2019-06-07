@@ -1,4 +1,5 @@
 ---
+featuredImage: null
 title: The Lost Tales Showing on Comet TV
 author: Ranger 3ndymion
 type: post
