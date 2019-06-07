@@ -22,7 +22,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-json`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-eslint`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,6 +30,14 @@ module.exports = {
         path: `${__dirname}/src/pages/post`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `page`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    `gatsby-transformer-javascript-frontmatter`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-webpack-size`,
@@ -51,6 +58,13 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
+      },
+    },
+    `gatsby-remark-copy-linked-files`,
+    {
+      resolve: `gatsby-remark-images`,
+      options: {
+        maxWidth: 1080,
       },
     },
   ],

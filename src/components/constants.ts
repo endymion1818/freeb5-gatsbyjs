@@ -35,3 +35,8 @@ export enum EFLEXALIGN {
   CENTER = 'center',
   END = 'flex-end',
 }
+export enum EBORDERRADIUS {
+  SMALL = '0.25rem',
+  MEDIUM = '0.5rem',
+  LARGE = '0.75rem',
+}

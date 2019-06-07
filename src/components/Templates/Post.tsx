@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
 import Container from '../Atoms/Container'
@@ -22,7 +23,11 @@ interface IPostTemplateProps {
       html: string
       excerpt: string
       frontmatter: {
-        featuredImage: string
+        featuredImage: {
+          childImageSharp: {
+            sizes: number[]
+          }
+        }
         featuredImageAlt: string
         title: string
         date: string
@@ -53,7 +58,9 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
                   <>
                     <header>
                       <h1>{title}</h1>
-                      {featuredImage && <img src={featuredImage} alt={featuredImageAlt} />}
+                      {featuredImage && (
+                        <Img sizes={featuredImage.childImageSharp.sizes} alt={featuredImageAlt} />
+                      )}
                     </header>
                     <section dangerouslySetInnerHTML={{ __html: html }} />
                     <footer>
@@ -86,6 +93,14 @@ export const query = graphql`
         title
         type
         date(formatString: "DD MMMM, YYYY")
+        featuredimage {
+          publicURL
+          childImageSharp {
+            sizes(maxWidth: 1240) {
+              srcSet
+            }
+          }
+        }
       }
     }
   }

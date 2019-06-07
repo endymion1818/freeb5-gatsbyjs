@@ -3,6 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { createGlobalStyle } from 'styled-components'
 import serpentine from '../../assets/serpentine.woff2'
+import Header from '../Partials/Header'
 
 interface IStaticQueryProps {
   site: {
@@ -47,6 +48,16 @@ const Layout: React.SFC = ({ children }) => (
             title
           }
         }
+        HeaderNav: allJavascriptFrontmatter {
+          edges {
+            node {
+              frontmatter {
+                description
+                title
+              }
+            }
+          }
+        }
       }
     `}
     render={(data: IStaticQueryProps) => (
@@ -56,7 +67,10 @@ const Layout: React.SFC = ({ children }) => (
           <title>{data.site.siteMetadata.title}</title>
           <meta name="description" content="FreeBabylon5" />
         </Helmet>
-        <main className="main">{children}</main>
+        <a href="main">Skip to main content</a>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main id="main">{children}</main>
+        <Footer siteTitle={data.site.siteMetadata.title} />
       </>
     )}
   />
