@@ -20,7 +20,7 @@ export const frontmatter = {
   footerNavOrder: 1,
 }
 
-const IndexPage: FC<IIndexPageProps> = () => (
+const IndexPage: FC<IIndexPageProps> = ({ data }) => (
   <Layout>
     <Helmet>
       <title>
