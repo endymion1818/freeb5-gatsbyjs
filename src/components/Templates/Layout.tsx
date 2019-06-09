@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
 import serpentine from '../../assets/serpentine.woff2'
+import ErrorBoundary from '../Molecules/ErrorBoundary'
 import Footer from '../Partials/Footer'
 import Header from '../Partials/Header'
 
@@ -129,7 +130,7 @@ const Layout: React.SFC = ({ children }) => (
       }
     `}
     render={(data: IStaticQueryProps) => (
-      <>
+      <ErrorBoundary>
         <GlobalStyle />
         <Helmet>
           <title>{data.site.siteMetadata.title}</title>
@@ -145,7 +146,7 @@ const Layout: React.SFC = ({ children }) => (
           primaryNav={data.primaryNav}
           secondaryNav={data.secondaryNav}
         />
-      </>
+      </ErrorBoundary>
     )}
   />
 )
