@@ -5,6 +5,7 @@ module.exports = {
     pathPrefix: '/',
     title: siteTitle,
     siteUrl: `https://www.freebabylon5.com`,
+    description: `Our last, best hope to get back on the air.`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
