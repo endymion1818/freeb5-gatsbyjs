@@ -79,6 +79,9 @@ const GlobalStyle = createGlobalStyle`
   h6 {
     font-family: SerpentineMedium;
   }
+  #gatsby-noscript {
+    display:none;
+  }
 `
 
 const Layout: React.SFC = ({ children }) => (
@@ -130,6 +133,17 @@ const Layout: React.SFC = ({ children }) => (
         <Helmet>
           <title>{data.site.siteMetadata.title}</title>
           <meta name="description" content="FreeBabylon5" />
+          <script type="application/ld+json">
+            {`
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "name": "#FreeBabylon5",
+              "url": "https://www.freebabylon5.com",
+              "sameAs": [
+                "https://www.facebook.com/freebabylon5",
+              ]
+            `}
+          </script>
         </Helmet>
         <AccessibilityMainContentSkipLink href="#main">
           Skip to main content
