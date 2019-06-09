@@ -2,11 +2,48 @@ import { graphql, StaticQuery } from 'gatsby'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 import serpentine from '../../assets/serpentine.woff2'
 import Footer from '../Partials/Footer'
 import Header from '../Partials/Header'
 
-interface IStaticQueryProps {
+export interface IPrimaryNavProps {
+  primaryNav: {
+    edges: {
+      node: {
+        frontmatter: {
+          MainNavOrder: number
+          secondaryNavMenu: string
+          secondaryNavOrder: number
+          title: string
+        }
+        node: {
+          relativePath: string
+        }
+      }
+    }
+  }
+}
+
+export interface ISecondaryNavProps {
+  primaryNav: {
+    edges: {
+      node: {
+        frontmatter: {
+          MainNavOrder: number
+          secondaryNavMenu: string
+          secondaryNavOrder: number
+          title: string
+        }
+        node: {
+          relativePath: string
+        }
+      }
+    }
+  }
+}
+
+export interface ISiteMetaProps {
   site: {
     siteMetadata: {
       title: string
@@ -14,6 +51,18 @@ interface IStaticQueryProps {
     }
   }
 }
+
+export interface IStaticQueryProps extends ISiteMetaProps, IPrimaryNavProps, IsecondaryNavProps {
+  S
+}
+
+const AccessibilityMainContentSkipLink = styled.a`
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  top: -10px;
+  overflow: hidden;
+`
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -49,11 +98,29 @@ const Layout: React.SFC = ({ children }) => (
             title
           }
         }
-        HeaderNav: allJavascriptFrontmatter {
+        primaryNav: allJavascriptFrontmatter(filter: { frontmatter: { MainNavOrder: { gt: 0 } } }) {
           edges {
             node {
               frontmatter {
-                description
+                path
+                MainNavOrder
+                secondaryNavMenu
+                secondaryNavOrder
+                title
+              }
+            }
+          }
+        }
+        secondaryNav: allJavascriptFrontmatter(
+          filter: { frontmatter: { secondaryNavOrder: { gt: 0 } } }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                path
+                MainNavOrder
+                secondaryNavMenu
+                secondaryNavOrder
                 title
               }
             }
@@ -68,10 +135,16 @@ const Layout: React.SFC = ({ children }) => (
           <title>{data.site.siteMetadata.title}</title>
           <meta name="description" content="FreeBabylon5" />
         </Helmet>
-        <a href="main">Skip to main content</a>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <AccessibilityMainContentSkipLink href="#main">
+          Skip to main content
+        </AccessibilityMainContentSkipLink>
+        <Header siteTitle={data.site.siteMetadata.title} primaryNav={data.primaryNav} />
         <main id="main">{children}</main>
-        <Footer siteTitle={data.site.siteMetadata.title} />
+        <Footer
+          siteTitle={data.site.siteMetadata.title}
+          primaryNav={data.primaryNav}
+          secondaryNav={data.secondaryNav}
+        />
       </>
     )}
   />

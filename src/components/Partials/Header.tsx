@@ -1,10 +1,16 @@
 import { withPrefix } from 'gatsby'
-import React from 'react'
+import React, { FC } from 'react'
 import styled from 'styled-components'
 import Container from '../Atoms/Container'
 import Link from '../Atoms/Link'
 import Wrapper from '../Atoms/Wrapper'
 import * as variable from '../constants'
+import { IprimaryNavProps } from '../Templates/Layout'
+
+export interface IHeaderProps {
+  primaryNav: IprimaryNavProps
+  siteTitle: string
+}
 
 const MainNav = styled.ul`
   display: flex;
@@ -22,12 +28,12 @@ const MainNav = styled.ul`
       &:hover,
       &:active,
       &:focus {
-        background-color: white;
-        color: ${variable.EBACKGROUND_COLOUR.SURFACE_ALT};
+        background-color: ${variable.EBACKGROUND_COLOUR.SURFACE};
+        color: ${variable.ETEXT_COLOUR.ON_SURFACE_ALT};
       }
       &.active {
         background-color: ${variable.EBACKGROUND_COLOUR.SURFACE};
-        color: ${variable.EBACKGROUND_COLOUR.SURFACE_ALT};
+        color: ${variable.ETEXT_COLOUR.ON_SURFACE_ALT};
       }
     }
   }
@@ -52,17 +58,17 @@ const HeaderContainer = styled(Container)`
   }
 `
 
-const Header = ({ navItems, siteTitle }) => (
+const Header: FC<IHeaderProps> = ({ primaryNav, siteTitle }) => (
   <Wrapper
     backgroundColour={variable.EBACKGROUND_COLOUR.SURFACE}
-    textColor={'white'}
+    textColor={variable.ETEXT_COLOUR.ON_SURFACE}
     bufferBottom={variable.ESIZE.SINGLE}
   >
     <HeaderContainer>
-      <Link to="/">#FreeBabylon5</Link>
+      <Link to={withPrefix('/')}>{siteTitle}</Link>
       <MainNav>
-        {navItems
-          ? navItems.edges.map(item => (
+        {primaryNav
+          ? primaryNav.edges.map(item => (
               <li key={item.node.frontmatter.path}>
                 <Link activeClassName="active" to={withPrefix(item.node.frontmatter.path)}>
                   {item.node.frontmatter.title}

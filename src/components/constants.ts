@@ -1,10 +1,10 @@
 export enum ETEXT_COLOUR {
-  ON_SURFACE = '#000000',
-  ON_SURFACE_ALT = '#FFFFFF',
+  ON_SURFACE = 'black',
+  ON_SURFACE_ALT = 'black',
 }
 export enum EBACKGROUND_COLOUR {
-  SURFACE = '#FFFFFF',
-  SURFACE_ALT = '#000000',
+  SURFACE = 'white',
+  SURFACE_ALT = 'white',
 }
 export enum EBREAKPOINT {
   SMALL = '36em',

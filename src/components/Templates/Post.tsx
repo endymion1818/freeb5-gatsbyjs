@@ -43,6 +43,7 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
   const { date } = data.markdownRemark.frontmatter
   const { featuredImage } = data.markdownRemark.frontmatter
   const { featuredImageAlt } = data.markdownRemark.frontmatter
+
   return (
     <Layout>
       <Helmet>

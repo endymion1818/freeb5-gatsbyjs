@@ -1,16 +1,17 @@
 import styled from 'styled-components'
+import * as variable from '../constants'
 
 export interface IWrapperProps {
   /**
    * background colour
-   * @default 'white'
+   * @default variable.EBACKGROUND_COLOUR.SURFACE
    */
-  backgroundColour?: string
+  backgroundColour?: variable.EBACKGROUND_COLOUR
   /**
    * text colour
-   * @default 'black'
+   * @default variable.ETEXT_COLOUR.ON_SURFACE
    */
-  textColour?: string
+  textColour?: variable.ETEXT_COLOUR
 }
 
 const Wrapper = styled.div<IWrapperProps>`
@@ -20,8 +21,8 @@ const Wrapper = styled.div<IWrapperProps>`
 `
 
 Wrapper.defaultProps = {
-  backgroundColour: 'white',
-  textColour: 'white',
+  backgroundColour: variable.EBACKGROUND_COLOUR.SURFACE,
+  textColour: variable.ETEXT_COLOUR.ON_SURFACE,
 }
 
 export default Wrapper

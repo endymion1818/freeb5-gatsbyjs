@@ -2,7 +2,8 @@ import { graphql } from 'gatsby'
 import React, { FC } from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Templates/Layout'
-export interface IIndexPageProps {
+
+export interface IAboutPageProps {
   data: {
     site: {
       siteMetadata: {
@@ -13,15 +14,15 @@ export interface IIndexPageProps {
 }
 
 export const frontmatter = {
-  title: 'Home',
-  path: '/',
+  title: 'About',
+  path: 'about',
   description: 'Welcome to Free Babylon 5 campaign site.',
-  MainNavOrder: 1,
+  MainNavOrder: 2,
   secondaryNavMenu: 'About',
-  secondaryNavOrder: 1,
+  secondaryNavOrder: 2,
 }
 
-const IndexPage: FC<IIndexPageProps> = ({ data }) => (
+const AboutPage: FC<IAboutPageProps> = ({ data }) => (
   <Layout>
     <Helmet>
       <title>
@@ -29,11 +30,11 @@ const IndexPage: FC<IIndexPageProps> = ({ data }) => (
       </title>
       <meta name="description" content={frontmatter.description} />
     </Helmet>
-    <h1>Home</h1>
+    <h1>About</h1>
   </Layout>
 )
 
-export default IndexPage
+export default AboutPage
 
 export const query = graphql`
   query {

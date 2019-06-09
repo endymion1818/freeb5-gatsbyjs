@@ -1,12 +1,9 @@
+import { graphql, Link } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
 import PropTypes from 'prop-types'
 import React, { FC } from 'react'
-
-// Utilities
-import kebabCase from 'lodash/kebabCase'
-
-// Components
-import { graphql, Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import Layout from '../components/Templates/Layout'
 
 export interface ICategoriesPageProps {
   data: {
@@ -34,9 +31,9 @@ const CategoriesPage: FC<ICategoriesPageProps> = ({
     },
   },
 }) => (
-  <div>
+  <Layout>
     <Helmet title={title} />
-    <div>
+    <>
       <h1>Categories</h1>
       <ul>
         {group.map(category => (
@@ -47,8 +44,8 @@ const CategoriesPage: FC<ICategoriesPageProps> = ({
           </li>
         ))}
       </ul>
-    </div>
-  </div>
+    </>
+  </Layout>
 )
 
 // CategoriesPage.propTypes = {
