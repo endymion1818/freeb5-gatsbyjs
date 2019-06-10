@@ -5,8 +5,8 @@ import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
 import serpentine from '../../assets/serpentine.woff2'
 import ErrorBoundary from '../Molecules/ErrorBoundary'
-import Footer from '../Partials/Footer'
-import Header from '../Partials/Header'
+import Footer from '../Organisms/Footer'
+import Header from '../Organisms/Header'
 
 export interface IPrimaryNavProps {
   primaryNav: {
