@@ -9,7 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   const blogPostTemplate = path.resolve(`./src/components/Templates/Post.tsx`)
   const categoryTemplate = path.resolve(`./src/components/Templates/Category.tsx`)
-  const archiveTemplate = path.resolve(`./src/components/Templates/Archive.tsx`)
+  const archiveTemplate = path.resolve(`./src/components/Templates/Category.tsx`)
 
   return graphql(
     `
