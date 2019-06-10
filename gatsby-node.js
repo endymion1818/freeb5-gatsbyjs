@@ -1,5 +1,5 @@
-import path from 'path'
-import _ from 'lodash'
+const path = require(`path`)
+const _ = require(`lodash`)
 import { paginate } from 'gatsby-awesome-pagination'
 
 const { createFilePath } = require(`gatsby-source-filesystem`)
@@ -9,7 +9,6 @@ exports.createPages = ({ graphql, actions }) => {
 
   const blogPostTemplate = path.resolve(`./src/components/Templates/Post.tsx`)
   const categoryTemplate = path.resolve(`./src/components/Templates/Category.tsx`)
-  const archiveTemplate = path.resolve(`./src/components/Templates/Archive.tsx`)
 
   return graphql(
     `
@@ -36,14 +35,6 @@ exports.createPages = ({ graphql, actions }) => {
 
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
-
-    paginate({
-      createPage, // The Gatsby `createPage` function
-      items: posts, // An array of objects
-      itemsPerPage: 10, // How many items you want per page
-      pathPrefix: '/post', // Creates pages like `/blog`, `/blog/2`, etc
-      component: archiveTemplate, // Just like `createPage()`
-    })
 
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
@@ -78,6 +69,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+
     return null
   })
 }
