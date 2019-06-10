@@ -92,5 +92,22 @@ module.exports = {
         exclude: [],
       },
     },
+    {
+      resolve: `gatsby-plugin-lunr`,
+      options: {
+        fields: [
+          { name: 'title', store: true, attributes: { boost: 20 } },
+          { name: 'content' },
+          { name: 'url', store: true },
+        ],
+        resolvers: {
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            content: node => node.rawMarkdownBody,
+            url: node => node.fields.url,
+          },
+        },
+      },
+    },
   ],
 }
