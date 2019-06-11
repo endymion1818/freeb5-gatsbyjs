@@ -1,22 +1,62 @@
-import { graphql } from 'gatsby'
+import { graphql, withPrefix } from 'gatsby'
 import React, { FC } from 'react'
+import Link from '../Atoms/Link'
+import Layout from '../Templates/Layout'
 
-export interface IArchiveProps {}
+export interface IArchiveProps {
+  data: {
+    posts: {
+      edges: {
+        node: {
+          frontmatter: {
+            title: string
+            date: string
+          }
+        }
+      }
+    }
+  }
+  pageContext: {
+    previousPagePath?: string
+    nextPagePath?: string
+  }
+}
 
-const Archive: FC<IArchiveProps> = props => {
-  const { pageContext } = props
+const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
   const { previousPagePath, nextPagePath } = pageContext
+  const { posts } = data
 
   return (
-    <div>
-      {props.data.posts.edges.map(edge => (
-        <Item key={index} post={edge.node} />
-      ))}
-      <div>
-        {previousPagePath ? <Link to={previousPagePath}>Previous</Link> : null}
-        {nextPagePath ? <Link to={nextPagePath}>Next</Link> : null}
-      </div>
-    </div>
+    <Layout>
+      <h2>Archives</h2>
+      {posts &&
+        posts.edges.map((edge, index) => (
+          <article key={index}>
+            <h2>
+              <Link to={withPrefix(edge.node.fields.slug)}>{edge.node.frontmatter.title}</Link>
+            </h2>
+            <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
+            <br />
+            <div>
+              Posted on: <time>{edge.node.frontmatter.date}</time>
+            </div>
+          </article>
+        ))}
+      <nav>
+        <ul>
+          {previousPagePath && (
+            <li>
+              <Link to={previousPagePath}>Previous</Link>
+            </li>
+          )}
+          {nextPagePath && (
+            <li>
+              <Link to={nextPagePath}>Next</Link>
+            </li>
+          )}
+        </ul>
+      </nav>
+    </Layout>
   )
 }
 
