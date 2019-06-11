@@ -86,22 +86,6 @@ const PostTemplate: FC<IPostTemplateProps> = ({ data }) => {
                         <div>Categories: </div>
                       </footer>
                     </article>
-                    {/* <nav className="post-navigation" aria-label="pagination">
-                      {nextPost && nextPost != null ? (
-                        <Link to={nextPost.fields.slug}>
-                          <span className="post-navigation__label">
-                            {nextPost.frontmatter.title}
-                          </span>
-                        </Link>
-                      ) : null}
-                      {prevPost && prevPost != null ? (
-                        <Link to={prevPost.fields.slug}>
-                          <span className="post-navigation__label">
-                            {prevPost.frontmatter.title}
-                          </span>
-                        </Link>
-                      ) : null}
-                    </nav> */}
                   </>
                 ),
               },
