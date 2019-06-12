@@ -1,3 +1,44 @@
+export const PRIMARY_NAV_ITEMS = [
+  {
+    title: 'Home',
+    path: '/',
+    navOrder: 1,
+  },
+  {
+    title: 'About',
+    path: '/about',
+    navOrder: 2,
+  },
+  {
+    title: 'Posts',
+    path: '/post',
+    navOrder: 3,
+  },
+  {
+    title: 'Contact',
+    path: '/contact',
+    navOrder: 3,
+  },
+]
+
+export const SECONDARY_NAV_ITEMS = [
+  {
+    title: 'Home',
+    path: '/',
+    navOrder: 1,
+  },
+  {
+    title: 'About',
+    path: '/about',
+    navOrder: 2,
+  },
+  {
+    title: 'Posts',
+    path: '/post',
+    navOrder: 3,
+  },
+]
+
 export enum ETEXT_COLOUR {
   ON_SURFACE = 'black',
   ON_SURFACE_ALT = 'black',

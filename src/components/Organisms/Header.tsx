@@ -5,6 +5,7 @@ import Container from '../Atoms/Container'
 import Link from '../Atoms/Link'
 import Wrapper from '../Atoms/Wrapper'
 import * as variable from '../constants'
+import { PRIMARY_NAV_ITEMS } from '../constants'
 import { IprimaryNavProps } from '../Templates/Layout'
 
 export interface IHeaderProps {
@@ -58,7 +59,7 @@ const HeaderContainer = styled(Container)`
   }
 `
 
-const Header: FC<IHeaderProps> = ({ primaryNav, siteTitle }) => (
+const Header: FC<IHeaderProps> = ({ siteTitle }) => (
   <Wrapper
     backgroundColour={variable.EBACKGROUND_COLOUR.SURFACE}
     textColor={variable.ETEXT_COLOUR.ON_SURFACE}
@@ -67,11 +68,11 @@ const Header: FC<IHeaderProps> = ({ primaryNav, siteTitle }) => (
     <HeaderContainer>
       <Link to={withPrefix('/')}>{siteTitle}</Link>
       <MainNav>
-        {primaryNav
-          ? primaryNav.edges.map(item => (
-              <li key={item.node.frontmatter.path}>
-                <Link activeClassName="active" to={withPrefix(item.node.frontmatter.path)}>
-                  {item.node.frontmatter.title}
+        {PRIMARY_NAV_ITEMS
+          ? PRIMARY_NAV_ITEMS.map(item => (
+              <li key={item.title}>
+                <Link activeClassName="active" to={withPrefix(item.path)}>
+                  {item.title}
                 </Link>
               </li>
             ))

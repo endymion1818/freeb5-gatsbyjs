@@ -8,12 +8,10 @@ import Container from '../Atoms/Container'
 import Row from '../Atoms/Row'
 import Wrapper from '../Atoms/Wrapper'
 import * as variable from '../constants'
-import { IPrimaryNavProps, ISecondaryNavProps } from '../Templates/Layout'
+import { PRIMARY_NAV_ITEMS, SECONDARY_NAV_ITEMS } from '../constants'
 
 export interface IFooterProps {
   siteTitle: string
-  secondaryNav: ISecondaryNavProps
-  primaryNav: IPrimaryNavProps
 }
 
 const SecondaryNav = styled.ul`
@@ -57,11 +55,11 @@ const Footer: FC<IFooterProps> = ({ secondaryNav, primaryNav, siteTitle }) => (
         <Column>
           <h3>This Site</h3>
           <SecondaryNav>
-            {primaryNav
-              ? primaryNav.edges.map(item => (
-                  <li key={item.node.frontmatter.path}>
-                    <Link activeClassName="active" to={withPrefix(item.node.frontmatter.path)}>
-                      {item.node.frontmatter.title}
+            {PRIMARY_NAV_ITEMS
+              ? PRIMARY_NAV_ITEMS.map(item => (
+                  <li key={item.title}>
+                    <Link activeClassName="active" to={withPrefix(item.path)}>
+                      {item.title}
                     </Link>
                   </li>
                 ))
@@ -71,11 +69,11 @@ const Footer: FC<IFooterProps> = ({ secondaryNav, primaryNav, siteTitle }) => (
         <Column>
           <h3>Navigate</h3>
           <SecondaryNav>
-            {secondaryNav
-              ? secondaryNav.edges.map(item => (
-                  <li key={item.node.frontmatter.path}>
-                    <Link activeClassName="active" to={withPrefix(item.node.frontmatter.path)}>
-                      {item.node.frontmatter.title}
+            {SECONDARY_NAV_ITEMS
+              ? SECONDARY_NAV_ITEMS.map(item => (
+                  <li key={item.title}>
+                    <Link activeClassName="active" to={withPrefix(item.path)}>
+                      {item.title}
                     </Link>
                   </li>
                 ))

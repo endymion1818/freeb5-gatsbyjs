@@ -8,35 +8,6 @@ import ErrorBoundary from '../Molecules/ErrorBoundary'
 import Footer from '../Organisms/Footer'
 import Header from '../Organisms/Header'
 
-export interface IPrimaryNavProps {
-  primaryNav: {
-    edges: {
-      node: {
-        frontmatter: {
-          MainNavOrder: number
-          secondaryNavMenu: string
-          secondaryNavOrder: number
-          title: string
-        }
-      }
-    }
-  }
-}
-
-export interface ISecondaryNavProps {
-  secondaryNav: {
-    edges: {
-      node: {
-        frontmatter: {
-          secondaryNavMenu: string
-          secondaryNavOrder: number
-          title: string
-        }
-      }
-    }
-  }
-}
-
 export interface ISiteMetaProps {
   site: {
     siteMetadata: {
@@ -46,7 +17,7 @@ export interface ISiteMetaProps {
   }
 }
 
-export interface IStaticQueryProps extends ISiteMetaProps, IPrimaryNavProps, ISecondaryNavProps {}
+export interface IStaticQueryProps extends ISiteMetaProps {}
 
 const AccessibilityMainContentSkipLink = styled.a`
   height: 1px;
@@ -91,38 +62,6 @@ const Layout: React.SFC = ({ children }) => (
         site {
           siteMetadata {
             title
-          }
-        }
-        primaryNav: allJavascriptFrontmatter(
-          filter: { frontmatter: { MainNavOrder: { gt: 0 } } }
-          sort: { fields: frontmatter___MainNavOrder, order: ASC }
-        ) {
-          edges {
-            node {
-              frontmatter {
-                path
-                MainNavOrder
-                secondaryNavMenu
-                secondaryNavOrder
-                title
-              }
-            }
-          }
-        }
-        secondaryNav: allJavascriptFrontmatter(
-          filter: { frontmatter: { secondaryNavOrder: { gt: 0 } } }
-          sort: { fields: frontmatter___secondaryNavOrder, order: ASC }
-        ) {
-          edges {
-            node {
-              frontmatter {
-                path
-                MainNavOrder
-                secondaryNavMenu
-                secondaryNavOrder
-                title
-              }
-            }
           }
         }
       }

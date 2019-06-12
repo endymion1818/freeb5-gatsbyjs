@@ -8,11 +8,9 @@ export interface ILinkProps {
   to?: string
   href?: string
   rel?: string
-  noUnderline?: boolean
 }
 
 const SLink = styled(GatsbyLink)<ILinkProps>`
-  ${({ noUnderline }) => (noUnderline ? `text-decoration: none` : `text-decoration: underline;`)}
   text-decoration-skip-ink: auto;
 
   &:focus {
@@ -21,13 +19,12 @@ const SLink = styled(GatsbyLink)<ILinkProps>`
 `
 
 const Anchor = styled.a<ILinkProps>`
-  ${({ noUnderline }) => (noUnderline ? `text-decoration: none` : `text-decoration: underline;`)}
   &:focus {
     box-shadow: 0 0 2px ${variable.ETEXT_COLOUR.ON_SURFACE_ALT};
   }
 `
 
-const Link: FC<ILinkProps> = ({ children, to, openInNewTab, noUnderline, ...other }) => {
+const Link: FC<ILinkProps> = ({ children, to, openInNewTab, ...other }) => {
   // This regex assumes that any internal link (intended for Gatsby to process)
   // will start with exactly one slash, and that anything else is external.
   const internal = /^\/(?!\/)/.test(to)
@@ -47,13 +44,13 @@ const Link: FC<ILinkProps> = ({ children, to, openInNewTab, noUnderline, ...othe
   if (internal) {
     if (file) {
       return (
-        <Anchor href={to} {...other} noUnderline={noUnderline}>
+        <Anchor href={to} {...other}>
           {children}
         </Anchor>
       )
     }
     return (
-      <SLink to={to} {...other} noUnderline={noUnderline}>
+      <SLink to={to} {...other}>
         {children}
       </SLink>
     )
@@ -61,11 +58,11 @@ const Link: FC<ILinkProps> = ({ children, to, openInNewTab, noUnderline, ...othe
   return (
     <>
       {openInNewTab ? (
-        <Anchor href={to} {...other} target="_blank" rel="noopener" noUnderline={noUnderline}>
+        <Anchor href={to} {...other} target="_blank" rel="noopener">
           {children}
         </Anchor>
       ) : (
-        <Anchor href={to} {...other} noUnderline={noUnderline}>
+        <Anchor href={to} {...other}>
           {children}
         </Anchor>
       )}
