@@ -6,10 +6,8 @@ import Link from '../Atoms/Link'
 import Wrapper from '../Atoms/Wrapper'
 import * as variable from '../constants'
 import { PRIMARY_NAV_ITEMS } from '../constants'
-import { IprimaryNavProps } from '../Templates/Layout'
 
 export interface IHeaderProps {
-  primaryNav: IprimaryNavProps
   siteTitle: string
 }
 
