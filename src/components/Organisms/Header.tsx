@@ -6,7 +6,7 @@ import Link from '../Atoms/Link'
 import Wrapper from '../Atoms/Wrapper'
 import * as variable from '../constants'
 import { PRIMARY_NAV_ITEMS } from '../constants'
-
+import Search from '../Organisms/Search'
 export interface IHeaderProps {
   siteTitle: string
 }
@@ -75,6 +75,7 @@ const Header: FC<IHeaderProps> = ({ siteTitle }) => (
               </li>
             ))
           : null}
+        <Search />
       </MainNav>
     </HeaderContainer>
   </Wrapper>
