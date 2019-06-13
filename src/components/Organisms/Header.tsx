@@ -75,7 +75,7 @@ const Header: FC<IHeaderProps> = ({ siteTitle }) => (
               </li>
             ))
           : null}
-        <Search />
+        {/* <Search /> */}
       </MainNav>
     </HeaderContainer>
   </Wrapper>

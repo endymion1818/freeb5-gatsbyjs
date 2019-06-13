@@ -79,7 +79,6 @@ module.exports = {
       resolve: `gatsby-plugin-sentry`,
       options: {
         dsn: `https://4d03fcf75e9a48d992e2179174e8bb9e@sentry.io/1477926`,
-        // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
         environment: process.env.NODE_ENV,
         enabled: (() => [`production`, `stage`].indexOf(process.env.NODE_ENV) !== -1)(),
       },
@@ -92,27 +91,27 @@ module.exports = {
         exclude: [],
       },
     },
-    {
-      resolve: `gatsby-plugin-lunr`,
-      options: {
-        languages: [
-          {
-            name: 'en',
-          },
-        ],
-        fields: [
-          { name: 'title', store: true, attributes: { boost: 20 } },
-          { name: 'content' },
-          { name: 'url', store: true },
-        ],
-        resolvers: {
-          MarkdownRemark: {
-            title: node => node.frontmatter.title,
-            content: node => node.rawMarkdownBody,
-            url: node => node.fields.slug,
-          },
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-lunr`,
+    //   options: {
+    //     languages: [
+    //       {
+    //         name: 'en',
+    //       },
+    //     ],
+    //     fields: [
+    //       { name: 'title', store: true, attributes: { boost: 20 } },
+    //       { name: 'content' },
+    //       { name: 'url', store: true },
+    //     ],
+    //     resolvers: {
+    //       MarkdownRemark: {
+    //         title: node => node.frontmatter.title,
+    //         content: node => node.rawMarkdownBody,
+    //         url: node => node.fields.slug,
+    //       },
+    //     },
+    //   },
+    // },
   ],
 }
