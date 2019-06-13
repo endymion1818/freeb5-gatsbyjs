@@ -84,34 +84,34 @@ module.exports = {
       },
     },
     `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        output: `/sitemap.xml`,
-        exclude: [],
-      },
-    },
     // {
-    //   resolve: `gatsby-plugin-lunr`,
+    //   resolve: `gatsby-plugin-sitemap`,
     //   options: {
-    //     languages: [
-    //       {
-    //         name: 'en',
-    //       },
-    //     ],
-    //     fields: [
-    //       { name: 'title', store: true, attributes: { boost: 20 } },
-    //       { name: 'content' },
-    //       { name: 'url', store: true },
-    //     ],
-    //     resolvers: {
-    //       MarkdownRemark: {
-    //         title: node => node.frontmatter.title,
-    //         content: node => node.rawMarkdownBody,
-    //         url: node => node.fields.slug,
-    //       },
-    //     },
+    //     output: `/sitemap.xml`,
+    //     exclude: [],
     //   },
     // },
+    {
+      resolve: `gatsby-plugin-lunr`,
+      options: {
+        languages: [
+          {
+            name: 'en',
+          },
+        ],
+        fields: [
+          { name: 'title', store: true, attributes: { boost: 20 } },
+          { name: 'content' },
+          { name: 'url', store: true },
+        ],
+        resolvers: {
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            content: node => node.rawMarkdownBody,
+            url: node => node.fields.slug,
+          },
+        },
+      },
+    },
   ],
 }
