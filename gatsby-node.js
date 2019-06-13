@@ -6,7 +6,6 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-
   const blogPostTemplate = path.resolve(`./src/components/Templates/Post.tsx`)
   const categoryTemplate = path.resolve(`./src/components/Templates/Category.tsx`)
   const archiveTemplate = path.resolve(`./src/components/Templates/Archive.tsx`)
@@ -23,6 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 title
                 categories
+                date
               }
             }
           }
