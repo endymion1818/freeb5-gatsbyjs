@@ -27,6 +27,11 @@ export interface IWrapperProps {
    * @default token.ESIZE.SINGLE
    */
   paddingBottom?: token.ESIZE;
+  /**
+   * min height
+   * @default token.ESIZE.SINGLE
+   */
+  minHeight?: string;
 }
 
 const Wrapper = styled.div<IWrapperProps>`
@@ -45,6 +50,14 @@ const Wrapper = styled.div<IWrapperProps>`
     textColour &&
     `
     color: ${textColour}`};
+
+  ${({ minHeight }) =>
+    minHeight &&
+    `
+    min-height: ${minHeight};
+    display: flex;
+    align-items: center;
+  `};
 `;
 
 Wrapper.defaultProps = {
