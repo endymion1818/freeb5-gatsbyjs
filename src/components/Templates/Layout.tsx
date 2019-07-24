@@ -52,7 +52,7 @@ export interface IStaticQueryProps
 const AccessibilityMainContentSkipLink = styled.a`
   position: absolute;
   display: inline-block;
-  transform: translateY(-${token.ESIZE.QUAD});
+  transform: translateY(-5rem);
   padding: ${token.ESIZE.SINGLEPLUSHALF};
   background-color: ${token.EBACKGROUND_COLOUR.SURFACE_ALT};
   color: ${token.ETEXT_COLOUR.ON_SURFACE_ALT};

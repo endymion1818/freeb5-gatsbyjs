@@ -58,10 +58,27 @@ const HeaderContainer = styled(Container)`
   }
 `;
 
+const SiteTitle = styled(Link)`
+  font-family: serpentine;
+  font-size: ${token.ESIZE.SINGLEPLUSHALF};
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  text-shadow: -4px 0 blue, 0 4px blue, 4px 0 blue, 0 -4px blue;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: ${token.EBREAKPOINT.MEDIUM}) {
+    font-size: ${token.ESIZE.DOUBLE};
+  }
+`;
+
 const Header: FC<IHeaderProps> = ({ primaryNav, siteTitle }) => (
   <Wrapper>
     <HeaderContainer>
-      <Link to={withPrefix("/")}>{siteTitle}</Link>
+      <SiteTitle noUnderline={true} to={withPrefix("/")}>
+        {siteTitle}
+      </SiteTitle>
       <MainNav>
         {primaryNav ? primaryNav.edges.map(item => NavItem(item)) : null}
         <li>

@@ -25,7 +25,7 @@ const SearchForm: FC<ISearchfFormProps> = ({ query }) => {
   return (
     <SForm role="search" method="GET">
       <div className="form-group">
-        <label htmlFor="search-input">Search sites</label>
+        <Label htmlFor="search-input">Search sites</Label>
         <input
           className="form-control"
           type="search"

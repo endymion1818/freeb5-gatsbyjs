@@ -124,6 +124,8 @@ export const SForm = styled.form`
     }
   }
   .form-group {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
   }
   .checkbox,
