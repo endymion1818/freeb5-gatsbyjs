@@ -1,10 +1,17 @@
-import { navigate } from 'gatsby'
-import React, { FC } from 'react'
-import styled from 'styled-components'
+import { navigate } from "gatsby";
+import React, { FC } from "react";
+import styled from "styled-components";
+
+import { ButtonStyles } from "../Atoms/Link";
+import { SForm } from "../Molecules/Form";
 
 export interface ISearchfFormProps {
-  query?: string
+  query?: string;
 }
+
+const Button = styled.button`
+  ${ButtonStyles}
+`;
 
 const Label = styled.label`
   position: absolute !important;
@@ -12,21 +19,26 @@ const Label = styled.label`
   width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
-`
+`;
 
 const SearchForm: FC<ISearchfFormProps> = ({ query }) => {
   return (
-    <form role="search" method="GET">
-      <label htmlFor="search-input">Search sites</label>
-      <input
-        type="search"
-        id="search-input"
-        name="keywords"
-        onChange={e => navigate(`/search?keywords=${encodeURIComponent(e.target.value)}`)}
-        value={query}
-      />
-      <button type="submit">Search</button>
-    </form>
-  )
-}
-export default SearchForm
+    <SForm role="search" method="GET">
+      <div className="form-group">
+        <label htmlFor="search-input">Search sites</label>
+        <input
+          className="form-control"
+          type="search"
+          id="search-input"
+          name="keywords"
+          onChange={e =>
+            navigate(`/search?keywords=${encodeURIComponent(e.target.value)}`)
+          }
+          value={query}
+        />
+        <Button type="submit">Search</Button>
+      </div>
+    </SForm>
+  );
+};
+export default SearchForm;

@@ -1,47 +1,53 @@
-import { graphql, StaticQuery } from 'gatsby'
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { createGlobalStyle } from 'styled-components'
-import styled from 'styled-components'
-import ErrorBoundary from '../Molecules/ErrorBoundary'
-import Footer from '../Organisms/Footer'
-import Header from '../Organisms/Header'
-import * as token from '../tokens'
+import { graphql, StaticQuery } from "gatsby";
+import React from "react";
+import { Helmet } from "react-helmet";
+import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
+import ErrorBoundary from "../Molecules/ErrorBoundary";
+import Footer from "../Organisms/Footer";
+import Header from "../Organisms/Header";
+import * as token from "../tokens";
+
+import pageBackground from "../../assets/pg-bckg.png";
+import serpentineWoff2 from "../../assets/serpentine.woff2";
 
 export interface INavEdges {
   edges: [
     {
       node: {
         frontmatter: {
-          MainNavOrder: number
-          secondaryNavMenu: string
-          secondaryNavOrder: number
-          title: string
-          path: string
-        }
-      }
+          MainNavOrder: number;
+          secondaryNavMenu: string;
+          secondaryNavOrder: number;
+          title: string;
+          path: string;
+        };
+      };
     }
-  ]
+  ];
 }
 
 export interface IPrimaryNavProps {
-  primaryNav: INavEdges
+  primaryNav: INavEdges;
 }
 
 export interface ISecondaryNavProps {
-  secondaryNav: INavEdges
+  secondaryNav: INavEdges;
 }
 
 export interface ISiteMetaProps {
   site: {
     siteMetadata: {
-      title: string
-      description: string
-    }
-  }
+      title: string;
+      description: string;
+    };
+  };
 }
 
-export interface IStaticQueryProps extends ISiteMetaProps, IPrimaryNavProps, ISecondaryNavProps {}
+export interface IStaticQueryProps
+  extends ISiteMetaProps,
+    IPrimaryNavProps,
+    ISecondaryNavProps {}
 
 const AccessibilityMainContentSkipLink = styled.a`
   position: absolute;
@@ -56,7 +62,7 @@ const AccessibilityMainContentSkipLink = styled.a`
   &:active {
     transform: translateY(-${token.ESIZE.ZERO});
   }
-`
+`;
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -65,9 +71,17 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
   }
+  @font-face {
+    font-family: serpentine;
+    font-style: normal;
+    font-weight: 700;
+    src: url(${serpentineWoff2});
+  }
   body {
     margin: 0;
     font-family: system;
+    background-color: black;
+    background-image: url(${pageBackground});
   }
   h1,
   h2,
@@ -75,12 +89,12 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: system;
+    font-family: serpentine;
   }
   #gatsby-noscript {
     display:none;
   }
-`
+`;
 
 const Layout: React.SFC = ({ children }) => (
   <StaticQuery
@@ -144,7 +158,10 @@ const Layout: React.SFC = ({ children }) => (
         <AccessibilityMainContentSkipLink href="#main">
           Skip to main content
         </AccessibilityMainContentSkipLink>
-        <Header siteTitle={data.site.siteMetadata.title} primaryNav={data.primaryNav} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          primaryNav={data.primaryNav}
+        />
         <main id="main">{children}</main>
         <Footer
           siteTitle={data.site.siteMetadata.title}
@@ -154,5 +171,5 @@ const Layout: React.SFC = ({ children }) => (
       </ErrorBoundary>
     )}
   />
-)
-export default Layout
+);
+export default Layout;
