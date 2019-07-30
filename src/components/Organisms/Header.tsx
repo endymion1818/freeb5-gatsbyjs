@@ -44,6 +44,7 @@ const HeaderContainer = styled(Container)`
 
   @media (min-width: ${token.EBREAKPOINT.MEDIUM}) {
     display: flex;
+    align-items: center;
 
     > a {
       flex: 1;

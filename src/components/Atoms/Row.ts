@@ -1,18 +1,18 @@
-import styled from 'styled-components'
-import * as token from '../tokens'
+import styled from "styled-components";
+import * as token from "../tokens";
 
 export interface IRowProps {
   /**
    * how many rows
    * @default 1
    */
-  size: number
+  size: number;
   /**
    * breakpoint
    *  @default token.EBREAKPOINT.LARGE
    */
 
-  breakpoint?: token.EBREAKPOINT
+  breakpoint?: token.EBREAKPOINT;
 }
 
 const Row = styled.div<IRowProps>`
@@ -39,16 +39,16 @@ const Row = styled.div<IRowProps>`
     }
     /* clear floats */
     &:after {
-      content: '';
+      content: "";
       display: block;
       clear: both;
     }
   }
-`
+`;
 
 Row.defaultProps = {
   size: 1,
-  breakpoint: token.EBREAKPOINT.LARGE,
-}
+  breakpoint: token.EBREAKPOINT.MEDIUM
+};
 
-export default Row
+export default Row;
