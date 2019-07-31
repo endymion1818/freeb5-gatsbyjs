@@ -1,16 +1,20 @@
-import GatsbyLink from 'gatsby-link'
-import React, { FC } from 'react'
-import styled, { css } from 'styled-components'
-import * as token from '../tokens'
+import GatsbyLink from "gatsby-link";
+import React, { FC } from "react";
+import styled, { css } from "styled-components";
+import * as token from "../tokens";
 
-export const ButtonStyles = css`
+export interface IButtonStylesProps {
+  buttonPrimary?: boolean;
+  buttonSecondary?: boolean;
+  buttonTertiary?: boolean;
+}
+
+export const ButtonStyles = css<IButtonStylesProps>`
   display: inline-block;
   border: none;
   padding: ${token.ESIZE.SINGLE} ${token.ESIZE.DOUBLE};
   margin: 0;
   text-decoration: none;
-  background: ${token.EBACKGROUND_COLOUR.SURFACE};
-  color: ${token.ETEXT_COLOUR.ON_SURFACE};
   font-size: ${token.ESIZE.SINGLE};
   cursor: pointer;
   text-align: center;
@@ -18,11 +22,46 @@ export const ButtonStyles = css`
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: ${token.EBORDERRADIUS.MEDIUM};
-
-  &:hover,
-  &:focus {
+  text-shadow: none;
+  
+  ${({ buttonPrimary }) =>
+    buttonPrimary &&
+    `
     background: ${token.EBACKGROUND_COLOUR.SURFACE};
-  }
+    color: ${token.ETEXT_COLOUR.ON_SURFACE};
+
+    &:hover,
+    &:focus {
+      background: ${token.EBACKGROUND_COLOUR.SURFACE_ALT};
+      color: ${token.ETEXT_COLOUR.ON_SURFACE_ALT};
+    }
+  `}
+    
+    ${({ buttonSecondary }) =>
+      buttonSecondary &&
+      `
+    background: ${token.EBACKGROUND_COLOUR.SURFACE};
+    color: ${token.ETEXT_COLOUR.ON_SURFACE};
+
+    &:hover,
+    &:focus {
+      background: ${token.EBACKGROUND_COLOUR.SURFACE_ALT};
+      color: ${token.ETEXT_COLOUR.ON_SURFACE_ALT};
+    }
+  `}
+  
+  ${({ buttonTertiary }) =>
+    buttonTertiary &&
+    `
+    background: ${token.EBACKGROUND_COLOUR.SURFACE};
+    color: ${token.ETEXT_COLOUR.ON_SURFACE};
+
+    &:hover,
+    &:focus {
+      background: ${token.EBACKGROUND_COLOUR.SURFACE_ALT};
+      color: ${token.ETEXT_COLOUR.ON_SURFACE_ALT};
+    }
+  `}
 
   &:focus {
     outline: 1px solid #fff;
@@ -36,52 +75,63 @@ export const ButtonStyles = css`
     opacity: 0.5;
     cursor: not-allowed;
   }
-`
+`;
 
 export interface ILinkProps {
-  openInNewTab?: boolean
-  to?: string
-  href?: string
-  rel?: string
-  noUnderline?: boolean
-  activeClassName?: string
-  isButton?: boolean
-  onClick?: (args: unknown) => void
+  openInNewTab?: boolean;
+  to?: string;
+  href?: string;
+  rel?: string;
+  noUnderline?: boolean;
+  activeClassName?: string;
+  isButton?: boolean;
+  buttonPrimary?: boolean;
+  buttonSecondary?: boolean;
+  buttonTertiary?: boolean;
+  onClick?: (args: unknown) => void;
+  className?: string;
 }
 
 const LinkStyles = css<ILinkProps>`
-  ${({ noUnderline }) => (noUnderline ? `text-decoration: none` : `text-decoration: underline;`)}
+  ${({ noUnderline }) =>
+    noUnderline ? `text-decoration: none` : `text-decoration: underline;`}
   text-decoration-skip-ink: auto;
 
   &:focus {
     box-shadow: 0 0 2px ${token.ETEXT_COLOUR.ON_SURFACE_ALT};
   }
   ${({ isButton }) => isButton && ButtonStyles}
-`
+`;
 
 const SLink = styled(GatsbyLink)<ILinkProps>`
   ${LinkStyles}
-`
+`;
 
 const Anchor = styled.a<ILinkProps>`
   ${LinkStyles}
-`
+`;
 
-const Link: FC<ILinkProps> = ({ children, to, openInNewTab, noUnderline, ...other }) => {
+const Link: FC<ILinkProps> = ({
+  children,
+  to,
+  openInNewTab,
+  noUnderline,
+  ...other
+}) => {
   // This regex assumes that any internal link (intended for Gatsby to process)
   // will start with exactly one slash, and that anything else is external.
-  const internal = /^\/(?!\/)/.test(to)
+  const internal = /^\/(?!\/)/.test(to);
 
   // This regex checks for file extensions - any string including a dot followed by
   // a series of other charachters.
 
-  const file = /\.[0-9a-z]+$/i.test(to)
+  const file = /\.[0-9a-z]+$/i.test(to);
 
   // Use gatsby-link for internal links, <a> for others, or <div> if no to or href is specified.
   // If internal, use the `file` regex to determine if this is a file resource, permitting a download.
 
-  if (typeof to === 'undefined' && typeof other.href === 'undefined') {
-    return <span {...other}>{children}</span>
+  if (typeof to === "undefined" && typeof other.href === "undefined") {
+    return <span {...other}>{children}</span>;
   }
 
   if (internal) {
@@ -90,18 +140,24 @@ const Link: FC<ILinkProps> = ({ children, to, openInNewTab, noUnderline, ...othe
         <Anchor href={to} {...other} noUnderline={noUnderline}>
           {children}
         </Anchor>
-      )
+      );
     }
     return (
       <SLink to={to} {...other} noUnderline={noUnderline}>
         {children}
       </SLink>
-    )
+    );
   }
   return (
     <>
       {openInNewTab ? (
-        <Anchor href={to} {...other} target="_blank" rel="noopener" noUnderline={noUnderline}>
+        <Anchor
+          href={to}
+          {...other}
+          target="_blank"
+          rel="noopener"
+          noUnderline={noUnderline}
+        >
           {children}
         </Anchor>
       ) : (
@@ -110,6 +166,6 @@ const Link: FC<ILinkProps> = ({ children, to, openInNewTab, noUnderline, ...othe
         </Anchor>
       )}
     </>
-  )
-}
-export default Link
+  );
+};
+export default Link;

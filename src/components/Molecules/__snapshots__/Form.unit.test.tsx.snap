@@ -180,8 +180,6 @@ exports[`Should render 1`] = `
   margin: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background: black;
-  color: white;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -191,11 +189,7 @@ exports[`Should render 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0.5rem;
-}
-
-.c0 button:hover,
-.c0 button:focus {
-  background: black;
+  text-shadow: none;
 }
 
 .c0 button:focus {

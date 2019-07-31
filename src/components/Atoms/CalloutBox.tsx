@@ -18,7 +18,7 @@ export interface ICalloutBoxProps {
    * children of this component
    * @default <>test</>
    */
-  children: string | JSX.Element[] | JSX.Element;
+  children: JSX.Element[] | JSX.Element;
   /**
    * background colour
    * @default token.EBACKGROUND_COLOUR.SURFACE
@@ -44,12 +44,16 @@ const CalloutContainer = styled.div<ICalloutContainerProps>`
 
   background-color: ${({ backgroundColour }) =>
     backgroundColour ? backgroundColour : `rgba(0, 0, 0, 0.5);`};
-  color: ${({ textColour }) =>
-    textColour
-      ? textColour
-      : `${token.ETEXT_COLOUR.ON_SURFACE};
+  
+  > *,
+  > a:not(.button) {
+    color: ${({ textColour }) =>
+      textColour
+        ? textColour
+        : `${token.ETEXT_COLOUR.ON_SURFACE};
     text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
     `};
+  }
 `;
 
 const CalloutBox: FC<ICalloutBoxProps> = ({

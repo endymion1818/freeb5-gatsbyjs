@@ -84,7 +84,7 @@ const Header: FC<IHeaderProps> = ({ primaryNav, siteTitle }) => (
         {primaryNav ? primaryNav.edges.map(item => NavItem(item)) : null}
         <li>
           <Link to="/post" activeClassName="active">
-            Posts
+            News
           </Link>
         </li>
       </MainNav>
