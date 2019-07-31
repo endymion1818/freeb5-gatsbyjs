@@ -44,7 +44,7 @@ exports[`<EvenColumns /> Should render 1`] = `
   width: 100%;
 }
 
-@media (min-width:75em) {
+@media (min-width:64em) {
   .c0 {
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -72,7 +72,7 @@ exports[`<EvenColumns /> Should render 1`] = `
   }
 
   .c0:after {
-    content: '';
+    content: "";
     display: block;
     clear: both;
   }
