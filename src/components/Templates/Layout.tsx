@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 import bg from "../../assets/pg-bckg.png";
+import Serpentine from "../../assets/SerpentineMedium.woff2";
 import ErrorBoundary from "../Molecules/ErrorBoundary";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
@@ -69,7 +70,8 @@ const GlobalStyle = createGlobalStyle`
     src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
   }
   @font-face {
-    
+     font-family: 'SerpentineMedium';
+     src: url('/SerpentineMedium.woff');
   }
   body {
     margin: 0;
@@ -81,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: system;
+    font-family: 'SerpentineMedium', system;
   }
   #gatsby-noscript {
     display:none;
