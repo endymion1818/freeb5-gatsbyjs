@@ -3,11 +3,11 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
+import bg from "../../assets/pg-bckg.png";
 import ErrorBoundary from "../Molecules/ErrorBoundary";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 import { colors, size } from "../tokens";
-
 export interface INavEdges {
   edges: [
     {
@@ -68,6 +68,9 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
   }
+  @font-face {
+    
+  }
   body {
     margin: 0;
     font-family: system;
@@ -83,6 +86,12 @@ const GlobalStyle = createGlobalStyle`
   #gatsby-noscript {
     display:none;
   }
+`;
+
+const Main = styled.main`
+  background-color: ${colors.neutral.dark};
+  background-image: url(${bg});
+  color: ${colors.neutral.light};
 `;
 
 const Layout: React.SFC = ({ children }) => (
@@ -151,7 +160,7 @@ const Layout: React.SFC = ({ children }) => (
           siteTitle={data.site.siteMetadata.title}
           primaryNav={data.primaryNav}
         />
-        <main id="main">{children}</main>
+        <Main id="main">{children}</Main>
         <Footer
           siteTitle={data.site.siteMetadata.title}
           primaryNav={data.primaryNav}
