@@ -7,7 +7,7 @@ import Link from "../Atoms/Link";
 import Wrapper from "../Atoms/Wrapper";
 import SearchForm from "../Molecules/SearchForm";
 import { IPrimaryNavProps } from "../Templates/Layout";
-import { borderradius, breakpoint, colors, size } from "../tokens";
+import { borderradius, BREAKPOINT, colors, size } from "../tokens";
 
 export interface IHeaderProps extends IPrimaryNavProps {
   siteTitle: string;
@@ -43,7 +43,7 @@ const MainNav = styled.ul`
 const HeaderContainer = styled(Container)`
   overflow-x: hidden;
 
-  @media (min-width: ${breakpoint.medium}) {
+  @media (min-width: ${BREAKPOINT.medium}) {
     display: flex;
 
     > a {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINT } from "../tokens";
 import { IBreakpoint } from "../types";
 
 export interface IRowProps {
@@ -7,33 +8,10 @@ export interface IRowProps {
 }
 
 const Row = styled.div<IRowProps>`
-  @media (min-width: ${({ breakpoint }) => breakpoint}) {
+  @media (min-width: ${({ breakpoint = BREAKPOINT.medium }) => breakpoint}) {
     display: grid;
-    grid-template-columns: repeat(${({ size }) => (size ? size : 100)}, 1fr);
+    grid-template-columns: repeat(${({ size }) => (size ? size : 1)}, 1fr);
     grid-gap: 15px;
-  }
-  /* IE fallback to float since Grid version is older & likely */
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    display: block !important;
-
-    > * {
-      display: block !important;
-      float: left;
-      width: ${({ size }) => (size <= 1 ? 100 : (size / 10) * 100)}%;
-
-      &:not(:first-child) {
-        margin-left: 1rem;
-      }
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
-    }
-    /* clear floats */
-    &:after {
-      content: "";
-      display: block;
-      clear: both;
-    }
   }
 `;
 

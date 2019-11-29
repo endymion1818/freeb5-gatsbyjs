@@ -28,7 +28,7 @@ export const colors: IColorSpec = {
   }
 };
 
-export const breakpoint: IBreakpoint = {
+export const BREAKPOINT: IBreakpoint = {
   small: "36em",
   medium: "64em",
   large: "75em"
