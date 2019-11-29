@@ -7,11 +7,15 @@ import Link from "../Atoms/Link";
 import Wrapper from "../Atoms/Wrapper";
 import SearchForm from "../Molecules/SearchForm";
 import { IPrimaryNavProps } from "../Templates/Layout";
-import { borderradius, BREAKPOINT, colors, size } from "../tokens";
+import { borderradius, BREAKPOINT, colors, FONTFAMILY, size } from "../tokens";
 
 export interface IHeaderProps extends IPrimaryNavProps {
   siteTitle: string;
 }
+
+const Logo = styled(Link)`
+  font-family: ${FONTFAMILY};
+`;
 
 const MainNav = styled.ul`
   display: flex;
@@ -65,7 +69,7 @@ const Header: FC<IHeaderProps> = ({ primaryNav, siteTitle }) => (
     textColour={colors.base.primary}
   >
     <HeaderContainer>
-      <Link to={withPrefix("/")}>{siteTitle}</Link>
+      <Logo to={withPrefix("/")}>{siteTitle}</Logo>
       <MainNav>
         {primaryNav ? primaryNav.edges.map(item => NavItem(item)) : null}
         <li>

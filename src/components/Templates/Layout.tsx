@@ -4,11 +4,10 @@ import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 import bg from "../../assets/pg-bckg.png";
-import Serpentine from "../../assets/SerpentineMedium.woff2";
 import ErrorBoundary from "../Molecules/ErrorBoundary";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
-import { colors, size } from "../tokens";
+import { colors, FONTFAMILY, size } from "../tokens";
 export interface INavEdges {
   edges: [
     {
@@ -83,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'SerpentineMedium', system;
+    font-family: ${FONTFAMILY}
   }
   #gatsby-noscript {
     display:none;
@@ -94,6 +93,7 @@ const Main = styled.main`
   background-color: ${colors.neutral.dark};
   background-image: url(${bg});
   color: ${colors.neutral.light};
+  min-height: 80vh;
 `;
 
 const Layout: React.SFC = ({ children }) => (

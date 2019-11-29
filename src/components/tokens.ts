@@ -67,3 +67,7 @@ export const borderradius: IBorderradius = {
   medium: "0.5rem",
   large: "0.75rem"
 };
+
+// tslint:disable-next-line: one-variable-per-declaration
+export const FONTFAMILY: string = "SerpentineMedium",
+  system;
