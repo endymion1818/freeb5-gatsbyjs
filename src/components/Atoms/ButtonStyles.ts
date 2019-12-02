@@ -8,7 +8,7 @@ const ButtonStyles = css`
   margin: 0;
   text-decoration: none;
   background: ${colors.neutral.medium};
-  color: ${colors.base.primary};
+  color: ${colors.neutral.nearDark};
   font-size: ${size.single};
   cursor: pointer;
   text-align: center;

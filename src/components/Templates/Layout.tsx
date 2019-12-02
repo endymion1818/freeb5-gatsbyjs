@@ -49,7 +49,7 @@ export interface IStaticQueryProps
 const AccessibilityMainContentSkipLink = styled.a`
   position: absolute;
   display: inline-block;
-  transform: translateY(-${size.quad});
+  transform: translateY(-${size.sextuple});
   padding: ${size.singleplushalf};
   background-color: ${colors.neutral.medium};
   color: ${colors.base.primary};
@@ -75,6 +75,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: system;
+    background-color: ${colors.neutral.dark};
+    background-image: url(${bg});
   }
   h1,
   h2,
@@ -82,7 +84,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: ${FONTFAMILY}
+    font-family: ${FONTFAMILY};
   }
   #gatsby-noscript {
     display:none;
@@ -90,10 +92,8 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Main = styled.main`
-  background-color: ${colors.neutral.dark};
-  background-image: url(${bg});
-  color: ${colors.neutral.light};
   min-height: 80vh;
+  color: ${colors.neutral.white};
 `;
 
 const Layout: React.SFC = ({ children }) => (

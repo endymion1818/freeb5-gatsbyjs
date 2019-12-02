@@ -9,15 +9,12 @@ export interface ILinkProps {
   to?: string;
   href?: string;
   rel?: string;
-  noUnderline?: boolean;
   activeClassName?: string;
   isButton?: boolean;
   onClick?: (args: unknown) => void;
 }
 
 const LinkStyles = css<ILinkProps>`
-  ${({ noUnderline }) =>
-    noUnderline ? `text-decoration: none` : `text-decoration: underline;`}
   text-decoration-skip-ink: auto;
 
   &:focus {
@@ -38,7 +35,6 @@ const Link: FC<ILinkProps> = ({
   children,
   to = "",
   openInNewTab,
-  noUnderline,
   ...other
 }) => {
   // This regex assumes that any internal link (intended for Gatsby to process)
@@ -60,13 +56,13 @@ const Link: FC<ILinkProps> = ({
   if (internal) {
     if (file) {
       return (
-        <Anchor href={to} {...other} noUnderline={noUnderline}>
+        <Anchor href={to} {...other}>
           {children}
         </Anchor>
       );
     }
     return (
-      <SLink to={to} {...other} noUnderline={noUnderline}>
+      <SLink to={to} {...other}>
         {children}
       </SLink>
     );
@@ -74,17 +70,11 @@ const Link: FC<ILinkProps> = ({
   return (
     <>
       {openInNewTab ? (
-        <Anchor
-          href={to}
-          {...other}
-          target="_blank"
-          rel="noopener"
-          noUnderline={noUnderline}
-        >
+        <Anchor href={to} {...other} target="_blank" rel="noopener">
           {children}
         </Anchor>
       ) : (
-        <Anchor href={to} {...other} noUnderline={noUnderline}>
+        <Anchor href={to} {...other}>
           {children}
         </Anchor>
       )}

@@ -40,17 +40,18 @@ const MainNav = styled.ul`
       display: block;
       padding: ${size.single};
       text-decoration: none;
+      color: ${colors.neutral.white};
       border-radius: ${borderradius.medium};
 
       &:hover,
       &:active,
       &:focus {
         background-color: ${colors.neutral.medium};
-        color: ${colors.base.primary};
+        color: ${colors.neutral.nearDark};
       }
       &.active {
         background-color: ${colors.neutral.medium};
-        color: ${colors.base.primary};
+        color: ${colors.neutral.nearDark};
       }
     }
   }
@@ -77,7 +78,7 @@ const HeaderContainer = styled(Container)`
 
 const Header: FC<IHeaderProps> = ({ primaryNav, siteTitle }) => (
   <Wrapper
-    backgroundColour={colors.neutral.medium}
+    backgroundColour={colors.neutral.dark}
     textColour={colors.base.primary}
   >
     <HeaderContainer>

@@ -15,6 +15,10 @@ export interface IFooterProps extends IPrimaryNavProps, ISecondaryNavProps {
   siteTitle: string;
 }
 
+const SWrapper = styled(Wrapper)`
+  color: ${colors.neutral.nearWhite};
+`;
+
 const SecondaryNav = styled.ul`
   list-style: none;
   padding-left: 0;
@@ -25,17 +29,18 @@ const SecondaryNav = styled.ul`
       padding: ${size.single};
       text-decoration: none;
       border-radius: ${borderradius.medium};
-      color: ${colors.base.primary};
+      color: ${colors.neutral.nearDark};
 
       &:hover,
       &:active,
       &:focus {
         background-color: ${colors.neutral.medium};
-        color: ${colors.base.primary};
+        color: ${colors.neutral.dark};
+        font-weight: bold;
       }
       &.active {
         background-color: ${colors.neutral.medium};
-        color: ${colors.base.primary};
+        color: ${colors.neutral.dark};
       }
     }
   }
