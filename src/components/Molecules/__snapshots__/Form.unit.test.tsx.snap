@@ -9,21 +9,21 @@ exports[`Should render 1`] = `
   font-weight: bold;
 }
 
-.c0 input[type='search'] {
+.c0 input[type="search"] {
   box-sizing: border-box;
 }
 
-.c0 input[type='checkbox'],
-.c0 input[type='radio'] {
+.c0 input[type="checkbox"],
+.c0 input[type="radio"] {
   margin: 1px9 0 0;
   line-height: normal;
 }
 
-.c0 input[type='file'] {
+.c0 input[type="file"] {
   display: block;
 }
 
-.c0 input[type='range'] {
+.c0 input[type="range"] {
   display: block;
   width: 100%;
 }
@@ -33,9 +33,9 @@ exports[`Should render 1`] = `
   height: auto;
 }
 
-.c0 input[type='checkbox']:focus,
-.c0 input[type='file']:focus,
-.c0 input[type='radio']:focus {
+.c0 input[type="checkbox"]:focus,
+.c0 input[type="file"]:focus,
+.c0 input[type="radio"]:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -61,7 +61,7 @@ exports[`Should render 1`] = `
 .c0 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
 }
 
 .c0 .form-control::-moz-placeholder {
@@ -98,7 +98,7 @@ exports[`Should render 1`] = `
   height: auto;
 }
 
-.c0 input[type='search'] {
+.c0 input[type="search"] {
   -webkit-appearance: none;
 }
 
@@ -123,10 +123,10 @@ exports[`Should render 1`] = `
   cursor: pointer;
 }
 
-.c0 .checkbox input[type='checkbox'],
-.c0 .checkbox-inline input[type='checkbox'],
-.c0 .radio input[type='radio'],
-.c0 .radio-inline input[type='radio'] {
+.c0 .checkbox input[type="checkbox"],
+.c0 .checkbox-inline input[type="checkbox"],
+.c0 .radio input[type="radio"],
+.c0 .radio-inline input[type="radio"] {
   position: absolute;
   margin-top: 4px9;
   margin-left: -20px;
@@ -143,12 +143,12 @@ exports[`Should render 1`] = `
   cursor: pointer;
 }
 
-.c0 fieldset[disabled] input[type='checkbox'],
-.c0 fieldset[disabled] input[type='radio'],
-.c0 input[type='checkbox'].disabled,
-.c0 input[type='checkbox'][disabled],
-.c0 input[type='radio'].disabled,
-.c0 input[type='radio'][disabled] {
+.c0 fieldset[disabled] input[type="checkbox"],
+.c0 fieldset[disabled] input[type="radio"],
+.c0 input[type="checkbox"].disabled,
+.c0 input[type="checkbox"][disabled],
+.c0 input[type="radio"].disabled,
+.c0 input[type="radio"][disabled] {
   cursor: not-allowed;
 }
 
@@ -173,7 +173,7 @@ exports[`Should render 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #DCDBE2;
-  color: #00B9A7;
+  color: #63637E;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
@@ -215,32 +215,32 @@ exports[`Should render 1`] = `
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-  .c0 input[type='date'].form-control,
-  .c0 input[type='datetime-local'].form-control,
-  .c0 input[type='month'].form-control,
-  .c0 input[type='time'].form-control {
+  .c0 input[type="date"].form-control,
+  .c0 input[type="datetime-local"].form-control,
+  .c0 input[type="month"].form-control,
+  .c0 input[type="time"].form-control {
     line-height: 34px;
   }
 
-  .c0 .input-group-sm input[type='date'],
-  .c0 .input-group-sm input[type='datetime-local'],
-  .c0 .input-group-sm input[type='month'],
-  .c0 .input-group-sm input[type='time'],
-  .c0 input[type='date'].input-sm,
-  .c0 input[type='datetime-local'].input-sm,
-  .c0 input[type='month'].input-sm,
-  .c0 input[type='time'].input-sm {
+  .c0 .input-group-sm input[type="date"],
+  .c0 .input-group-sm input[type="datetime-local"],
+  .c0 .input-group-sm input[type="month"],
+  .c0 .input-group-sm input[type="time"],
+  .c0 input[type="date"].input-sm,
+  .c0 input[type="datetime-local"].input-sm,
+  .c0 input[type="month"].input-sm,
+  .c0 input[type="time"].input-sm {
     line-height: 30px;
   }
 
-  .c0 .input-group-lg input[type='date'],
-  .c0 .input-group-lg input[type='datetime-local'],
-  .c0 .input-group-lg input[type='month'],
-  .c0 .input-group-lg input[type='time'],
-  .c0 input[type='date'].input-lg,
-  .c0 input[type='datetime-local'].input-lg,
-  .c0 input[type='month'].input-lg,
-  .c0 input[type='time'].input-lg {
+  .c0 .input-group-lg input[type="date"],
+  .c0 .input-group-lg input[type="datetime-local"],
+  .c0 .input-group-lg input[type="month"],
+  .c0 .input-group-lg input[type="time"],
+  .c0 input[type="date"].input-lg,
+  .c0 input[type="datetime-local"].input-lg,
+  .c0 input[type="month"].input-lg,
+  .c0 input[type="time"].input-lg {
     line-height: 46px;
   }
 }
