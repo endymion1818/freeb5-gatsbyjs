@@ -15,6 +15,17 @@ export interface IHeaderProps extends IPrimaryNavProps {
 
 const Logo = styled(Link)`
   font-family: ${FONTFAMILY};
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  text-shadow: -4px 0 blue, 0 4px blue, 4px 0 blue, 0 -4px blue;
+  margin: 1rem 1rem 1rem 0;
+  display: inline-block;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 const MainNav = styled.ul`
@@ -22,6 +33,7 @@ const MainNav = styled.ul`
   flex-direction: row;
   list-style: none;
   overflow-x: auto;
+  font-weight: bold;
 
   li {
     a {

@@ -1,4 +1,4 @@
-const siteTitle = `Carraway`;
+const siteTitle = `#FreeBabylon5`;
 
 module.exports = {
   siteMetadata: {

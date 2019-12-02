@@ -9,7 +9,7 @@ interface IErrors {
   phone: string[];
 }
 
-const SForm = styled.form`
+export const SForm = styled.form`
   /* Form style reset */
   label {
     display: block;

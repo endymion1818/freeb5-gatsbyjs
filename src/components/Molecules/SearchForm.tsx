@@ -1,6 +1,8 @@
 import { navigate } from "gatsby";
 import React, { FC, SyntheticEvent } from "react";
 import styled from "styled-components";
+import ButtonStyles from "../Atoms/ButtonStyles";
+import { SForm as BaseForm } from "../Molecules/Form";
 
 export interface ISearchfFormProps {
   query?: string;
@@ -10,7 +12,14 @@ export interface IInputProps {
   onEnter?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
-const Input = styled.input<IInputProps>``;
+const Input = styled.input<IInputProps>`
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+`;
+
+const Form = styled(BaseForm)`
+  margin: 1rem 0 1rem 1rem;
+`;
 
 const Label = styled.label`
   position: absolute !important;
@@ -22,8 +31,8 @@ const Label = styled.label`
 
 const SearchForm: FC<ISearchfFormProps> = ({ query }) => {
   return (
-    <form role="search" method="GET">
-      <label htmlFor="search-input">Search sites</label>
+    <Form role="search" method="GET">
+      <Label htmlFor="search-input">Search sites</Label>
       <Input
         tabIndex={0}
         type="search"
@@ -39,7 +48,7 @@ const SearchForm: FC<ISearchfFormProps> = ({ query }) => {
         value={query}
       />
       <button type="submit">Search</button>
-    </form>
+    </Form>
   );
 };
 export default SearchForm;
