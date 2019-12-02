@@ -1,21 +1,21 @@
 export interface IBaseColorSpec {
-  primary: "#4d0aaf";
-  secondary: "#4A3EDE";
+  primary: string;
+  secondary: string;
 }
 
 export interface INeutralColorSpec {
-  white: "#FFFFFF";
-  nearWhite: "#F8F8F8";
-  light: "#EAEAEE";
-  medium: "#DCDBE2";
-  nearDark: "#63637E";
-  dark: "#0D0A38";
+  white: string;
+  nearWhite: string;
+  light: string;
+  medium: string;
+  nearDark: string;
+  dark: string;
 }
 
 export interface ISemanticColorSpec {
-  success: "#1EC06A";
-  alert: "#FFB428";
-  error: "#EE0505";
+  success: string;
+  alert: string;
+  error: string;
 }
 
 export interface IColorSpec {
