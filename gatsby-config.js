@@ -25,10 +25,10 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-eslint`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-ghost`,
       options: {
-        name: `post`,
-        path: `${__dirname}/src/pages/post`
+        apiUrl: `http://freeb5-content.herokuapp.com`,
+        contentApiKey: `b783ffa3ee79b182e9d73ef236`
       }
     },
     {

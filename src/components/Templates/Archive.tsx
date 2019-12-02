@@ -70,7 +70,7 @@ export default Archive;
 
 export const archiveQuery = graphql`
   query($skip: Int!, $limit: Int!) {
-    posts: allMarkdownRemark(
+    posts: allGhostPost(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { type: { ne: "page" } } }
       skip: $skip
