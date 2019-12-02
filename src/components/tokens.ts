@@ -69,5 +69,4 @@ export const borderradius: IBorderradius = {
 };
 
 // tslint:disable-next-line
-export const FONTFAMILY: string = "SerpentineMedium",
-  system;
+export const FONTFAMILY: string = '"SerpentineMedium", system;';
