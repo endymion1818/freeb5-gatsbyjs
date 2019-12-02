@@ -10,7 +10,7 @@ import {
 
 export const colors: IColorSpec = {
   base: {
-    primary: "#00B9A7",
+    primary: "#4d0aaf",
     secondary: "#4A3EDE"
   },
   neutral: {
@@ -68,6 +68,6 @@ export const borderradius: IBorderradius = {
   large: "0.75rem"
 };
 
-// tslint:disable-next-line: one-variable-per-declaration
+// tslint:disable-next-line
 export const FONTFAMILY: string = "SerpentineMedium",
   system;
