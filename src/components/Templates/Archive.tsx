@@ -5,20 +5,7 @@ import Page from "../Templates/Page";
 
 export interface IArchiveProps {
   data: {
-    posts: {
-      edges: Array<{
-        node: {
-          frontmatter: {
-            title: string;
-            date: string;
-          };
-          fields: {
-            slug: string;
-          };
-          excerpt: string;
-        };
-      }>;
-    };
+    // needs retyping
   };
   pageContext: {
     previousPagePath?: string;
@@ -26,26 +13,30 @@ export interface IArchiveProps {
   };
 }
 
-const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
+const Archive: FC<IArchiveProps> = ({ data, location, pageContext }) => {
   const { previousPagePath, nextPagePath } = pageContext;
-  const { posts } = data;
+  const posts = data.allGhostPost.edges
 
   return (
     <Page>
       <h2>All Posts</h2>
       {posts &&
-        posts.edges.map((edge, index) => (
-          <article key={index}>
+        posts.edges.map((edge => (
+          <article key={edge.node.id}>
             <h2>
-              <Link to={withPrefix(edge.node.fields.slug)}>
-                {edge.node.frontmatter.title}
+              <Link to={edge.node.url}>
+                {edge.node.title.title}
               </Link>
             </h2>
+            {edge.node.feature_image &&
+            <div className="post-card-image" style={{
+                backgroundImage: `url(${edge.node.feature_image})` ,
+            }}></div>}
             <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
             <br />
-            <div>
+            {/* <div>
               Posted on: <time>{edge.node.frontmatter.date}</time>
-            </div>
+            </div> */}
           </article>
         ))}
       <nav>
@@ -69,25 +60,17 @@ const Archive: FC<IArchiveProps> = ({ data, pageContext }) => {
 export default Archive;
 
 export const archiveQuery = graphql`
-  query($skip: Int!, $limit: Int!) {
-    posts: allGhostPost(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { type: { ne: "page" } } }
-      skip: $skip
-      limit: $limit
+  query GhostPostQuery($limit: Int!, $skip: Int!) {
+    allGhostPost(
+        sort: { order: DESC, fields: [published_at] },
+        limit: $limit,
+        skip: $skip
     ) {
       edges {
         node {
-          excerpt(pruneLength: 280)
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "DD MMMM, YYYY")
-            title
-          }
+          ...GhostPostFields
         }
       }
     }
   }
-`;
+`

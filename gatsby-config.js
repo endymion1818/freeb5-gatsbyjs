@@ -1,36 +1,47 @@
-const siteTitle = `#FreeBabylon5`;
+const path = require(`path`);
 
+const config = require(`./src/utils/siteConfig`);
+const generateRSSFeed = require(`./src/utils/rss/generate-feed`);
+
+let ghostConfig;
+
+try {
+  ghostConfig = require(`./.ghost`);
+} catch (e) {
+  ghostConfig = {
+    production: {
+      apiUrl: process.env.GHOST_API_URL,
+      contentApiKey: process.env.GHOST_CONTENT_API_KEY
+    }
+  };
+} finally {
+  const { apiUrl, contentApiKey } =
+    process.env.NODE_ENV === `development`
+      ? ghostConfig.development
+      : ghostConfig.production;
+
+  if (!apiUrl || !contentApiKey || contentApiKey.match(/<key>/)) {
+    throw new Error(
+      `GHOST_API_URL and GHOST_CONTENT_API_KEY are required to build. Check the README.`
+    ); // eslint-disable-line
+  }
+}
+
+/**
+ * This is the place where you can tell Gatsby which plugins to use
+ * and set them up the way you want.
+ *
+ * Further info 👉🏼 https://www.gatsbyjs.org/docs/gatsby-config/
+ *
+ */
 module.exports = {
   siteMetadata: {
-    pathPrefix: "/",
-    title: siteTitle,
-    siteUrl: `https://www.gatsby-starter-carraway.netlify.com`,
-    description: `A starter for Gatsbyjs with typescript, jest and several ui components`
+    siteUrl: config.siteUrl
   },
   plugins: [
     `gatsby-plugin-typescript`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`
-      }
-    },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-twitter`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
-    `gatsby-transformer-json`,
     `gatsby-plugin-eslint`,
-    {
-      resolve: `gatsby-source-ghost`,
-      options: {
-        apiUrl: `http://freeb5-content.herokuapp.com`,
-        contentApiKey: `b783ffa3ee79b182e9d73ef236`
-      }
-    },
+    `gatsby-transformer-javascript-frontmatter`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -45,37 +56,6 @@ module.exports = {
         path: `${__dirname}/src/assets/`
       }
     },
-    `gatsby-transformer-javascript-frontmatter`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-webpack-size`,
-    {
-      resolve: `gatsby-plugin-react-svg`,
-      options: {
-        rule: {
-          include: /images\/.*\.svg$/
-        }
-      }
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: siteTitle,
-        short_name: siteTitle,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
-        icon: `src/assets/icon.png`
-      }
-    },
-    `gatsby-remark-copy-linked-files`,
-    {
-      resolve: `gatsby-remark-images`,
-      options: {
-        maxWidth: 1080
-      }
-    },
     {
       resolve: `gatsby-plugin-sentry`,
       options: {
@@ -83,66 +63,6 @@ module.exports = {
         environment: process.env.NODE_ENV,
         enabled: (() =>
           [`production`, `stage`].indexOf(process.env.NODE_ENV) !== -1)()
-      }
-    },
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }]
-                });
-              });
-            },
-            query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/feed.xml",
-            title: `RSS feed for ${siteTitle}`
-          }
-        ]
-      }
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        output: `/sitemap.xml`,
-        exclude: []
       }
     },
     {
@@ -166,6 +86,151 @@ module.exports = {
           }
         }
       }
-    }
+    },
+    /**
+     *  Content Plugins
+     */
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `pages`),
+        name: `pages`
+      }
+    },
+    // Setup for optimised images.
+    // See https://www.gatsbyjs.org/packages/gatsby-image/
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `images`),
+        name: `images`
+      }
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-ghost`,
+      options:
+        process.env.NODE_ENV === `development`
+          ? ghostConfig.development
+          : ghostConfig.production
+    },
+    /**
+     *  Utility Plugins
+     */
+    {
+      resolve: `gatsby-plugin-ghost-manifest`,
+      options: {
+        short_name: config.shortTitle,
+        start_url: `/`,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: `minimal-ui`,
+        icon: `static/${config.siteIcon}`,
+        legacy: true,
+        query: `
+                {
+                    allGhostSettings {
+                        edges {
+                            node {
+                                title
+                                description
+                            }
+                        }
+                    }
+                }
+              `
+      }
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+                {
+                    allGhostSettings {
+                        edges {
+                            node {
+                                title
+                                description
+                            }
+                        }
+                    }
+                }
+              `,
+        feeds: [generateRSSFeed(config)]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        query: `
+                {
+                    allGhostPost {
+                        edges {
+                            node {
+                                id
+                                slug
+                                updated_at
+                                created_at
+                                feature_image
+                            }
+                        }
+                    }
+                    allGhostPage {
+                        edges {
+                            node {
+                                id
+                                slug
+                                updated_at
+                                created_at
+                                feature_image
+                            }
+                        }
+                    }
+                    allGhostTag {
+                        edges {
+                            node {
+                                id
+                                slug
+                                feature_image
+                            }
+                        }
+                    }
+                    allGhostAuthor {
+                        edges {
+                            node {
+                                id
+                                slug
+                                profile_image
+                            }
+                        }
+                    }
+                }`,
+        mapping: {
+          allGhostPost: {
+            sitemap: `posts`
+          },
+          allGhostTag: {
+            sitemap: `tags`
+          },
+          allGhostAuthor: {
+            sitemap: `authors`
+          },
+          allGhostPage: {
+            sitemap: `pages`
+          }
+        },
+        exclude: [
+          `/dev-404-page`,
+          `/404`,
+          `/404.html`,
+          `/offline-plugin-app-shell-fallback`
+        ],
+        createLinkInHead: true,
+        addUncaughtPages: true
+      }
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`
   ]
 };
